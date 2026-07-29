@@ -1,0 +1,1017 @@
+[
+  {
+    "id": "robusta-bananas",
+    "slug": "robusta-bananas",
+    "name": "Robusta Bananas",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "apples-shimla",
+    "slug": "apples-shimla",
+    "name": "Shimla Apples",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "tomatoes",
+    "slug": "tomatoes",
+    "name": "Tomatoes",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "onions",
+    "slug": "onions",
+    "name": "Onions",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "potatoes",
+    "slug": "potatoes",
+    "name": "Potatoes",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "spinach",
+    "slug": "spinach",
+    "name": "Spinach",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "mangoes-alphonso",
+    "slug": "mangoes-alphonso",
+    "name": "Alphonso Mangoes",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "oranges",
+    "slug": "oranges",
+    "name": "Oranges",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "cucumber",
+    "slug": "cucumber",
+    "name": "Cucumber",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "cauliflower",
+    "slug": "cauliflower",
+    "name": "Cauliflower",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "coriander-leaves",
+    "slug": "coriander-leaves",
+    "name": "Coriander Leaves",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "ginger",
+    "slug": "ginger",
+    "name": "Ginger",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "green-chilli",
+    "slug": "green-chilli",
+    "name": "Green Chilli",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "lemons",
+    "slug": "lemons",
+    "name": "Lemons",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "strawberries",
+    "slug": "strawberries",
+    "name": "Strawberries",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "papaya",
+    "slug": "papaya",
+    "name": "Papaya",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "pomegranate",
+    "slug": "pomegranate",
+    "name": "Pomegranate",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "watermelon",
+    "slug": "watermelon",
+    "name": "Watermelon",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "sweet-corn",
+    "slug": "sweet-corn",
+    "name": "Sweet Corn",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "bitter-gourd",
+    "slug": "bitter-gourd",
+    "name": "Bitter Gourd",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "capsicum",
+    "slug": "capsicum",
+    "name": "Capsicum",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "brinjal",
+    "slug": "brinjal",
+    "name": "Brinjal",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "cabbage",
+    "slug": "cabbage",
+    "name": "Cabbage",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "ladyfinger",
+    "slug": "ladyfinger",
+    "name": "Ladyfinger",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "beetroot",
+    "slug": "beetroot",
+    "name": "Beetroot",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-curd",
+    "slug": "amul-curd",
+    "name": "Fresh Curd",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "eggs",
+    "slug": "eggs",
+    "name": "Farm Eggs",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "dove-soap",
+    "slug": "dove-soap",
+    "name": "Beauty Cream Soap",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "colgate-toothpaste",
+    "slug": "colgate-toothpaste",
+    "name": "Strong Teeth Toothpaste",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "lifebuoy-soap",
+    "slug": "lifebuoy-soap",
+    "name": "Germ Protection Soap",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "horlicks",
+    "slug": "horlicks",
+    "name": "Health Drink",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "bournvita",
+    "slug": "bournvita",
+    "name": "Chocolate Health Drink",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "bingo-tomato-tricks",
+    "slug": "bingo-tomato-tricks",
+    "name": "Tomato Tricks",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "treat-cookies",
+    "slug": "treat-cookies",
+    "name": "Treat Cream Biscuits",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "haldirams-mixture",
+    "slug": "haldirams-mixture",
+    "name": "Punjabi Mixture",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "kurkure-chutney-chaska",
+    "slug": "kurkure-chutney-chaska",
+    "name": "Chutney Chaska",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "dark-chocolate",
+    "slug": "dark-chocolate",
+    "name": "Dark Chocolate",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "pepsi",
+    "slug": "pepsi",
+    "name": "Pepsi",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "maza-mango-drink",
+    "slug": "maza-mango-drink",
+    "name": "Mango Drink",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "britannia-bun",
+    "slug": "britannia-bun",
+    "name": "Pav Buns",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "britannia-croissant",
+    "slug": "britannia-croissant",
+    "name": "Butter Croissant",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "britannia-donuts",
+    "slug": "britannia-donuts",
+    "name": "Chocolate Donuts",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "britannia-puffs",
+    "slug": "britannia-puffs",
+    "name": "Cream Puffs",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "britannia-pizza-base",
+    "slug": "britannia-pizza-base",
+    "name": "Pizza Base",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "britannia-pita-bread",
+    "slug": "britannia-pita-bread",
+    "name": "Pita Bread",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "surf-excel",
+    "slug": "surf-excel",
+    "name": "Matic Liquid Detergent",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "surf-excel-quick-wash",
+    "slug": "surf-excel-quick-wash",
+    "name": "Quick Wash Detergent",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "ariel-detergent",
+    "slug": "ariel-detergent",
+    "name": "Matic Liquid Detergent",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "tide-detergent",
+    "slug": "tide-detergent",
+    "name": "Tide Plus Detergent",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "comfort-fabric-conditioner",
+    "slug": "comfort-fabric-conditioner",
+    "name": "Fabric Conditioner",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "surf-excel-matic-top-load",
+    "slug": "surf-excel-matic-top-load",
+    "name": "Matic Top Load Detergent",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "vim-dishwash",
+    "slug": "vim-dishwash",
+    "name": "Dishwash Liquid",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "pril-dishwash",
+    "slug": "pril-dishwash",
+    "name": "Dishwash Gel",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "harpic-toilet-cleaner",
+    "slug": "harpic-toilet-cleaner",
+    "name": "Toilet Cleaner",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "floor-cleaner",
+    "slug": "floor-cleaner",
+    "name": "Floor Cleaner",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "red-label-tea",
+    "slug": "red-label-tea",
+    "name": "Red Label Tea",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "santoor-soap",
+    "slug": "santoor-soap",
+    "name": "Sandalwood Soap",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "mosquito-repellent",
+    "slug": "mosquito-repellent",
+    "name": "Mosquito Repellent",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "good-knight",
+    "slug": "good-knight",
+    "name": "Mosquito Coil",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "colin-glass-cleaner",
+    "slug": "colin-glass-cleaner",
+    "name": "Glass Cleaner",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "sunsilk-shampoo",
+    "slug": "sunsilk-shampoo",
+    "name": "Shampoo",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "head-shoulders",
+    "slug": "head-shoulders",
+    "name": "Anti-Dandruff Shampoo",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "tresemme-shampoo",
+    "slug": "tresemme-shampoo",
+    "name": "Keratin Smooth Shampoo",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "dove-conditioner",
+    "slug": "dove-conditioner",
+    "name": "Conditioner",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "clinic-plus-oil",
+    "slug": "clinic-plus-oil",
+    "name": "Hair Oil",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "nivea-lotion",
+    "slug": "nivea-lotion",
+    "name": "Body Lotion",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "oral-b-toothbrush",
+    "slug": "oral-b-toothbrush",
+    "name": "Toothbrush",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "colgate-mouthwash",
+    "slug": "colgate-mouthwash",
+    "name": "Mouthwash",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "gillette-shaving-cream",
+    "slug": "gillette-shaving-cream",
+    "name": "Shaving Cream",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "lakme-face-wash",
+    "slug": "lakme-face-wash",
+    "name": "Face Wash",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "pampers-diapers",
+    "slug": "pampers-diapers",
+    "name": "Premium Care Diapers",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "himalaya-baby-wipes",
+    "slug": "himalaya-baby-wipes",
+    "name": "Gentle Baby Wipes",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "himalaya-baby-massage-oil",
+    "slug": "himalaya-baby-massage-oil",
+    "name": "Baby Massage Oil",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "himalaya-baby-shampoo",
+    "slug": "himalaya-baby-shampoo",
+    "name": "Baby Shampoo",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "mamy-poko-diapers",
+    "slug": "mamy-poko-diapers",
+    "name": "Diapers",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "himalaya-diaper-rash-cream",
+    "slug": "himalaya-diaper-rash-cream",
+    "name": "Diaper Rash Cream",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "himalaya-baby-cream",
+    "slug": "himalaya-baby-cream",
+    "name": "Baby Cream",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "maggi-instant-noodles",
+    "slug": "maggi-instant-noodles",
+    "name": "2-Minute Masala Noodles",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "knorr-soup",
+    "slug": "knorr-soup",
+    "name": "Vegetable Soup",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "top-ramen-instant",
+    "slug": "top-ramen-instant",
+    "name": "Masala Noodles",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "chings-instant",
+    "slug": "chings-instant",
+    "name": "Schezwan Noodles",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "mtr-breakfast-mix",
+    "slug": "mtr-breakfast-mix",
+    "name": "Breakfast Mix",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "gits-instant",
+    "slug": "gits-instant",
+    "name": "Instant Gulab Jamun Mix",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-mayo",
+    "slug": "amul-mayo",
+    "name": "Mayonnaise",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "fun-foods-mayo",
+    "slug": "fun-foods-mayo",
+    "name": "Mayonnaise",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "mccain-nuggets",
+    "slug": "mccain-nuggets",
+    "name": "Chicken Nuggets",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "fortune-atta",
+    "slug": "fortune-atta",
+    "name": "Whole Wheat Flour",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "tata-salt",
+    "slug": "tata-salt",
+    "name": "Iodised Salt",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "fortune-rice",
+    "slug": "fortune-rice",
+    "name": "Basmati Rice",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "sona-masoori-rice",
+    "slug": "sona-masoori-rice",
+    "name": "Sona Masoori Rice",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "jaggery",
+    "slug": "jaggery",
+    "name": "Jaggery",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "turmeric-powder",
+    "slug": "turmeric-powder",
+    "name": "Turmeric Powder",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "red-chilli-powder",
+    "slug": "red-chilli-powder",
+    "name": "Red Chilli Powder",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "cumin-seeds",
+    "slug": "cumin-seeds",
+    "name": "Cumin Seeds",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "mustard-seeds",
+    "slug": "mustard-seeds",
+    "name": "Mustard Seeds",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "fenugreek-seeds",
+    "slug": "fenugreek-seeds",
+    "name": "Fenugreek Seeds",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "asafoetida",
+    "slug": "asafoetida",
+    "name": "Asafoetida",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "cinnamon",
+    "slug": "cinnamon",
+    "name": "Cinnamon",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "cloves",
+    "slug": "cloves",
+    "name": "Cloves",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "black-pepper",
+    "slug": "black-pepper",
+    "name": "Black Pepper",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "fortune-ghee",
+    "slug": "fortune-ghee",
+    "name": "Pure Ghee",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "dairy-day-milk",
+    "slug": "dairy-day-milk",
+    "name": "Toned Milk",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "curd",
+    "slug": "curd",
+    "name": "Fresh Curd",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "lassi",
+    "slug": "lassi",
+    "name": "Sweet Lassi",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-masti",
+    "slug": "amul-masti",
+    "name": "Masti Buttermilk",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-chaas",
+    "slug": "amul-chaas",
+    "name": "Chaas",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-butter-special",
+    "slug": "amul-butter-special",
+    "name": "Special Butter",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-ghee",
+    "slug": "amul-ghee",
+    "name": "Pure Ghee",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-milk-special",
+    "slug": "amul-milk-special",
+    "name": "Special Toned Milk",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-chocolate-milk",
+    "slug": "amul-chocolate-milk",
+    "name": "Chocolate Milk",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "fortune-oil",
+    "slug": "fortune-oil",
+    "name": "Sunflower Oil",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lactose-free",
+    "slug": "amul-lactose-free",
+    "name": "Lactose Free Milk",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-butter-salted",
+    "slug": "amul-butter-salted",
+    "name": "Salted Butter",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-cheese-block",
+    "slug": "amul-cheese-block",
+    "name": "Cheese Block",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-masti-plus",
+    "slug": "amul-masti-plus",
+    "name": "Masti Plus Dahi",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-strawberry",
+    "slug": "amul-lassi-strawberry",
+    "name": "Strawberry Lassi",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-mix-fruit",
+    "slug": "amul-lassi-mix-fruit",
+    "name": "Mixed Fruit Lassi",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-banana",
+    "slug": "amul-lassi-banana",
+    "name": "Banana Lassi",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-mango-special",
+    "slug": "amul-lassi-mango-special",
+    "name": "Mango Lassi Special",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-strawberry-special",
+    "slug": "amul-lassi-strawberry-special",
+    "name": "Strawberry Lassi Special",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-pineapple-special",
+    "slug": "amul-lassi-pineapple-special",
+    "name": "Pineapple Lassi Special",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-mix-fruit-special",
+    "slug": "amul-lassi-mix-fruit-special",
+    "name": "Mixed Fruit Lassi Special",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-banana-special",
+    "slug": "amul-lassi-banana-special",
+    "name": "Banana Lassi Special",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-vanilla",
+    "slug": "amul-lassi-vanilla",
+    "name": "Vanilla Lassi",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-chocolate",
+    "slug": "amul-lassi-chocolate",
+    "name": "Chocolate Lassi",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-coffee",
+    "slug": "amul-lassi-coffee",
+    "name": "Coffee Lassi",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-kesar",
+    "slug": "amul-lassi-kesar",
+    "name": "Kesar Lassi",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-badam",
+    "slug": "amul-lassi-badam",
+    "name": "Badam Lassi",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-pista",
+    "slug": "amul-lassi-pista",
+    "name": "Pista Lassi",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-elaichi",
+    "slug": "amul-lassi-elaichi",
+    "name": "Elaichi Lassi",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-rose",
+    "slug": "amul-lassi-rose",
+    "name": "Rose Lassi",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-mango-special-offer",
+    "slug": "amul-lassi-mango-special-offer",
+    "name": "Mango Lassi Special Offer",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-strawberry-special-offer",
+    "slug": "amul-lassi-strawberry-special-offer",
+    "name": "Strawberry Lassi Special Offer",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-pineapple-special-offer",
+    "slug": "amul-lassi-pineapple-special-offer",
+    "name": "Pineapple Lassi Special Offer",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-mix-fruit-special-offer",
+    "slug": "amul-lassi-mix-fruit-special-offer",
+    "name": "Mixed Fruit Lassi Special Offer",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-banana-special-offer",
+    "slug": "amul-lassi-banana-special-offer",
+    "name": "Banana Lassi Special Offer",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-vanilla-special-offer",
+    "slug": "amul-lassi-vanilla-special-offer",
+    "name": "Vanilla Lassi Special Offer",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-chocolate-special-offer",
+    "slug": "amul-lassi-chocolate-special-offer",
+    "name": "Chocolate Lassi Special Offer",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-coffee-special-offer",
+    "slug": "amul-lassi-coffee-special-offer",
+    "name": "Coffee Lassi Special Offer",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-kesar-special-offer",
+    "slug": "amul-lassi-kesar-special-offer",
+    "name": "Kesar Lassi Special Offer",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-badam-special-offer",
+    "slug": "amul-lassi-badam-special-offer",
+    "name": "Badam Lassi Special Offer",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-pista-special-offer",
+    "slug": "amul-lassi-pista-special-offer",
+    "name": "Pista Lassi Special Offer",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-elaichi-special-offer",
+    "slug": "amul-lassi-elaichi-special-offer",
+    "name": "Elaichi Lassi Special Offer",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "amul-lassi-rose-special-offer",
+    "slug": "amul-lassi-rose-special-offer",
+    "name": "Rose Lassi Special Offer",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  },
+  {
+    "id": "real-fruit-juice",
+    "slug": "real-fruit-juice",
+    "name": "Mixed Fruit Juice",
+    "reason": "No candidates downloaded",
+    "bestScore": null
+  }
+]

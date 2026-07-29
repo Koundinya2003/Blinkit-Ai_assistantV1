@@ -1,0 +1,22 @@
+.next
+node_modules
+.env
+.env.local
+npm-debug.log*
+dist
+coverage
+tsconfig.tsbuildinfo
+
+# Firebase Admin service account credentials — NEVER commit these
+service-account.json
+firebase-adminsdk-*.json
+
+# Product Asset Pipeline — generated artifacts (keep folders via .gitkeep)
+scripts/assets/downloads/*
+!scripts/assets/downloads/.gitkeep
+scripts/assets/validated/*
+!scripts/assets/validated/.gitkeep
+scripts/assets/optimized/*
+!scripts/assets/optimized/.gitkeep
+scripts/assets/logs/*
+!scripts/assets/logs/.gitkeep

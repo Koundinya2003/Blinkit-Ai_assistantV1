@@ -1,0 +1,2898 @@
+{
+  "peas:candidate1.jpg:35421": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-butter:candidate1.jpg:15375": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-butter:candidate2.jpg:20470": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-brown-bread:candidate1.jpg:26125": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-brown-bread:candidate2.jpg:23896": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-brown-bread:candidate3.jpg:25303": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-brown-bread:candidate4.jpg:18407": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "quaker-oats:candidate1.jpg:38428": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "quaker-oats:candidate2.jpg:27499": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "quaker-oats:candidate3.jpg:19331": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "quaker-oats:candidate4.jpg:29603": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "quaker-oats:candidate5.jpg:27450": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "unibic-cookies:candidate1.jpg:11897": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "unibic-cookies:candidate2.jpg:17834": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "unibic-cookies:candidate3.jpg:18692": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "unibic-cookies:candidate4.jpg:24116": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "unibic-cookies:candidate5.jpg:17455": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "parle-g:candidate1.jpg:40816": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "parle-g:candidate2.jpg:28223": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "parle-g:candidate3.jpg:43815": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "parle-g:candidate4.jpg:23908": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "parle-g:candidate5.jpg:33920": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "maggi-noodles:candidate1.jpg:29973": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "maggi-noodles:candidate2.jpg:16232": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "maggi-noodles:candidate3.jpg:24316": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "maggi-noodles:candidate4.jpg:29299": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kurkure-masala-munch:candidate1.jpg:34734": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kurkure-masala-munch:candidate2.jpg:16545": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kurkure-masala-munch:candidate3.jpg:22741": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kurkure-masala-munch:candidate4.jpg:25992": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "good-day-biscuits:candidate1.jpg:15378": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "good-day-biscuits:candidate2.jpg:25488": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "good-day-biscuits:candidate3.jpg:25561": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "too-yumm-multigrain:candidate1.jpg:37203": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "too-yumm-multigrain:candidate2.jpg:30882": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "too-yumm-multigrain:candidate3.jpg:33546": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "top-ramen:candidate1.jpg:18265": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "top-ramen:candidate2.jpg:27424": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "top-ramen:candidate3.jpg:31977": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "top-ramen:candidate4.jpg:19758": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "top-ramen:candidate5.jpg:59088": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "haldirams-bhujia:candidate1.jpg:58417": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "haldirams-bhujia:candidate2.jpg:32312": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "haldirams-bhujia:candidate3.jpg:49698": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "haldirams-bhujia:candidate4.jpg:24663": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "haldirams-bhujia:candidate5.jpg:32584": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "perk:candidate1.jpg:13668": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "perk:candidate2.jpg:13173": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "perk:candidate3.jpg:12702": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "perk:candidate4.jpg:22212": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "perk:candidate5.jpg:8145": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "gems:candidate1.jpg:18920": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "gems:candidate2.jpg:27492": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "gems:candidate3.jpg:30365": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "gems:candidate4.jpg:47333": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "gems:candidate5.jpg:34403": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "bru-coffee:candidate1.jpg:33795": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "bru-coffee:candidate2.jpg:17211": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "bru-coffee:candidate3.jpg:21270": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "bru-coffee:candidate4.jpg:29082": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "bru-coffee:candidate5.jpg:33312": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "tata-tea:candidate1.jpg:23693": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "tata-tea:candidate2.jpg:17356": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "tata-tea:candidate3.jpg:31773": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "tata-tea:candidate4.jpg:19931": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "tata-tea:candidate5.jpg:29722": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "taj-mahal-tea:candidate1.jpg:38548": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "taj-mahal-tea:candidate2.jpg:19008": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "taj-mahal-tea:candidate3.jpg:24507": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "taj-mahal-tea:candidate4.jpg:21574": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "taj-mahal-tea:candidate5.jpg:20228": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "tropicana-juice:candidate1.jpg:17359": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "tropicana-juice:candidate2.jpg:14897": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "tropicana-juice:candidate3.jpg:14154": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "tropicana-juice:candidate4.jpg:26672": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "tropicana-juice:candidate5.jpg:11221": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "frooti:candidate1.jpg:17592": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "frooti:candidate2.jpg:11607": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "frooti:candidate3.jpg:23529": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "frooti:candidate4.jpg:18996": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "frooti:candidate5.jpg:23295": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-milk-bread:candidate1.jpg:24178": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-white-bread:candidate1.jpg:21360": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-white-bread:candidate2.jpg:22023": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-white-bread:candidate3.jpg:27895": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-white-bread:candidate4.jpg:21556": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-toast-bread:candidate1.jpg:32667": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-multigrain-bread:candidate1.jpg:30876": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-muffins:candidate1.jpg:33016": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "parachute-hair-oil:candidate1.jpg:11465": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "parachute-hair-oil:candidate2.jpg:20635": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "parachute-hair-oil:candidate3.jpg:16992": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-cake:candidate1.jpg:23703": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-cake:candidate2.jpg:22089": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-cake:candidate3.jpg:23006": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-cake:candidate4.jpg:17413": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-cake:candidate5.jpg:31154": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "lux-body-wash:candidate1.jpg:19459": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "dove-body-wash:candidate1.jpg:9571": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "dove-body-wash:candidate2.jpg:29381": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "gillette-razor:candidate1.jpg:30964": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "gillette-razor:candidate2.jpg:25487": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "gillette-razor:candidate3.jpg:27935": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "himalaya-face-wash:candidate1.jpg:17287": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "himalaya-face-wash:candidate2.jpg:17334": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "himalaya-face-wash:candidate3.jpg:14925": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "himalaya-face-wash:candidate4.jpg:17692": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "johnsons-baby-soap:candidate1.jpg:15182": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "johnsons-baby-powder:candidate1.jpg:17258": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "johnsons-baby-powder:candidate2.jpg:20689": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "johnsons-baby-powder:candidate3.jpg:18180": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "johnsons-baby-powder:candidate4.jpg:12448": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nestle-cerelac:candidate1.jpg:23891": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nestle-cerelac:candidate2.jpg:22085": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nestle-cerelac:candidate3.jpg:40804": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nestle-cerelac:candidate4.jpg:30259": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nestle-cerelac:candidate5.jpg:30897": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "knorr-soupy-noodles:candidate1.jpg:32429": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nestle-lactogen:candidate1.jpg:27327": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nestle-lactogen:candidate2.jpg:24852": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nestle-lactogen:candidate3.jpg:26065": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nestle-lactogen:candidate4.jpg:28280": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nestle-lactogen:candidate5.jpg:27511": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "mtr-instant-meals:candidate1.jpg:29341": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "mtr-instant-meals:candidate2.jpg:44267": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "mtr-instant-meals:candidate3.jpg:34912": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "mtr-instant-meals:candidate4.jpg:26415": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "chings-schewan-sauce:candidate1.jpg:18122": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "chings-schewan-sauce:candidate2.jpg:26161": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "maggi-sauce:candidate1.jpg:12296": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "maggi-sauce:candidate2.jpg:10769": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "maggi-sauce:candidate3.jpg:15144": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "maggi-sauce:candidate4.jpg:14901": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "maggi-sauce:candidate5.jpg:9465": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "mccain-fries:candidate1.jpg:36487": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "mccain-fries:candidate2.jpg:32698": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "mccain-fries:candidate3.jpg:35361": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "mccain-fries:candidate4.jpg:64131": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "mccain-fries:candidate5.jpg:39445": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "aashirvaad-atta:candidate1.jpg:33964": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "aashirvaad-atta:candidate2.jpg:19770": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "aashirvaad-atta:candidate3.jpg:28428": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "aashirvaad-atta:candidate4.jpg:23790": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "aashirvaad-atta:candidate5.jpg:31204": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "moong-dal:candidate1.jpg:22467": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "moong-dal:candidate2.jpg:20854": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "moong-dal:candidate3.jpg:21719": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "india-gate-rice:candidate1.jpg:32706": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "india-gate-rice:candidate2.jpg:30193": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "india-gate-rice:candidate3.jpg:27895": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "india-gate-rice:candidate4.jpg:22691": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "india-gate-rice:candidate5.jpg:27516": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "masoor-dal:candidate1.jpg:20787": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "masoor-dal:candidate2.jpg:15292": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "masoor-dal:candidate3.jpg:35423": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "chana-dal:candidate1.jpg:29681": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "chana-dal:candidate2.jpg:21132": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "chana-dal:candidate3.jpg:21330": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "sugar:candidate1.jpg:25574": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "sugar:candidate2.jpg:22681": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "fortune-mustard-oil:candidate1.jpg:14024": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "fortune-mustard-oil:candidate2.jpg:31524": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "fortune-mustard-oil:candidate3.jpg:16427": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "fortune-mustard-oil:candidate4.jpg:19623": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "garam-masala:candidate1.jpg:34717": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "coriander-powder:candidate1.jpg:28565": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "coriander-powder:candidate2.jpg:20166": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "cardamom:candidate1.jpg:20091": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "paneer:candidate1.jpg:26060": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-butter-slices:candidate1.jpg:14502": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-butter-slices:candidate2.jpg:21800": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "milkmaid:candidate1.jpg:29235": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "milkmaid:candidate2.jpg:9603": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-mawa:candidate1.jpg:10923": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-mawa:candidate2.jpg:13155": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "ghee:candidate1.jpg:23036": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "ghee:candidate2.jpg:38633": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "ghee:candidate3.jpg:11594": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "ghee:candidate4.jpg:17314": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "ghee:candidate5.jpg:27163": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-lassi:candidate1.jpg:14336": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-lassi:candidate2.jpg:15625": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-lassi:candidate3.jpg:19323": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-lassi:candidate4.jpg:28943": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-lassi:candidate5.jpg:16025": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-kulfi:candidate1.jpg:37344": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-kulfi:candidate2.jpg:17943": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-kulfi:candidate3.jpg:15560": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "buttermilk:candidate1.jpg:29254": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "buttermilk:candidate2.jpg:15495": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "buttermilk:candidate3.jpg:26963": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "buttermilk:candidate4.jpg:19382": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "buttermilk:candidate5.jpg:24793": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-kesar-milk:candidate1.jpg:14792": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-pro-milk:candidate1.jpg:11757": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-skimmed-milk:candidate1.jpg:23624": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-skimmed-milk:candidate2.jpg:31961": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-butter-unsalted:candidate1.jpg:34439": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-butter-unsalted:candidate2.jpg:20857": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-masti-dahi:candidate1.jpg:30845": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-masti-dahi:candidate2.jpg:64313": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-masti-dahi:candidate3.jpg:19558": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-masti-dahi:candidate4.jpg:39181": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-masti-dahi:candidate5.jpg:26554": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-lassi-pineapple:candidate1.jpg:23729": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-cheese-slices:candidate1.jpg:24482": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-cheese-slices:candidate2.jpg:22774": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-cheese-slices:candidate3.jpg:24868": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-cheese-slices:candidate4.jpg:22041": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-cheese-slices:candidate5.jpg:24438": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-doodh:candidate1.jpg:29003": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-doodh:candidate2.jpg:25549": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-doodh:candidate3.jpg:27395": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "mother-dairy-milk:candidate1.jpg:21884": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "carrots:candidate1.jpg:21698": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-toned-milk:candidate1.jpg:29003": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-toned-milk:candidate2.jpg:25549": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-toned-milk:candidate3.jpg:27395": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-bread:candidate2.jpg:22023": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-bread:candidate3.jpg:22511": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-bread:candidate4.jpg:26816": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kelloggs-chocos:candidate1.jpg:32454": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kelloggs-chocos:candidate2.jpg:33262": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kelloggs-chocos:candidate3.jpg:35064": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kelloggs-chocos:candidate4.jpg:28936": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kelloggs-chocos:candidate5.jpg:22778": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nestle-munch:candidate1.jpg:25173": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nestle-munch:candidate2.jpg:8861": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nestle-munch:candidate3.jpg:23565": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nestle-munch:candidate4.jpg:18675": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nestle-munch:candidate5.jpg:18110": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "lays-india-magic:candidate1.jpg:37267": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "lays-india-magic:candidate2.jpg:26755": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "lays-india-magic:candidate3.jpg:26548": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "lays-india-magic:candidate4.jpg:33900": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "lays-india-magic:candidate5.jpg:54911": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "saffola-oats:candidate1.jpg:27513": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "saffola-oats:candidate2.jpg:36803": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "saffola-oats:candidate3.jpg:24684": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "saffola-oats:candidate4.jpg:19041": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "saffola-oats:candidate5.jpg:24951": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "cheetos:candidate1.jpg:39857": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "cheetos:candidate2.jpg:22766": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "cheetos:candidate3.jpg:16385": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "cheetos:candidate4.jpg:26292": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "cheetos:candidate5.jpg:32216": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "doritos:candidate1.jpg:19068": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "doritos:candidate2.jpg:36111": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "doritos:candidate3.jpg:13675": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "doritos:candidate4.jpg:31765": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "doritos:candidate5.jpg:23835": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "5star:candidate1.jpg:14438": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "5star:candidate2.jpg:14577": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "5star:candidate3.jpg:41556": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "5star:candidate4.jpg:33431": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "5star:candidate5.jpg:32801": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nescafe-classic:candidate1.jpg:18761": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nescafe-classic:candidate2.jpg:20625": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nescafe-classic:candidate3.jpg:20849": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nescafe-classic:candidate4.jpg:18535": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nescafe-classic:candidate5.jpg:17109": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nescafe-gold:candidate1.jpg:13630": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nescafe-gold:candidate2.jpg:18149": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nescafe-gold:candidate3.jpg:27315": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nescafe-gold:candidate4.jpg:26137": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "nescafe-gold:candidate5.jpg:15440": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "coca-cola:candidate1.jpg:11963": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "coca-cola:candidate2.jpg:24296": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "coca-cola:candidate3.jpg:21647": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "coca-cola:candidate4.jpg:18391": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "coca-cola:candidate5.jpg:18700": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "slice-mango-drink:candidate1.jpg:22179": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-rusk:candidate2.jpg:26050": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "britannia-rusk:candidate3.jpg:24195": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "dove-shampoo:candidate1.jpg:10147": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "dove-shampoo:candidate2.jpg:29206": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "dove-shampoo:candidate3.jpg:13149": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "pantene-shampoo:candidate1.jpg:20285": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "pantene-shampoo:candidate2.jpg:11085": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "pantene-shampoo:candidate3.jpg:11126": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "pantene-shampoo:candidate4.jpg:11617": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "pantene-shampoo:candidate5.jpg:12181": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "johnsons-baby-lotion:candidate1.jpg:17469": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "johnsons-baby-lotion:candidate2.jpg:15459": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "johnsons-baby-lotion:candidate3.jpg:12656": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "johnsons-baby-lotion:candidate4.jpg:15790": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "meadjohnson-formula:candidate1.jpg:14474": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "meadjohnson-formula:candidate2.jpg:26380": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "meadjohnson-formula:candidate3.jpg:34964": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "meadjohnson-formula:candidate4.jpg:28859": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "tata-salt-lite:candidate1.jpg:32334": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kissan-ketchup:candidate1.jpg:25608": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kissan-ketchup:candidate2.jpg:23860": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kissan-ketchup:candidate3.jpg:19893": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kissan-ketchup:candidate4.jpg:23656": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kissan-ketchup:candidate5.jpg:11608": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-cheese:candidate1.jpg:24482": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-cheese:candidate2.jpg:22774": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-cheese:candidate3.jpg:24868": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-cheese:candidate4.jpg:22041": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-cheese:candidate5.jpg:24438": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-shrikhand:candidate1.jpg:21239": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-shrikhand:candidate2.jpg:22507": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-shrikhand:candidate3.jpg:17933": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-shrikhand:candidate4.jpg:16559": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-buffalo-milk:candidate2.jpg:29491": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-buffalo-milk:candidate3.jpg:24984": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-buffalo-milk:candidate4.jpg:28980": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-buffalo-milk:candidate5.jpg:17328": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-badam-milk:candidate1.jpg:15929": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-paneer:candidate2.jpg:24785": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-paneer:candidate3.jpg:33940": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-paneer:candidate4.jpg:19779": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-paneer:candidate5.jpg:37370": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "garlic:candidate1.jpg:23349": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kelloggs-corn-flakes:candidate1.jpg:33719": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kelloggs-corn-flakes:candidate2.jpg:30713": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kelloggs-corn-flakes:candidate3.jpg:19534": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kelloggs-corn-flakes:candidate4.jpg:27726": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "kelloggs-corn-flakes:candidate5.jpg:22232": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "yippee-noodles:candidate1.jpg:16361": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "yippee-noodles:candidate2.jpg:37598": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "yippee-noodles:candidate3.jpg:34126": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "yippee-noodles:candidate4.jpg:23122": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "yippee-noodles:candidate5.jpg:27470": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "hide-seek:candidate1.jpg:7959": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "hide-seek:candidate2.jpg:22647": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "hide-seek:candidate3.jpg:13560": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "hide-seek:candidate4.jpg:25381": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "hide-seek:candidate5.jpg:15810": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "cadbury-dairy-milk:candidate1.jpg:34260": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "cadbury-dairy-milk:candidate2.jpg:12286": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "cadbury-dairy-milk:candidate3.jpg:15308": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "cadbury-dairy-milk:candidate4.jpg:13284": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "cadbury-dairy-milk:candidate5.jpg:18390": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "sprite:candidate1.jpg:25529": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "sprite:candidate2.jpg:13671": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "sprite:candidate3.jpg:14075": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "sprite:candidate4.jpg:21254": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "sprite:candidate5.jpg:13272": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "thumbs-up:candidate1.jpg:19017": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "thumbs-up:candidate2.jpg:16826": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "thumbs-up:candidate3.jpg:41760": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "thumbs-up:candidate4.jpg:13435": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "thumbs-up:candidate5.jpg:12839": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "dettol-antiseptic:candidate1.jpg:13623": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "dettol-antiseptic:candidate2.jpg:14249": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "dettol-antiseptic:candidate3.jpg:14903": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "vaseline-lotion:candidate1.jpg:13741": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "dettol-handwash:candidate1.jpg:24050": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "dettol-handwash:candidate2.jpg:24167": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "dettol-handwash:candidate3.jpg:19646": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "dettol-handwash:candidate4.jpg:23033": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "toor-dal:candidate1.jpg:30439": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "maggi-pasta:candidate1.jpg:30245": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "maggi-pasta:candidate2.jpg:26755": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "maggi-pasta:candidate5.jpg:28334": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "saffola-oil:candidate1.jpg:22752": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-ice-cream:candidate1.jpg:35689": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-ice-cream:candidate2.jpg:13979": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-lassi-mango:candidate1.jpg:13721": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  },
+  "amul-lassi-mango:candidate2.jpg:16952": {
+    "confidence": 92,
+    "reason": "No Gemini key — auto-accepted candidate",
+    "imageQuality": 80,
+    "packagingVisibility": 80,
+    "brandVisibility": 80,
+    "finalScore": 92
+  }
+}

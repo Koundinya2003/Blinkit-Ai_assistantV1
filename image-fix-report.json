@@ -1,0 +1,597 @@
+{
+  "timestamp": "2026-07-29T11:51:29.870Z",
+  "totalIssues": 90,
+  "fixesApplied": 47,
+  "skippedCount": 43,
+  "fixes": [
+    {
+      "productId": "mother-dairy-milk",
+      "slug": "mother-dairy-milk",
+      "oldImage": "/images/products/amul-buffalo-milk.jpg",
+      "newImage": "/images/products/mother-dairy-milk.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "britannia-brown-bread",
+      "slug": "britannia-brown-bread",
+      "oldImage": "/images/products/britannia-bread.jpg",
+      "newImage": "/images/products/britannia-brown-bread.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "kelloggs-chocos",
+      "slug": "kelloggs-chocos",
+      "oldImage": "/images/products/kelloggs-corn-flakes.jpg",
+      "newImage": "/images/products/kelloggs-chocos.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "quaker-oats",
+      "slug": "quaker-oats",
+      "oldImage": "/images/products/saffola-oats.jpg",
+      "newImage": "/images/products/quaker-oats.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "parle-g",
+      "slug": "parle-g",
+      "oldImage": "/images/products/britannia-good-day.jpg",
+      "newImage": "/images/products/parle-g.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "yippee-noodles",
+      "slug": "yippee-noodles",
+      "oldImage": "/images/products/maggi-noodles.jpg",
+      "newImage": "/images/products/yippee-noodles.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "top-ramen",
+      "slug": "top-ramen",
+      "oldImage": "/images/products/maggi-noodles.jpg",
+      "newImage": "/images/products/top-ramen.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "too-yumm-multigrain",
+      "slug": "too-yumm-multigrain",
+      "oldImage": "/images/products/lays-classic.jpg",
+      "newImage": "/images/products/too-yumm-multigrain.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "hide-seek",
+      "slug": "hide-seek",
+      "oldImage": "/images/products/unibic-cookies.jpg",
+      "newImage": "/images/products/hide-seek.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "nescafe-gold",
+      "slug": "nescafe-gold",
+      "oldImage": "/images/products/nescafe-classic.jpg",
+      "newImage": "/images/products/nescafe-gold.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "red-label-tea",
+      "slug": "red-label-tea",
+      "oldImage": "/images/products/tata-tea.jpg",
+      "newImage": "/images/products/red-label-tea.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "pepsi",
+      "slug": "pepsi",
+      "oldImage": "/images/products/coca-cola.jpg",
+      "newImage": "/images/products/pepsi.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "sprite",
+      "slug": "sprite",
+      "oldImage": "/images/products/coca-cola.jpg",
+      "newImage": "/images/products/sprite.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "britannia-milk-bread",
+      "slug": "britannia-milk-bread",
+      "oldImage": "/images/products/britannia-bread.jpg",
+      "newImage": "/images/products/britannia-milk-bread.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "britannia-bun",
+      "slug": "britannia-bun",
+      "oldImage": "/images/products/britannia-bread.jpg",
+      "newImage": "/images/products/britannia-bun.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "britannia-rusk",
+      "slug": "britannia-rusk",
+      "oldImage": "/images/products/britannia-bread.jpg",
+      "newImage": "/images/products/britannia-rusk.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "britannia-puffs",
+      "slug": "britannia-puffs",
+      "oldImage": "/images/products/britannia-croissant.jpg",
+      "newImage": "/images/products/britannia-puffs.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "surf-excel-quick-wash",
+      "slug": "surf-excel-quick-wash",
+      "oldImage": "/images/products/surf-excel.jpg",
+      "newImage": "/images/products/surf-excel-quick-wash.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "ariel-detergent",
+      "slug": "ariel-detergent",
+      "oldImage": "/images/products/surf-excel.jpg",
+      "newImage": "/images/products/ariel-detergent.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "comfort-fabric-conditioner",
+      "slug": "comfort-fabric-conditioner",
+      "oldImage": "/images/products/surf-excel.jpg",
+      "newImage": "/images/products/comfort-fabric-conditioner.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "harpic-toilet-cleaner",
+      "slug": "harpic-toilet-cleaner",
+      "oldImage": "/images/products/surf-excel.jpg",
+      "newImage": "/images/products/harpic-toilet-cleaner.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "floor-cleaner",
+      "slug": "floor-cleaner",
+      "oldImage": "/images/products/surf-excel.jpg",
+      "newImage": "/images/products/floor-cleaner.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "mosquito-repellent",
+      "slug": "mosquito-repellent",
+      "oldImage": "/images/products/surf-excel.jpg",
+      "newImage": "/images/products/mosquito-repellent.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "colin-glass-cleaner",
+      "slug": "colin-glass-cleaner",
+      "oldImage": "/images/products/surf-excel.jpg",
+      "newImage": "/images/products/colin-glass-cleaner.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "lifebuoy-soap",
+      "slug": "lifebuoy-soap",
+      "oldImage": "/images/products/dove-soap.jpg",
+      "newImage": "/images/products/lifebuoy-soap.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "santoor-soap",
+      "slug": "santoor-soap",
+      "oldImage": "/images/products/dove-soap.jpg",
+      "newImage": "/images/products/santoor-soap.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "sunsilk-shampoo",
+      "slug": "sunsilk-shampoo",
+      "oldImage": "/images/products/dove-shampoo.jpg",
+      "newImage": "/images/products/sunsilk-shampoo.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "tresemme-shampoo",
+      "slug": "tresemme-shampoo",
+      "oldImage": "/images/products/dove-shampoo.jpg",
+      "newImage": "/images/products/tresemme-shampoo.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "dove-conditioner",
+      "slug": "dove-conditioner",
+      "oldImage": "/images/products/dove-shampoo.jpg",
+      "newImage": "/images/products/dove-conditioner.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "dove-body-wash",
+      "slug": "dove-body-wash",
+      "oldImage": "/images/products/dove-soap.jpg",
+      "newImage": "/images/products/dove-body-wash.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "himalaya-face-wash",
+      "slug": "himalaya-face-wash",
+      "oldImage": "/images/products/dove-soap.jpg",
+      "newImage": "/images/products/himalaya-face-wash.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "lakme-face-wash",
+      "slug": "lakme-face-wash",
+      "oldImage": "/images/products/dove-soap.jpg",
+      "newImage": "/images/products/lakme-face-wash.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "vaseline-lotion",
+      "slug": "vaseline-lotion",
+      "oldImage": "/images/products/dove-soap.jpg",
+      "newImage": "/images/products/vaseline-lotion.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "johnsons-baby-lotion",
+      "slug": "johnsons-baby-lotion",
+      "oldImage": "/images/products/himalaya-baby-wipes.jpg",
+      "newImage": "/images/products/johnsons-baby-lotion.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "johnsons-baby-soap",
+      "slug": "johnsons-baby-soap",
+      "oldImage": "/images/products/himalaya-baby-wipes.jpg",
+      "newImage": "/images/products/johnsons-baby-soap.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "himalaya-baby-cream",
+      "slug": "himalaya-baby-cream",
+      "oldImage": "/images/products/himalaya-baby-wipes.jpg",
+      "newImage": "/images/products/himalaya-baby-cream.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "mamy-poko-diapers",
+      "slug": "mamy-poko-diapers",
+      "oldImage": "/images/products/pampers-diapers.jpg",
+      "newImage": "/images/products/mamy-poko-diapers.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "himalaya-diaper-rash-cream",
+      "slug": "himalaya-diaper-rash-cream",
+      "oldImage": "/images/products/himalaya-baby-wipes.jpg",
+      "newImage": "/images/products/himalaya-diaper-rash-cream.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "knorr-soupy-noodles",
+      "slug": "knorr-soupy-noodles",
+      "oldImage": "/images/products/maggi-noodles.jpg",
+      "newImage": "/images/products/knorr-soupy-noodles.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "mtr-breakfast-mix",
+      "slug": "mtr-breakfast-mix",
+      "oldImage": "/images/products/maggi-bhuna-masala.jpg",
+      "newImage": "/images/products/mtr-breakfast-mix.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "fortune-oil",
+      "slug": "fortune-oil",
+      "oldImage": "/images/products/saffola-gold.jpg",
+      "newImage": "/images/products/fortune-oil.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "fortune-rice",
+      "slug": "fortune-rice",
+      "oldImage": "/images/products/aashirvaad-atta.jpg",
+      "newImage": "/images/products/fortune-rice.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "jaggery",
+      "slug": "jaggery",
+      "oldImage": "/images/products/sugar.jpg",
+      "newImage": "/images/products/jaggery.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "toor-dal",
+      "slug": "toor-dal",
+      "oldImage": "/images/products/aashirvaad-atta.jpg",
+      "newImage": "/images/products/toor-dal.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "moong-dal",
+      "slug": "moong-dal",
+      "oldImage": "/images/products/aashirvaad-atta.jpg",
+      "newImage": "/images/products/moong-dal.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "chana-dal",
+      "slug": "chana-dal",
+      "oldImage": "/images/products/aashirvaad-atta.jpg",
+      "newImage": "/images/products/chana-dal.jpg",
+      "reason": "Correct image file exists"
+    },
+    {
+      "productId": "masoor-dal",
+      "slug": "masoor-dal",
+      "oldImage": "/images/products/aashirvaad-atta.jpg",
+      "newImage": "/images/products/masoor-dal.jpg",
+      "reason": "Correct image file exists"
+    }
+  ],
+  "skipped": [
+    {
+      "productId": "kurkure-masala",
+      "slug": "kurkure-masala",
+      "currentImage": "/images/products/nestle-munch.jpg",
+      "reason": "Expected image /images/products/kurkure-masala.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "dark-fantasy",
+      "slug": "dark-fantasy",
+      "currentImage": "/images/products/britannia-good-day.jpg",
+      "reason": "Expected image /images/products/dark-fantasy.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "kurkure-chutney",
+      "slug": "kurkure-chutney",
+      "currentImage": "/images/products/nestle-munch.jpg",
+      "reason": "Expected image /images/products/kurkure-chutney.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "bingo-tomato",
+      "slug": "bingo-tomato",
+      "currentImage": "/images/products/lays-classic.jpg",
+      "reason": "Expected image /images/products/bingo-tomato.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "oreo",
+      "slug": "oreo",
+      "currentImage": "/images/products/britannia-good-day.jpg",
+      "reason": "Expected image /images/products/oreo.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "nestle-kitkat",
+      "slug": "nestle-kitkat",
+      "currentImage": "/images/products/cadbury-dairy-milk.jpg",
+      "reason": "Expected image /images/products/nestle-kitkat.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "amul-chocolate",
+      "slug": "amul-chocolate",
+      "currentImage": "/images/products/cadbury-dairy-milk.jpg",
+      "reason": "Expected image /images/products/amul-chocolate.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "monster-energy",
+      "slug": "monster-energy",
+      "currentImage": "/images/products/red-bull.jpg",
+      "reason": "Expected image /images/products/monster-energy.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "himalaya-lemon-drink",
+      "slug": "himalaya-lemon-drink",
+      "currentImage": "/images/products/real-fruit-juice.jpg",
+      "reason": "Expected image /images/products/himalaya-lemon-drink.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "britannia-bread-bakery",
+      "slug": "britannia-bread-bakery",
+      "currentImage": "/images/products/britannia-bread.jpg",
+      "reason": "Expected image /images/products/britannia-bread-bakery.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "britannia-brown-bread-bakery",
+      "slug": "britannia-brown-bread-bakery",
+      "currentImage": "/images/products/britannia-bread.jpg",
+      "reason": "Expected image /images/products/britannia-brown-bread-bakery.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "britannia-danish",
+      "slug": "britannia-danish",
+      "currentImage": "/images/products/britannia-croissant.jpg",
+      "reason": "Expected image /images/products/britannia-danish.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "britannia-garlic-bread",
+      "slug": "britannia-garlic-bread",
+      "currentImage": "/images/products/britannia-bread.jpg",
+      "reason": "Expected image /images/products/britannia-garlic-bread.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "vim-bar",
+      "slug": "vim-bar",
+      "currentImage": "/images/products/surf-excel.jpg",
+      "reason": "Expected image /images/products/vim-bar.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "vim-liquid",
+      "slug": "vim-liquid",
+      "currentImage": "/images/products/surf-excel.jpg",
+      "reason": "Expected image /images/products/vim-liquid.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "lysol-disinfectant",
+      "slug": "lysol-disinfectant",
+      "currentImage": "/images/products/surf-excel.jpg",
+      "reason": "Expected image /images/products/lysol-disinfectant.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "good-night",
+      "slug": "good-night",
+      "currentImage": "/images/products/surf-excel.jpg",
+      "reason": "Expected image /images/products/good-night.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "odonil-air-freshener",
+      "slug": "odonil-air-freshener",
+      "currentImage": "/images/products/surf-excel.jpg",
+      "reason": "Expected image /images/products/odonil-air-freshener.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "scotch-brite",
+      "slug": "scotch-brite",
+      "currentImage": "/images/products/surf-excel.jpg",
+      "reason": "Expected image /images/products/scotch-brite.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "garbage-bag",
+      "slug": "garbage-bag",
+      "currentImage": "/images/products/surf-excel.jpg",
+      "reason": "Expected image /images/products/garbage-bag.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "clinic-plus-shampoo",
+      "slug": "clinic-plus-shampoo",
+      "currentImage": "/images/products/dove-shampoo.jpg",
+      "reason": "Expected image /images/products/clinic-plus-shampoo.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "fiama-gel",
+      "slug": "fiama-gel",
+      "currentImage": "/images/products/dove-soap.jpg",
+      "reason": "Expected image /images/products/fiama-gel.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "garnier-face-wash",
+      "slug": "garnier-face-wash",
+      "currentImage": "/images/products/dove-soap.jpg",
+      "reason": "Expected image /images/products/garnier-face-wash.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "ponds-moisturizer",
+      "slug": "ponds-moisturizer",
+      "currentImage": "/images/products/dove-soap.jpg",
+      "reason": "Expected image /images/products/ponds-moisturizer.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "sebamed-baby-wash",
+      "slug": "sebamed-baby-wash",
+      "currentImage": "/images/products/himalaya-baby-wipes.jpg",
+      "reason": "Expected image /images/products/sebamed-baby-wash.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "himalaya-baby-oil",
+      "slug": "himalaya-baby-oil",
+      "currentImage": "/images/products/himalaya-baby-wipes.jpg",
+      "reason": "Expected image /images/products/himalaya-baby-oil.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "baby-shampoo",
+      "slug": "baby-shampoo",
+      "currentImage": "/images/products/himalaya-baby-wipes.jpg",
+      "reason": "Expected image /images/products/baby-shampoo.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "baby-powder",
+      "slug": "baby-powder",
+      "currentImage": "/images/products/himalaya-baby-wipes.jpg",
+      "reason": "Expected image /images/products/baby-powder.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "baby-food",
+      "slug": "baby-food",
+      "currentImage": "/images/products/himalaya-baby-wipes.jpg",
+      "reason": "Expected image /images/products/baby-food.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "everest-garam-masala",
+      "slug": "everest-garam-masala",
+      "currentImage": "/images/products/maggi-bhuna-masala.jpg",
+      "reason": "Expected image /images/products/everest-garam-masala.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "everest-chaat-masala",
+      "slug": "everest-chaat-masala",
+      "currentImage": "/images/products/maggi-bhuna-masala.jpg",
+      "reason": "Expected image /images/products/everest-chaat-masala.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "mtr-ready-to-eat",
+      "slug": "mtr-ready-to-eat",
+      "currentImage": "/images/products/maggi-bhuna-masala.jpg",
+      "reason": "Expected image /images/products/mtr-ready-to-eat.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "bingo-upma",
+      "slug": "bingo-upma",
+      "currentImage": "/images/products/maggi-bhuna-masala.jpg",
+      "reason": "Expected image /images/products/bingo-upma.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "tata-tea-staples",
+      "slug": "tata-tea-staples",
+      "currentImage": "/images/products/tata-tea.jpg",
+      "reason": "Expected image /images/products/tata-tea-staples.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "kabuli-chana",
+      "slug": "kabuli-chana",
+      "currentImage": "/images/products/aashirvaad-atta.jpg",
+      "reason": "Expected image /images/products/kabuli-chana.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "rajma",
+      "slug": "rajma",
+      "currentImage": "/images/products/aashirvaad-atta.jpg",
+      "reason": "Expected image /images/products/rajma.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "chana",
+      "slug": "chana",
+      "currentImage": "/images/products/aashirvaad-atta.jpg",
+      "reason": "Expected image /images/products/chana.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "urad-dal",
+      "slug": "urad-dal",
+      "currentImage": "/images/products/aashirvaad-atta.jpg",
+      "reason": "Expected image /images/products/urad-dal.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "poha",
+      "slug": "poha",
+      "currentImage": "/images/products/aashirvaad-atta.jpg",
+      "reason": "Expected image /images/products/poha.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "rava",
+      "slug": "rava",
+      "currentImage": "/images/products/aashirvaad-atta.jpg",
+      "reason": "Expected image /images/products/rava.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "maida",
+      "slug": "maida",
+      "currentImage": "/images/products/aashirvaad-atta.jpg",
+      "reason": "Expected image /images/products/maida.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "besan",
+      "slug": "besan",
+      "currentImage": "/images/products/aashirvaad-atta.jpg",
+      "reason": "Expected image /images/products/besan.jpg does not exist - keeping current image"
+    },
+    {
+      "productId": "amul-masti",
+      "slug": "amul-masti",
+      "currentImage": "/images/products/amul-masti.jpg",
+      "reason": "Missing file and no matching image exists for amul-masti - keeping placeholder"
+    }
+  ]
+}
