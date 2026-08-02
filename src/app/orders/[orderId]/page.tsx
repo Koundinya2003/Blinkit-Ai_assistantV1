@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { CheckCircle2, Clock, MapPin, Package, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { getOrder } from "@/lib/firebase-orders";
+import { getOrder } from "@/lib/firebase/orders";
 import { formatCurrency } from "@/lib/utils";
 
 const statusConfig = {

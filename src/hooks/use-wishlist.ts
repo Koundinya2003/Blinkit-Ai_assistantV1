@@ -1,14 +1,14 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { useAuth } from "@/lib/firebase-auth";
+import { useAuth } from "@/lib/firebase/auth";
 import {
   getWishlist,
   createWishlist,
   addToWishlist as addToFirestoreWishlist,
   removeFromWishlist as removeFromFirestoreWishlist,
   toggleWishlist as toggleFirestoreWishlist
-} from "@/lib/firebase-wishlist";
+} from "@/lib/firebase/wishlist";
 
 type WishlistState = {
   productIds: string[];

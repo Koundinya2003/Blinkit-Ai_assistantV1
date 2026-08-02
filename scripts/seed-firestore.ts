@@ -125,7 +125,7 @@ async function main() {
   // ----------------------------------------------------------------
   // Import seed data
   // ----------------------------------------------------------------
-  const { categories, products } = await import("../src/lib/seed-data");
+  const { categories: rawCategories, products } = await import("../src/lib/catalog");
 
   // ----------------------------------------------------------------
   // Seed categories
@@ -133,9 +133,17 @@ async function main() {
   console.log("Seeding categories...");
   const categoriesCol = db.collection("categories");
 
-  const categoryWrites = categories.map((cat) =>
-    categoriesCol.doc(cat.id).set(cat, { merge: true })
-  );
+  const categoryWrites = rawCategories.map((cat) => {
+    const id = cat.name.toLowerCase().replace(/\s+/g, "-");
+    return categoriesCol.doc(id).set({
+      id,
+      name: cat.name,
+      icon: cat.icon,
+      description: "",
+      productCount: 0,
+      image: "",
+    }, { merge: true });
+  });
   await Promise.all(categoryWrites);
   console.log("✓ Categories complete");
 

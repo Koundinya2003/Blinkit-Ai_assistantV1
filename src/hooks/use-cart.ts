@@ -2,7 +2,7 @@
 
 import { useEffect, useCallback, useRef } from "react";
 import { useCartStore } from "@/store/cart-store";
-import { useAuth } from "@/lib/firebase-auth";
+import { useAuth } from "@/lib/firebase/auth";
 import {
   getCart,
   createCart,
@@ -10,7 +10,7 @@ import {
   removeFromCart as removeFromFirestoreCart,
   updateCartItemQuantity as updateFirestoreCartItemQuantity,
   clearCart as clearFirestoreCart
-} from "@/lib/firebase-cart";
+} from "@/lib/firebase/cart";
 import {
   getLocalCart,
   addToLocalCart,

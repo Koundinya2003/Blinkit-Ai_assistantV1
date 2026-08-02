@@ -10,13 +10,13 @@ import { ArrowLeft, CreditCard, Loader2, MapPin, Plus, Trash2 } from "lucide-rea
 import { Header } from "@/components/shop/header";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useAuth } from "@/lib/firebase-auth";
+import { useAuth } from "@/lib/firebase/auth";
 import {
   getUserAddresses,
   addUserAddress,
   deleteUserAddress,
   setDefaultAddress
-} from "@/lib/firebase-addresses";
+} from "@/lib/firebase/addresses";
 import { getCartTotals } from "@/lib/pricing";
 import { formatCurrency } from "@/lib/utils";
 import { useCartStore } from "@/store/cart-store";
@@ -24,7 +24,7 @@ import type { UserAddress } from "@/lib/types";
 
 const checkoutSchema = z.object({
   addressId: z.string().min(1, "Please select a delivery address"),
-  paymentMode: z.enum(["upi", "card", "cod"])
+  paymentMethod: z.enum(["upi", "card", "cod"])
 });
 
 type CheckoutForm = z.infer<typeof checkoutSchema>;
@@ -62,7 +62,7 @@ export function CheckoutExperience() {
     resolver: zodResolver(checkoutSchema),
     defaultValues: {
       addressId: "",
-      paymentMode: "cod"
+      paymentMethod: "cod"
     }
   });
 
@@ -191,7 +191,7 @@ export function CheckoutExperience() {
           userId: user.id,
           addressId: values.addressId,
           deliveryAddress: selectedAddress,
-          paymentMode: values.paymentMode,
+          paymentMethod: values.paymentMethod,
           cart: cart.map(item => ({
             productId: item.productId,
             quantity: item.quantity
@@ -427,7 +427,7 @@ export function CheckoutExperience() {
                 <h2 className="text-xl font-black">Payment method</h2>
               </div>
               <Controller
-                name="paymentMode"
+                name="paymentMethod"
                 control={form.control}
                 render={({ field }) => (
                   <div className="mt-4 grid gap-2 sm:grid-cols-3">

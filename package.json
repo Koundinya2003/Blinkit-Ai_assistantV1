@@ -9,8 +9,7 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "seed": "tsx scripts/seed-firestore.ts",
-    "fix-images": "tsx scripts/fix-product-images.ts",
-    "assets": "tsx scripts/assets/asset-pipeline.ts"
+    "generate-images": "tsx scripts/generate-pexels-images.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",

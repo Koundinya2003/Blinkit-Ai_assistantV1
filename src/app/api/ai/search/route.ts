@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { smartSearch, getSearchSuggestions, parseSearchQuery } from "@/lib/ai-search";
+import { smartSearch, getSearchSuggestions, parseSearchQuery } from "@/lib/ai/search";
 
 const searchRequestSchema = z.object({
   query: z.string().min(1).max(200),

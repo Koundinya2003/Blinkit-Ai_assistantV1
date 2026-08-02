@@ -5,7 +5,7 @@ import {
   getSimilarProducts,
   getFrequentlyBoughtTogether,
   getSmartRecommendations
-} from "@/lib/ai-recommendations";
+} from "@/lib/ai/recommendations";
 
 const recommendationRequestSchema = z.object({
   type: z.enum(["personalized", "similar", "frequently_bought", "smart"]).default("personalized"),

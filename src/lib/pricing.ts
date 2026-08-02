@@ -1,4 +1,4 @@
-import { getProductById } from "@/lib/catalog";
+import { getProductById } from "@/lib/data-service";
 import type { CartLine } from "@/lib/types";
 
 export function getCartTotals(cart: CartLine[]) {

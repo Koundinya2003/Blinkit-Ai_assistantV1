@@ -1,16 +1,16 @@
 import type { Category, Product } from "@/lib/types";
 
 export const categories: { name: Category; icon: string; image: string }[] = [
-  { name: "Fruits & Vegetables", icon: "🍌", image: "/images/categories/fruits-vegetables.jpg" },
-  { name: "Dairy & Breakfast", icon: "🥛", image: "/images/categories/dairy-breakfast.jpg" },
-  { name: "Snacks", icon: "🍪", image: "/images/categories/snacks.jpg" },
-  { name: "Beverages", icon: "☕", image: "/images/categories/beverages.jpg" },
-  { name: "Bakery", icon: "🍞", image: "/images/categories/bakery.jpg" },
-  { name: "Household", icon: "🧽", image: "/images/categories/household.jpg" },
-  { name: "Personal Care", icon: "🧼", image: "/images/categories/personal-care.jpg" },
-  { name: "Baby Care", icon: "🧴", image: "/images/categories/baby-care.jpg" },
-  { name: "Instant Food", icon: "🍜", image: "/images/categories/instant-food.jpg" },
-  { name: "Staples", icon: "🍚", image: "/images/categories/staples.jpg" }
+  { name: "Fruits & Vegetables", icon: "🍌", image: "" },
+  { name: "Dairy & Breakfast", icon: "🥛", image: "" },
+  { name: "Snacks", icon: "🍪", image: "" },
+  { name: "Beverages", icon: "☕", image: "" },
+  { name: "Bakery", icon: "🍞", image: "" },
+  { name: "Household", icon: "🧽", image: "" },
+  { name: "Personal Care", icon: "🧼", image: "" },
+  { name: "Baby Care", icon: "🧴", image: "" },
+  { name: "Instant Food", icon: "🍜", image: "" },
+  { name: "Staples", icon: "🍚", image: "" }
 ];
 
 export const indianCities = [
@@ -47,7 +47,7 @@ export const products: Product[] = [
     reviewCount: 11320,
     reviews: 11320,
     deliveryMinutes: 10,
-    image: "/images/products/robusta-bananas.jpg",
+    image: "",
     tags: ["banana", "fruit"],
     aiSignals: ["protein powder", "oats", "peanut butter", "cereal"],
     description: "Naturally sweet bananas for smoothies, breakfast bowls, and snacks."
@@ -68,7 +68,7 @@ export const products: Product[] = [
     reviewCount: 8920,
     reviews: 8920,
     deliveryMinutes: 10,
-    image: "/images/products/apples-shimla.jpg",
+    image: "",
     tags: ["apple", "fruit"],
     aiSignals: ["oats", "peanut butter", "salad"],
     description: "Crisp and juicy Shimla apples, perfect for snacking and salads."
@@ -89,7 +89,7 @@ export const products: Product[] = [
     reviewCount: 15600,
     reviews: 15600,
     deliveryMinutes: 10,
-    image: "/images/products/tomatoes.jpg",
+    image: "",
     tags: ["tomato", "vegetable"],
     aiSignals: ["onion", "chilli", "coriander"],
     description: "Fresh red tomatoes for curries, salads, and everyday cooking."
@@ -110,7 +110,7 @@ export const products: Product[] = [
     reviewCount: 18200,
     reviews: 18200,
     deliveryMinutes: 10,
-    image: "/images/products/onions.jpg",
+    image: "",
     tags: ["onion", "vegetable", "staple"],
     aiSignals: ["tomato", "chilli", "garlic"],
     description: "Essential kitchen onions for gravies, sabzis, and biryanis."
@@ -131,7 +131,7 @@ export const products: Product[] = [
     reviewCount: 14500,
     reviews: 14500,
     deliveryMinutes: 10,
-    image: "/images/products/potatoes.jpg",
+    image: "",
     tags: ["potato", "vegetable", "staple"],
     aiSignals: ["onion", "tomato", "chilli"],
     description: "Versatile potatoes for fries, curries, and snacks."
@@ -152,7 +152,7 @@ export const products: Product[] = [
     reviewCount: 7800,
     reviews: 7800,
     deliveryMinutes: 10,
-    image: "/images/products/carrots.jpg",
+    image: "",
     tags: ["carrot", "vegetable"],
     aiSignals: ["beetroot", "radish", "cucumber"],
     description: "Crunchy carrots for salads, juices, and sabzis."
@@ -173,7 +173,7 @@ export const products: Product[] = [
     reviewCount: 5200,
     reviews: 5200,
     deliveryMinutes: 10,
-    image: "/images/products/spinach.jpg",
+    image: "",
     tags: ["spinach", "leafy", "vegetable"],
     aiSignals: ["coriander", "methi", "lettuce"],
     description: "Fresh green spinach for curries, soups, and smoothies."
@@ -194,7 +194,7 @@ export const products: Product[] = [
     reviewCount: 9200,
     reviews: 9200,
     deliveryMinutes: 10,
-    image: "/images/products/mangoes-alphonso.jpg",
+    image: "",
     tags: ["mango", "fruit", "seasonal"],
     aiSignals: ["banana", "papaya", "pineapple"],
     description: "Premium Alphonso mangoes, the king of fruits."
@@ -215,7 +215,7 @@ export const products: Product[] = [
     reviewCount: 6800,
     reviews: 6800,
     deliveryMinutes: 10,
-    image: "/images/products/oranges.jpg",
+    image: "",
     tags: ["orange", "fruit", "citrus"],
     aiSignals: ["lemon", "lime", "grapefruit"],
     description: "Juicy oranges rich in vitamin C."
@@ -236,7 +236,7 @@ export const products: Product[] = [
     reviewCount: 5400,
     reviews: 5400,
     deliveryMinutes: 10,
-    image: "/images/products/cucumber.jpg",
+    image: "",
     tags: ["cucumber", "vegetable", "salad"],
     aiSignals: ["tomato", "onion", "radish"],
     description: "Cool and refreshing cucumber for salads and raita."
@@ -257,7 +257,7 @@ export const products: Product[] = [
     reviewCount: 6100,
     reviews: 6100,
     deliveryMinutes: 10,
-    image: "/images/products/cauliflower.jpg",
+    image: "",
     tags: ["cauliflower", "vegetable"],
     aiSignals: ["potato", "carrot", "peas"],
     description: "Fresh cauliflower for gobi Manchurian, curries, and parathas."
@@ -278,7 +278,7 @@ export const products: Product[] = [
     reviewCount: 8900,
     reviews: 8900,
     deliveryMinutes: 10,
-    image: "/images/products/coriander-leaves.jpg",
+    image: "",
     tags: ["coriander", "herb", "vegetable"],
     aiSignals: ["mint", "spinach", "curry leaves"],
     description: "Fresh coriander leaves for garnishing and chutneys."
@@ -299,7 +299,7 @@ export const products: Product[] = [
     reviewCount: 7200,
     reviews: 7200,
     deliveryMinutes: 10,
-    image: "/images/products/ginger.jpg",
+    image: "",
     tags: ["ginger", "vegetable", "spice"],
     aiSignals: ["garlic", "chilli", "turmeric"],
     description: "Aromatic ginger for teas, curries, and home remedies."
@@ -320,7 +320,7 @@ export const products: Product[] = [
     reviewCount: 6500,
     reviews: 6500,
     deliveryMinutes: 10,
-    image: "/images/products/garlic.jpg",
+    image: "",
     tags: ["garlic", "vegetable", "spice"],
     aiSignals: ["ginger", "chilli", "onion"],
     description: "Pungent garlic cloves for tempering and marinades."
@@ -341,7 +341,7 @@ export const products: Product[] = [
     reviewCount: 5800,
     reviews: 5800,
     deliveryMinutes: 10,
-    image: "/images/products/green-chilli.jpg",
+    image: "",
     tags: ["chilli", "vegetable", "spice"],
     aiSignals: ["ginger", "garlic", "coriander"],
     description: "Spicy green chillies for Indian cooking and pickles."
@@ -362,7 +362,7 @@ export const products: Product[] = [
     reviewCount: 9100,
     reviews: 9100,
     deliveryMinutes: 10,
-    image: "/images/products/lemons.jpg",
+    image: "",
     tags: ["lemon", "fruit", "citrus"],
     aiSignals: ["mint", "coriander", "salt"],
     description: "Tangy lemons for lemonade, chutneys, and garnishing."
@@ -383,7 +383,7 @@ export const products: Product[] = [
     reviewCount: 4200,
     reviews: 4200,
     deliveryMinutes: 10,
-    image: "/images/products/strawberries.jpg",
+    image: "",
     tags: ["strawberry", "fruit", "berry"],
     aiSignals: ["banana", "yogurt", "cream"],
     description: "Sweet and juicy strawberries for desserts and smoothies."
@@ -404,7 +404,7 @@ export const products: Product[] = [
     reviewCount: 3800,
     reviews: 3800,
     deliveryMinutes: 10,
-    image: "/images/products/papaya.jpg",
+    image: "",
     tags: ["papaya", "fruit"],
     aiSignals: ["banana", "mango", "pineapple"],
     description: "Tropical papaya for salads and digestive health."
@@ -425,7 +425,7 @@ export const products: Product[] = [
     reviewCount: 5600,
     reviews: 5600,
     deliveryMinutes: 10,
-    image: "/images/products/pomegranate.jpg",
+    image: "",
     tags: ["pomegranate", "fruit"],
     aiSignals: ["apple", "orange", "grapes"],
     description: "Ruby-red pomegranate seeds for juices and salads."
@@ -446,7 +446,7 @@ export const products: Product[] = [
     reviewCount: 4800,
     reviews: 4800,
     deliveryMinutes: 10,
-    image: "/images/products/watermelon.jpg",
+    image: "",
     tags: ["watermelon", "fruit", "summer"],
     aiSignals: ["cucumber", "melon", "berries"],
     description: "Refreshing watermelon for summer hydration."
@@ -467,7 +467,7 @@ export const products: Product[] = [
     reviewCount: 3900,
     reviews: 3900,
     deliveryMinutes: 10,
-    image: "/images/products/sweet-corn.jpg",
+    image: "",
     tags: ["corn", "vegetable"],
     aiSignals: ["butter", "cheese", "pepper"],
     description: "Sweet corn for boiling, grilling, and salads."
@@ -488,7 +488,7 @@ export const products: Product[] = [
     reviewCount: 4100,
     reviews: 4100,
     deliveryMinutes: 10,
-    image: "/images/products/peas.jpg",
+    image: "",
     tags: ["peas", "vegetable"],
     aiSignals: ["carrot", "potato", "corn"],
     description: "Sweet green peas for curries, pulao, and snacks."
@@ -509,7 +509,7 @@ export const products: Product[] = [
     reviewCount: 3200,
     reviews: 3200,
     deliveryMinutes: 10,
-    image: "/images/products/bitter-gourd.jpg",
+    image: "",
     tags: ["bitter gourd", "vegetable"],
     aiSignals: ["potato", "onion", "chilli"],
     description: "Nutritious bitter gourd for stir-fries and curries."
@@ -530,7 +530,7 @@ export const products: Product[] = [
     reviewCount: 4700,
     reviews: 4700,
     deliveryMinutes: 10,
-    image: "/images/products/capsicum.jpg",
+    image: "",
     tags: ["capsicum", "vegetable", "bell pepper"],
     aiSignals: ["onion", "tomato", "cabbage"],
     description: "Colorful capsicum for stir-fries, pizzas, and salads."
@@ -551,7 +551,7 @@ export const products: Product[] = [
     reviewCount: 5100,
     reviews: 5100,
     deliveryMinutes: 10,
-    image: "/images/products/brinjal.jpg",
+    image: "",
     tags: ["brinjal", "eggplant", "vegetable"],
     aiSignals: ["onion", "tomato", "chilli"],
     description: "Tender brinjal for curries and bharta."
@@ -572,7 +572,7 @@ export const products: Product[] = [
     reviewCount: 6200,
     reviews: 6200,
     deliveryMinutes: 10,
-    image: "/images/products/cabbage.jpg",
+    image: "",
     tags: ["cabbage", "vegetable"],
     aiSignals: ["carrot", "onion", "capsicum"],
     description: "Fresh cabbage for salads, parathas, and stir-fries."
@@ -593,7 +593,7 @@ export const products: Product[] = [
     reviewCount: 5800,
     reviews: 5800,
     deliveryMinutes: 10,
-    image: "/images/products/ladyfinger.jpg",
+    image: "",
     tags: ["ladyfinger", "okra", "vegetable"],
     aiSignals: ["onion", "tomato", "chilli"],
     description: "Tender ladyfinger for bhindi masala and curries."
@@ -614,7 +614,7 @@ export const products: Product[] = [
     reviewCount: 3600,
     reviews: 3600,
     deliveryMinutes: 10,
-    image: "/images/products/beetroot.jpg",
+    image: "",
     tags: ["beetroot", "vegetable"],
     aiSignals: ["carrot", "radish", "cucumber"],
     description: "Sweet beetroot for salads, juices, and curries."
@@ -636,7 +636,7 @@ export const products: Product[] = [
     reviewCount: 18420,
     reviews: 18420,
     deliveryMinutes: 11,
-    image: "/images/products/amul-toned-milk.jpg",
+    image: "",
     tags: ["milk", "daily", "fresh"],
     aiSignals: ["breakfast", "tea", "coffee", "cereal", "cookies"],
     description: "Fresh toned milk for tea, coffee, cereal, and daily cooking."
@@ -657,7 +657,7 @@ export const products: Product[] = [
     reviewCount: 14200,
     reviews: 14200,
     deliveryMinutes: 11,
-    image: "/images/products/mother-dairy-milk.jpg",
+    image: "",
     tags: ["milk", "full cream", "dairy"],
     aiSignals: ["breakfast", "tea", "coffee", "cereal"],
     description: "Rich full cream milk for making curd, paneer, and desserts."
@@ -678,7 +678,7 @@ export const products: Product[] = [
     reviewCount: 15610,
     reviews: 15610,
     deliveryMinutes: 12,
-    image: "/images/products/amul-butter.jpg",
+    image: "",
     tags: ["butter", "breakfast"],
     aiSignals: ["bread", "toast", "paratha", "cookies"],
     description: "Classic salted butter for toast, pav bhaji, parathas, and baking."
@@ -699,7 +699,7 @@ export const products: Product[] = [
     reviewCount: 9800,
     reviews: 9800,
     deliveryMinutes: 11,
-    image: "/images/products/amul-curd.jpg",
+    image: "",
     tags: ["curd", "yogurt", "dairy"],
     aiSignals: ["rice", "roti", "buttermilk"],
     description: "Thick and creamy curd for lunch and buttermilk."
@@ -720,7 +720,7 @@ export const products: Product[] = [
     reviewCount: 9290,
     reviews: 9290,
     deliveryMinutes: 10,
-    image: "/images/products/britannia-bread.jpg",
+    image: "",
     tags: ["bread", "breakfast", "toast"],
     aiSignals: ["milk", "butter", "jam", "eggs", "coffee"],
     description: "Soft sliced bread for sandwiches, toast, and lunch boxes."
@@ -741,7 +741,7 @@ export const products: Product[] = [
     reviewCount: 7200,
     reviews: 7200,
     deliveryMinutes: 10,
-    image: "/images/products/britannia-brown-bread.jpg",
+    image: "",
     tags: ["bread", "brown", "healthy"],
     aiSignals: ["butter", "jam", "cheese"],
     description: "Healthy brown bread with whole wheat flour."
@@ -762,7 +762,7 @@ export const products: Product[] = [
     reviewCount: 11200,
     reviews: 11200,
     deliveryMinutes: 10,
-    image: "/images/products/eggs.jpg",
+    image: "",
     tags: ["eggs", "breakfast", "protein"],
     aiSignals: ["bread", "butter", "cheese"],
     description: "Fresh farm eggs for breakfast and baking."
@@ -783,7 +783,7 @@ export const products: Product[] = [
     reviewCount: 7410,
     reviews: 7410,
     deliveryMinutes: 13,
-    image: "/images/products/kelloggs-corn-flakes.jpg",
+    image: "",
     tags: ["cereal", "breakfast"],
     aiSignals: ["milk", "banana", "honey"],
     description: "Crunchy breakfast cereal that pairs well with chilled milk and fruit."
@@ -804,7 +804,7 @@ export const products: Product[] = [
     reviewCount: 6200,
     reviews: 6200,
     deliveryMinutes: 13,
-    image: "/images/products/kelloggs-chocos.jpg",
+    image: "",
     tags: ["cereal", "chocolate", "breakfast"],
     aiSignals: ["milk", "banana", "strawberry"],
     description: "Chocolate-flavored cereal for kids and adults."
@@ -825,7 +825,7 @@ export const products: Product[] = [
     reviewCount: 6870,
     reviews: 6870,
     deliveryMinutes: 13,
-    image: "/images/products/saffola-oats.jpg",
+    image: "",
     tags: ["oats", "breakfast"],
     aiSignals: ["protein powder", "banana", "greek yogurt"],
     description: "Quick masala oats for a filling breakfast or evening meal."
@@ -846,7 +846,7 @@ export const products: Product[] = [
     reviewCount: 8900,
     reviews: 8900,
     deliveryMinutes: 13,
-    image: "/images/products/quaker-oats.jpg",
+    image: "",
     tags: ["oats", "healthy", "breakfast"],
     aiSignals: ["banana", "honey", "milk"],
     description: "100% whole grain rolled oats for a healthy breakfast."
@@ -867,7 +867,7 @@ export const products: Product[] = [
     reviewCount: 10500,
     reviews: 10500,
     deliveryMinutes: 12,
-    image: "/images/products/nestle-munch.jpg",
+    image: "",
     tags: ["chocolate", "snack", "nestle"],
     aiSignals: ["milk", "coffee", "tea"],
     description: "Crunchy chocolate-coated wafer bars."
@@ -888,7 +888,7 @@ export const products: Product[] = [
     reviewCount: 11200,
     reviews: 11200,
     deliveryMinutes: 13,
-    image: "/images/products/horlicks.jpg",
+    image: "",
     tags: ["health drink", "nutrition"],
     aiSignals: ["milk", "oats", "banana"],
     description: "Nutritious health drink for growing kids and adults."
@@ -910,7 +910,7 @@ export const products: Product[] = [
     reviewCount: 15100,
     reviews: 15100,
     deliveryMinutes: 11,
-    image: "/images/products/maggi-noodles.jpg",
+    image: "",
     tags: ["noodles", "snack"],
     aiSignals: ["ketchup", "cheese", "butter"],
     description: "Classic masala noodles for quick evening snacks and late-night cravings."
@@ -931,7 +931,7 @@ export const products: Product[] = [
     reviewCount: 22100,
     reviews: 22100,
     deliveryMinutes: 10,
-    image: "/images/products/lays-classic.jpg",
+    image: "",
     tags: ["chips", "snack"],
     aiSignals: ["coke", "soda", "juice"],
     description: "Classic salted potato chips for movie nights and parties."
@@ -952,7 +952,7 @@ export const products: Product[] = [
     reviewCount: 18900,
     reviews: 18900,
     deliveryMinutes: 10,
-    image: "/images/products/nestle-munch.jpg",
+    image: "",
     tags: ["chips", "snack", "masala"],
     aiSignals: ["coke", "soda", "juice"],
     description: "Crunchy masala munch for tea time and parties."
@@ -973,7 +973,7 @@ export const products: Product[] = [
     reviewCount: 19800,
     reviews: 19800,
     deliveryMinutes: 10,
-    image: "/images/products/britannia-good-day.jpg",
+    image: "",
     tags: ["biscuits", "snack"],
     aiSignals: ["tea", "coffee", "milk"],
     description: "Buttery biscuits perfect with tea or coffee."
@@ -994,7 +994,7 @@ export const products: Product[] = [
     reviewCount: 25600,
     reviews: 25600,
     deliveryMinutes: 10,
-    image: "/images/products/parle-g.jpg",
+    image: "",
     tags: ["biscuits", "snack", "classic"],
     aiSignals: ["tea", "coffee", "milk"],
     description: "India's favorite glucose biscuits since 1939."
@@ -1015,7 +1015,7 @@ export const products: Product[] = [
     reviewCount: 14200,
     reviews: 14200,
     deliveryMinutes: 10,
-    image: "/images/products/britannia-good-day.jpg",
+    image: "",
     tags: ["biscuits", "chocolate", "snack"],
     aiSignals: ["milk", "coffee", "tea"],
     description: "Rich chocolate-filled biscuits for chocolate lovers."
@@ -1036,7 +1036,7 @@ export const products: Product[] = [
     reviewCount: 16800,
     reviews: 16800,
     deliveryMinutes: 11,
-    image: "/images/products/yippee-noodles.jpg",
+    image: "",
     tags: ["noodles", "snack"],
     aiSignals: ["ketchup", "cheese", "butter"],
     description: "Long masala noodles that don't break while eating."
@@ -1057,7 +1057,7 @@ export const products: Product[] = [
     reviewCount: 19200,
     reviews: 19200,
     deliveryMinutes: 11,
-    image: "/images/products/top-ramen.jpg",
+    image: "",
     tags: ["noodles", "snack"],
     aiSignals: ["ketchup", "cheese", "butter"],
     description: "Classic masala noodles for quick meals."
@@ -1078,7 +1078,7 @@ export const products: Product[] = [
     reviewCount: 15600,
     reviews: 15600,
     deliveryMinutes: 10,
-    image: "/images/products/nestle-munch.jpg",
+    image: "",
     tags: ["chips", "snack", "chutney"],
     aiSignals: ["coke", "soda", "juice"],
     description: "Tangy chutney-flavored crunchy snacks."
@@ -1099,7 +1099,7 @@ export const products: Product[] = [
     reviewCount: 21400,
     reviews: 21400,
     deliveryMinutes: 10,
-    image: "/images/products/lays-classic.jpg",
+    image: "",
     tags: ["chips", "snack", "tomato"],
     aiSignals: ["coke", "soda", "juice"],
     description: "Tangy tomato-flavored potato chips."
@@ -1120,7 +1120,7 @@ export const products: Product[] = [
     reviewCount: 8900,
     reviews: 8900,
     deliveryMinutes: 10,
-    image: "/images/products/too-yumm-multigrain.jpg",
+    image: "",
     tags: ["chips", "healthy", "snack"],
     aiSignals: ["salsa", "dip", "juice"],
     description: "Healthy multigrain chips for guilt-free snacking."
@@ -1141,7 +1141,7 @@ export const products: Product[] = [
     reviewCount: 17500,
     reviews: 17500,
     deliveryMinutes: 10,
-    image: "/images/products/hide-seek.jpg",
+    image: "",
     tags: ["cookies", "chocolate", "snack"],
     aiSignals: ["milk", "coffee", "tea"],
     description: "Chocolate chip cookies that kids love."
@@ -1162,7 +1162,7 @@ export const products: Product[] = [
     reviewCount: 24500,
     reviews: 24500,
     deliveryMinutes: 10,
-    image: "/images/products/britannia-good-day.jpg",
+    image: "",
     tags: ["biscuits", "chocolate", "snack"],
     aiSignals: ["milk", "coffee", "tea"],
     description: "Milk's favorite cookie with creamy filling."
@@ -1183,7 +1183,7 @@ export const products: Product[] = [
     reviewCount: 28900,
     reviews: 28900,
     deliveryMinutes: 10,
-    image: "/images/products/cadbury-dairy-milk.jpg",
+    image: "",
     tags: ["chocolate", "snack"],
     aiSignals: ["milk", "cake", "cookies"],
     description: "Smooth and creamy milk chocolate bar."
@@ -1204,7 +1204,7 @@ export const products: Product[] = [
     reviewCount: 21300,
     reviews: 21300,
     deliveryMinutes: 10,
-    image: "/images/products/cadbury-dairy-milk.jpg",
+    image: "",
     tags: ["chocolate", "snack", "wafer"],
     aiSignals: ["milk", "coffee", "ice cream"],
     description: "Crispy wafer fingers covered in chocolate."
@@ -1225,7 +1225,7 @@ export const products: Product[] = [
     reviewCount: 15600,
     reviews: 15600,
     deliveryMinutes: 10,
-    image: "/images/products/cadbury-dairy-milk.jpg",
+    image: "",
     tags: ["chocolate", "snack"],
     aiSignals: ["milk", "cake", "cookies"],
     description: "Rich Indian milk chocolate bar."
@@ -1247,7 +1247,7 @@ export const products: Product[] = [
     reviewCount: 10110,
     reviews: 10110,
     deliveryMinutes: 10,
-    image: "/images/products/nescafe-classic.jpg",
+    image: "",
     tags: ["coffee", "beverage"],
     aiSignals: ["milk", "cookies", "sugar"],
     description: "Bold instant coffee for quick hot or cold coffee at home."
@@ -1268,7 +1268,7 @@ export const products: Product[] = [
     reviewCount: 12500,
     reviews: 12500,
     deliveryMinutes: 10,
-    image: "/images/products/nescafe-gold.jpg",
+    image: "",
     tags: ["coffee", "premium", "beverage"],
     aiSignals: ["milk", "sugar", "cream"],
     description: "Premium coffee blend for coffee lovers."
@@ -1289,7 +1289,7 @@ export const products: Product[] = [
     reviewCount: 18900,
     reviews: 18900,
     deliveryMinutes: 10,
-    image: "/images/products/tata-tea.jpg",
+    image: "",
     tags: ["tea", "beverage"],
     aiSignals: ["milk", "sugar", "biscuits"],
     description: "Premium tea leaves for the perfect cup of chai."
@@ -1310,7 +1310,7 @@ export const products: Product[] = [
     reviewCount: 16500,
     reviews: 16500,
     deliveryMinutes: 10,
-    image: "/images/products/red-label-tea.jpg",
+    image: "",
     tags: ["tea", "beverage"],
     aiSignals: ["milk", "sugar", "biscuits"],
     description: "Rich aroma tea for the perfect chai experience."
@@ -1331,7 +1331,7 @@ export const products: Product[] = [
     reviewCount: 22100,
     reviews: 22100,
     deliveryMinutes: 10,
-    image: "/images/products/coca-cola.jpg",
+    image: "",
     tags: ["soft drink", "beverage"],
     aiSignals: ["pizza", "burger", "chips"],
     description: "Refreshing cola drink for parties and meals."
@@ -1352,7 +1352,7 @@ export const products: Product[] = [
     reviewCount: 19800,
     reviews: 19800,
     deliveryMinutes: 10,
-    image: "/images/products/pepsi.jpg",
+    image: "",
     tags: ["soft drink", "beverage"],
     aiSignals: ["pizza", "burger", "chips"],
     description: "Refreshing cola drink for parties and meals."
@@ -1373,7 +1373,7 @@ export const products: Product[] = [
     reviewCount: 17600,
     reviews: 17600,
     deliveryMinutes: 10,
-    image: "/images/products/sprite.jpg",
+    image: "",
     tags: ["soft drink", "lemon", "beverage"],
     aiSignals: ["pizza", "burger", "chips"],
     description: "Clear lemon-lime flavored soft drink."
@@ -1394,7 +1394,7 @@ export const products: Product[] = [
     reviewCount: 14200,
     reviews: 14200,
     deliveryMinutes: 10,
-    image: "/images/products/amul-masti.jpg",
+    image: "",
     tags: ["buttermilk", "beverage"],
     aiSignals: ["roti", "rice", "curd"],
     description: "Refreshing spiced buttermilk for meals."
@@ -1415,7 +1415,7 @@ export const products: Product[] = [
     reviewCount: 9800,
     reviews: 9800,
     deliveryMinutes: 10,
-    image: "/images/products/real-fruit-juice.jpg",
+    image: "",
     tags: ["juice", "fruit", "beverage"],
     aiSignals: ["fruits", "snacks", "cookies"],
     description: "100% mixed fruit juice with no added sugar."
@@ -1436,7 +1436,7 @@ export const products: Product[] = [
     reviewCount: 11200,
     reviews: 11200,
     deliveryMinutes: 10,
-    image: "/images/products/tropicana-juice.jpg",
+    image: "",
     tags: ["juice", "orange", "beverage"],
     aiSignals: ["fruits", "snacks", "cookies"],
     description: "100% pure orange juice with no added sugar."
@@ -1457,7 +1457,7 @@ export const products: Product[] = [
     reviewCount: 14500,
     reviews: 14500,
     deliveryMinutes: 10,
-    image: "/images/products/red-bull.jpg",
+    image: "",
     tags: ["energy drink", "beverage"],
     aiSignals: ["snacks", "chips", "chocolate"],
     description: "Energy drink for instant energy boost."
@@ -1478,7 +1478,7 @@ export const products: Product[] = [
     reviewCount: 11200,
     reviews: 11200,
     deliveryMinutes: 10,
-    image: "/images/products/red-bull.jpg",
+    image: "",
     tags: ["energy drink", "beverage"],
     aiSignals: ["snacks", "chips", "chocolate"],
     description: "Unleash the beast with Monster energy."
@@ -1499,7 +1499,7 @@ export const products: Product[] = [
     reviewCount: 7800,
     reviews: 7800,
     deliveryMinutes: 10,
-    image: "/images/products/real-fruit-juice.jpg",
+    image: "",
     tags: ["health drink", "lemon", "beverage"],
     aiSignals: ["snacks", "fruits", "cookies"],
     description: "Refreshing lemon drink with natural ingredients."
@@ -1521,7 +1521,7 @@ export const products: Product[] = [
     reviewCount: 9290,
     reviews: 9290,
     deliveryMinutes: 10,
-    image: "/images/products/britannia-bread.jpg",
+    image: "",
     tags: ["bread", "bakery"],
     aiSignals: ["butter", "jam", "eggs"],
     description: "Soft sliced bread for sandwiches and toast."
@@ -1542,7 +1542,7 @@ export const products: Product[] = [
     reviewCount: 7200,
     reviews: 7200,
     deliveryMinutes: 10,
-    image: "/images/products/britannia-bread.jpg",
+    image: "",
     tags: ["bread", "brown", "healthy"],
     aiSignals: ["butter", "jam", "cheese"],
     description: "Healthy brown bread with whole wheat flour."
@@ -1563,7 +1563,7 @@ export const products: Product[] = [
     reviewCount: 8500,
     reviews: 8500,
     deliveryMinutes: 10,
-    image: "/images/products/britannia-milk-bread.jpg",
+    image: "",
     tags: ["bread", "soft", "bakery"],
     aiSignals: ["butter", "jam", "cheese"],
     description: "Soft milk bread for sandwiches and toast."
@@ -1584,7 +1584,7 @@ export const products: Product[] = [
     reviewCount: 6800,
     reviews: 6800,
     deliveryMinutes: 10,
-    image: "/images/products/britannia-bun.jpg",
+    image: "",
     tags: ["bun", "pav", "bakery"],
     aiSignals: ["butter", "vada pav", "pav bhaji"],
     description: "Soft pav buns for vada pav and pav bhaji."
@@ -1605,7 +1605,7 @@ export const products: Product[] = [
     reviewCount: 5200,
     reviews: 5200,
     deliveryMinutes: 10,
-    image: "/images/products/britannia-muffins.jpg",
+    image: "",
     tags: ["muffins", "chocolate", "bakery"],
     aiSignals: ["milk", "coffee", "tea"],
     description: "Soft chocolate muffins for breakfast and snacks."
@@ -1626,7 +1626,7 @@ export const products: Product[] = [
     reviewCount: 4800,
     reviews: 4800,
     deliveryMinutes: 10,
-    image: "/images/products/britannia-croissant.jpg",
+    image: "",
     tags: ["croissant", "pastry", "bakery"],
     aiSignals: ["butter", "coffee", "tea"],
     description: "Flaky butter croissants for breakfast."
@@ -1647,7 +1647,7 @@ export const products: Product[] = [
     reviewCount: 4200,
     reviews: 4200,
     deliveryMinutes: 10,
-    image: "/images/products/britannia-croissant.jpg",
+    image: "",
     tags: ["danish", "pastry", "bakery"],
     aiSignals: ["butter", "coffee", "tea"],
     description: "Sweet fruit-filled Danish pastries."
@@ -1668,7 +1668,7 @@ export const products: Product[] = [
     reviewCount: 5600,
     reviews: 5600,
     deliveryMinutes: 10,
-    image: "/images/products/britannia-cake.jpg",
+    image: "",
     tags: ["cake", "fruit", "bakery"],
     aiSignals: ["milk", "coffee", "tea"],
     description: "Rich fruit cake for celebrations and snacks."
@@ -1689,7 +1689,7 @@ export const products: Product[] = [
     reviewCount: 7800,
     reviews: 7800,
     deliveryMinutes: 10,
-    image: "/images/products/britannia-rusk.jpg",
+    image: "",
     tags: ["rusk", "toast", "bakery"],
     aiSignals: ["tea", "coffee", "milk"],
     description: "Crispy toasted rusk for tea time."
@@ -1710,7 +1710,7 @@ export const products: Product[] = [
     reviewCount: 4500,
     reviews: 4500,
     deliveryMinutes: 10,
-    image: "/images/products/britannia-puffs.jpg",
+    image: "",
     tags: ["puffs", "pastry", "bakery"],
     aiSignals: ["butter", "coffee", "tea"],
     description: "Flaky cream-filled puffs for snacks."
@@ -1731,7 +1731,7 @@ export const products: Product[] = [
     reviewCount: 6200,
     reviews: 6200,
     deliveryMinutes: 10,
-    image: "/images/products/britannia-pizza-base.jpg",
+    image: "",
     tags: ["pizza", "bakery"],
     aiSignals: ["cheese", "sauce", "veggies"],
     description: "Ready-to-use pizza base for homemade pizza."
@@ -1752,7 +1752,7 @@ export const products: Product[] = [
     reviewCount: 5800,
     reviews: 5800,
     deliveryMinutes: 10,
-    image: "/images/products/britannia-bread.jpg",
+    image: "",
     tags: ["garlic bread", "bakery"],
     aiSignals: ["butter", "cheese", "pasta"],
     description: "Garlic-flavored bread for Italian meals."
@@ -1774,7 +1774,7 @@ export const products: Product[] = [
     reviewCount: 8210,
     reviews: 8210,
     deliveryMinutes: 12,
-    image: "/images/products/surf-excel.jpg",
+    image: "",
     tags: ["detergent", "laundry"],
     aiSignals: ["fabric conditioner", "floor cleaner"],
     description: "Liquid detergent for front-load and top-load washing machines."
@@ -1795,7 +1795,7 @@ export const products: Product[] = [
     reviewCount: 7500,
     reviews: 7500,
     deliveryMinutes: 12,
-    image: "/images/products/surf-excel-quick-wash.jpg",
+    image: "",
     tags: ["detergent", "laundry"],
     aiSignals: ["fabric conditioner", "floor cleaner"],
     description: "Quick wash detergent powder for everyday laundry."
@@ -1816,7 +1816,7 @@ export const products: Product[] = [
     reviewCount: 9800,
     reviews: 9800,
     deliveryMinutes: 12,
-    image: "/images/products/ariel-detergent.jpg",
+    image: "",
     tags: ["detergent", "laundry"],
     aiSignals: ["fabric conditioner", "floor cleaner"],
     description: "Premium liquid detergent for spotless clothes."
@@ -1837,7 +1837,7 @@ export const products: Product[] = [
     reviewCount: 7200,
     reviews: 7200,
     deliveryMinutes: 12,
-    image: "/images/products/comfort-fabric-conditioner.jpg",
+    image: "",
     tags: ["fabric conditioner", "laundry"],
     aiSignals: ["detergent", "softener"],
     description: "Fabric conditioner for soft and fresh clothes."
@@ -1858,7 +1858,7 @@ export const products: Product[] = [
     reviewCount: 15600,
     reviews: 15600,
     deliveryMinutes: 10,
-    image: "/images/products/surf-excel.jpg",
+    image: "",
     tags: ["dishwash", "cleaning"],
     aiSignals: ["sponge", "scrubber"],
     description: "Powerful dishwash bar for grease removal."
@@ -1879,7 +1879,7 @@ export const products: Product[] = [
     reviewCount: 11200,
     reviews: 11200,
     deliveryMinutes: 10,
-    image: "/images/products/surf-excel.jpg",
+    image: "",
     tags: ["dishwash", "cleaning"],
     aiSignals: ["sponge", "scrubber"],
     description: "Effective dishwash liquid for sparkling clean dishes."
@@ -1900,7 +1900,7 @@ export const products: Product[] = [
     reviewCount: 8900,
     reviews: 8900,
     deliveryMinutes: 10,
-    image: "/images/products/surf-excel.jpg",
+    image: "",
     tags: ["disinfectant", "cleaning"],
     aiSignals: ["floor cleaner", "surface cleaner"],
     description: "Kills 99.9% of germs and viruses."
@@ -1921,7 +1921,7 @@ export const products: Product[] = [
     reviewCount: 10200,
     reviews: 10200,
     deliveryMinutes: 10,
-    image: "/images/products/harpic-toilet-cleaner.jpg",
+    image: "",
     tags: ["toilet cleaner", "cleaning"],
     aiSignals: ["disinfectant", "floor cleaner"],
     description: "Powerful toilet cleaner that kills germs."
@@ -1942,7 +1942,7 @@ export const products: Product[] = [
     reviewCount: 8500,
     reviews: 8500,
     deliveryMinutes: 10,
-    image: "/images/products/floor-cleaner.jpg",
+    image: "",
     tags: ["floor cleaner", "cleaning"],
     aiSignals: ["disinfectant", "mop"],
     description: "Floor cleaner for germ-free and shiny floors."
@@ -1963,7 +1963,7 @@ export const products: Product[] = [
     reviewCount: 12500,
     reviews: 12500,
     deliveryMinutes: 10,
-    image: "/images/products/mosquito-repellent.jpg",
+    image: "",
     tags: ["mosquito", "repellent"],
     aiSignals: ["mosquito coil", "mosquito spray"],
     description: "Effective mosquito repellent for peaceful sleep."
@@ -1984,7 +1984,7 @@ export const products: Product[] = [
     reviewCount: 14500,
     reviews: 14500,
     deliveryMinutes: 10,
-    image: "/images/products/surf-excel.jpg",
+    image: "",
     tags: ["mosquito", "repellent"],
     aiSignals: ["mosquito spray", "mosquito cream"],
     description: "Mosquito coils for protection from mosquitoes."
@@ -2005,7 +2005,7 @@ export const products: Product[] = [
     reviewCount: 7800,
     reviews: 7800,
     deliveryMinutes: 10,
-    image: "/images/products/colin-glass-cleaner.jpg",
+    image: "",
     tags: ["glass cleaner", "cleaning"],
     aiSignals: ["surface cleaner", "disinfectant"],
     description: "Streak-free glass cleaner for windows and mirrors."
@@ -2026,7 +2026,7 @@ export const products: Product[] = [
     reviewCount: 9200,
     reviews: 9200,
     deliveryMinutes: 10,
-    image: "/images/products/surf-excel.jpg",
+    image: "",
     tags: ["air freshener", "cleaning"],
     aiSignals: ["room freshener", "air purifier"],
     description: "Long-lasting air freshener for home and office."
@@ -2047,7 +2047,7 @@ export const products: Product[] = [
     reviewCount: 11200,
     reviews: 11200,
     deliveryMinutes: 10,
-    image: "/images/products/surf-excel.jpg",
+    image: "",
     tags: ["scrub pad", "cleaning"],
     aiSignals: ["sponge", "cleaning cloth"],
     description: "Heavy-duty scrub pads for tough stains."
@@ -2068,7 +2068,7 @@ export const products: Product[] = [
     reviewCount: 8900,
     reviews: 8900,
     deliveryMinutes: 10,
-    image: "/images/products/surf-excel.jpg",
+    image: "",
     tags: ["garbage bag", "cleaning"],
     aiSignals: ["dustbin", "waste management"],
     description: "Durable garbage bags for home and office."
@@ -2090,7 +2090,7 @@ export const products: Product[] = [
     reviewCount: 13200,
     reviews: 13200,
     deliveryMinutes: 12,
-    image: "/images/products/dove-soap.jpg",
+    image: "",
     tags: ["soap", "beauty", "personal care"],
     aiSignals: ["shampoo", "conditioner", "body wash"],
     description: "Moisturizing cream soap for soft and smooth skin."
@@ -2111,7 +2111,7 @@ export const products: Product[] = [
     reviewCount: 22100,
     reviews: 22100,
     deliveryMinutes: 12,
-    image: "/images/products/colgate-toothpaste.jpg",
+    image: "",
     tags: ["toothpaste", "dental", "personal care"],
     aiSignals: ["toothbrush", "mouthwash", "floss"],
     description: "Anticavity toothpaste for strong teeth and healthy gums."
@@ -2132,7 +2132,7 @@ export const products: Product[] = [
     reviewCount: 18500,
     reviews: 18500,
     deliveryMinutes: 12,
-    image: "/images/products/lifebuoy-soap.jpg",
+    image: "",
     tags: ["soap", "germ protection", "personal care"],
     aiSignals: ["handwash", "sanitizer", "shampoo"],
     description: "Protective soap that kills 99.9% of germs."
@@ -2153,7 +2153,7 @@ export const products: Product[] = [
     reviewCount: 16800,
     reviews: 16800,
     deliveryMinutes: 12,
-    image: "/images/products/santoor-soap.jpg",
+    image: "",
     tags: ["soap", "sandalwood", "personal care"],
     aiSignals: ["shampoo", "body wash", "face wash"],
     description: "Sandalwood and turmeric soap for glowing skin."
@@ -2174,7 +2174,7 @@ export const products: Product[] = [
     reviewCount: 15600,
     reviews: 15600,
     deliveryMinutes: 12,
-    image: "/images/products/dove-shampoo.jpg",
+    image: "",
     tags: ["shampoo", "hair care"],
     aiSignals: ["conditioner", "hair oil", "hair serum"],
     description: "Nourishing shampoo for soft and shiny hair."
@@ -2195,7 +2195,7 @@ export const products: Product[] = [
     reviewCount: 14200,
     reviews: 14200,
     deliveryMinutes: 12,
-    image: "/images/products/sunsilk-shampoo.jpg",
+    image: "",
     tags: ["shampoo", "hair care"],
     aiSignals: ["conditioner", "hair oil", "hair serum"],
     description: "Shampoo for beautiful and manageable hair."
@@ -2216,7 +2216,7 @@ export const products: Product[] = [
     reviewCount: 12800,
     reviews: 12800,
     deliveryMinutes: 12,
-    image: "/images/products/dove-shampoo.jpg",
+    image: "",
     tags: ["shampoo", "hair care"],
     aiSignals: ["conditioner", "hair oil", "hair serum"],
     description: "Shampoo with amla for strong hair."
@@ -2237,7 +2237,7 @@ export const products: Product[] = [
     reviewCount: 11500,
     reviews: 11500,
     deliveryMinutes: 12,
-    image: "/images/products/tresemme-shampoo.jpg",
+    image: "",
     tags: ["shampoo", "hair care", "premium"],
     aiSignals: ["conditioner", "hair oil", "hair serum"],
     description: "Professional quality shampoo for salon-like hair."
@@ -2258,7 +2258,7 @@ export const products: Product[] = [
     reviewCount: 9800,
     reviews: 9800,
     deliveryMinutes: 12,
-    image: "/images/products/dove-conditioner.jpg",
+    image: "",
     tags: ["conditioner", "hair care"],
     aiSignals: ["shampoo", "hair oil", "hair serum"],
     description: "Smoothing conditioner for silky hair."
@@ -2279,7 +2279,7 @@ export const products: Product[] = [
     reviewCount: 11200,
     reviews: 11200,
     deliveryMinutes: 12,
-    image: "/images/products/dove-body-wash.jpg",
+    image: "",
     tags: ["body wash", "personal care"],
     aiSignals: ["soap", "moisturizer", "scrub"],
     description: "Moisturizing body wash for soft skin."
@@ -2300,7 +2300,7 @@ export const products: Product[] = [
     reviewCount: 8500,
     reviews: 8500,
     deliveryMinutes: 12,
-    image: "/images/products/dove-soap.jpg",
+    image: "",
     tags: ["shower gel", "personal care"],
     aiSignals: ["soap", "body wash", "scrub"],
     description: "Refreshing shower gel with essential oils."
@@ -2321,7 +2321,7 @@ export const products: Product[] = [
     reviewCount: 12500,
     reviews: 12500,
     deliveryMinutes: 12,
-    image: "/images/products/himalaya-face-wash.jpg",
+    image: "",
     tags: ["face wash", "personal care"],
     aiSignals: ["moisturizer", "scrub", "toner"],
     description: "Herbal face wash for clear and glowing skin."
@@ -2342,7 +2342,7 @@ export const products: Product[] = [
     reviewCount: 9800,
     reviews: 9800,
     deliveryMinutes: 12,
-    image: "/images/products/lakme-face-wash.jpg",
+    image: "",
     tags: ["face wash", "personal care"],
     aiSignals: ["moisturizer", "scrub", "toner"],
     description: "Gentle face wash for daily cleansing."
@@ -2363,7 +2363,7 @@ export const products: Product[] = [
     reviewCount: 11200,
     reviews: 11200,
     deliveryMinutes: 12,
-    image: "/images/products/dove-soap.jpg",
+    image: "",
     tags: ["face wash", "personal care"],
     aiSignals: ["moisturizer", "scrub", "toner"],
     description: "Brightening face wash with vitamin C."
@@ -2384,7 +2384,7 @@ export const products: Product[] = [
     reviewCount: 13500,
     reviews: 13500,
     deliveryMinutes: 12,
-    image: "/images/products/vaseline-lotion.jpg",
+    image: "",
     tags: ["lotion", "moisturizer", "personal care"],
     aiSignals: ["body wash", "soap", "scrub"],
     description: "Intensive moisturizing lotion for dry skin."
@@ -2405,7 +2405,7 @@ export const products: Product[] = [
     reviewCount: 14200,
     reviews: 14200,
     deliveryMinutes: 12,
-    image: "/images/products/dove-soap.jpg",
+    image: "",
     tags: ["moisturizer", "face care"],
     aiSignals: ["face wash", "scrub", "toner"],
     description: "Lightweight moisturizer for daily use."
@@ -2427,7 +2427,7 @@ export const products: Product[] = [
     reviewCount: 5120,
     reviews: 5120,
     deliveryMinutes: 15,
-    image: "/images/products/pampers-diapers.jpg",
+    image: "",
     tags: ["diapers", "baby"],
     aiSignals: ["baby wipes", "baby lotion", "baby soap"],
     description: "Soft absorbent diapers for overnight comfort and daily baby care."
@@ -2448,7 +2448,7 @@ export const products: Product[] = [
     reviewCount: 4470,
     reviews: 4470,
     deliveryMinutes: 12,
-    image: "/images/products/himalaya-baby-wipes.jpg",
+    image: "",
     tags: ["baby wipes", "baby"],
     aiSignals: ["diapers", "baby lotion", "baby soap"],
     description: "Mild baby wipes for diaper changes and quick cleanups."
@@ -2469,7 +2469,7 @@ export const products: Product[] = [
     reviewCount: 3980,
     reviews: 3980,
     deliveryMinutes: 14,
-    image: "/images/products/johnsons-baby-lotion.jpg",
+    image: "",
     tags: ["baby lotion", "baby"],
     aiSignals: ["diapers", "baby wipes", "baby soap"],
     description: "Gentle lotion for soft baby skin after bath time."
@@ -2490,7 +2490,7 @@ export const products: Product[] = [
     reviewCount: 5200,
     reviews: 5200,
     deliveryMinutes: 12,
-    image: "/images/products/johnsons-baby-soap.jpg",
+    image: "",
     tags: ["baby soap", "baby"],
     aiSignals: ["baby lotion", "baby wipes", "diapers"],
     description: "Mild baby soap for gentle cleansing."
@@ -2511,7 +2511,7 @@ export const products: Product[] = [
     reviewCount: 3800,
     reviews: 3800,
     deliveryMinutes: 12,
-    image: "/images/products/himalaya-baby-cream.jpg",
+    image: "",
     tags: ["baby cream", "baby"],
     aiSignals: ["baby lotion", "baby wipes", "diapers"],
     description: "Herbal baby cream for soft and healthy skin."
@@ -2532,7 +2532,7 @@ export const products: Product[] = [
     reviewCount: 4200,
     reviews: 4200,
     deliveryMinutes: 12,
-    image: "/images/products/himalaya-baby-wipes.jpg",
+    image: "",
     tags: ["baby wash", "baby"],
     aiSignals: ["baby lotion", "baby wipes", "diapers"],
     description: "pH-balanced baby wash for gentle cleansing."
@@ -2553,7 +2553,7 @@ export const products: Product[] = [
     reviewCount: 6800,
     reviews: 6800,
     deliveryMinutes: 15,
-    image: "/images/products/mamy-poko-diapers.jpg",
+    image: "",
     tags: ["diapers", "baby"],
     aiSignals: ["baby wipes", "baby lotion", "baby soap"],
     description: "Comfortable diapers for active babies."
@@ -2574,7 +2574,7 @@ export const products: Product[] = [
     reviewCount: 5800,
     reviews: 5800,
     deliveryMinutes: 12,
-    image: "/images/products/himalaya-baby-wipes.jpg",
+    image: "",
     tags: ["baby oil", "baby"],
     aiSignals: ["baby lotion", "baby wipes", "diapers"],
     description: "Nourishing baby massage oil for healthy skin."
@@ -2595,7 +2595,7 @@ export const products: Product[] = [
     reviewCount: 4500,
     reviews: 4500,
     deliveryMinutes: 12,
-    image: "/images/products/himalaya-diaper-rash-cream.jpg",
+    image: "",
     tags: ["diaper rash cream", "baby"],
     aiSignals: ["diapers", "baby wipes", "baby lotion"],
     description: "Protective cream for diaper rash prevention."
@@ -2616,7 +2616,7 @@ export const products: Product[] = [
     reviewCount: 6200,
     reviews: 6200,
     deliveryMinutes: 12,
-    image: "/images/products/himalaya-baby-wipes.jpg",
+    image: "",
     tags: ["baby shampoo", "baby"],
     aiSignals: ["baby lotion", "baby wipes", "diapers"],
     description: "No-tears baby shampoo for gentle cleansing."
@@ -2637,7 +2637,7 @@ export const products: Product[] = [
     reviewCount: 7500,
     reviews: 7500,
     deliveryMinutes: 12,
-    image: "/images/products/himalaya-baby-wipes.jpg",
+    image: "",
     tags: ["baby powder", "baby"],
     aiSignals: ["baby lotion", "baby wipes", "diapers"],
     description: "Mild baby powder for soft and dry skin."
@@ -2658,7 +2658,7 @@ export const products: Product[] = [
     reviewCount: 5800,
     reviews: 5800,
     deliveryMinutes: 12,
-    image: "/images/products/himalaya-baby-wipes.jpg",
+    image: "",
     tags: ["baby food", "baby"],
     aiSignals: ["baby cereal", "baby snacks"],
     description: "Nutritious baby food for growing babies."
@@ -2680,7 +2680,7 @@ export const products: Product[] = [
     reviewCount: 12500,
     reviews: 12500,
     deliveryMinutes: 11,
-    image: "/images/products/maggi-pasta.jpg",
+    image: "",
     tags: ["pasta", "instant food"],
     aiSignals: ["cheese", "sauce", "bread"],
     description: "Quick-cooking pasta with masala flavor."
@@ -2701,7 +2701,7 @@ export const products: Product[] = [
     reviewCount: 9800,
     reviews: 9800,
     deliveryMinutes: 10,
-    image: "/images/products/knorr-soup.jpg",
+    image: "",
     tags: ["soup", "instant food"],
     aiSignals: ["bread", "crackers", "butter"],
     description: "Hot and savory instant soup for quick meals."
@@ -2722,7 +2722,7 @@ export const products: Product[] = [
     reviewCount: 11200,
     reviews: 11200,
     deliveryMinutes: 10,
-    image: "/images/products/knorr-soupy-noodles.jpg",
+    image: "",
     tags: ["noodles", "soup", "instant food"],
     aiSignals: ["crackers", "bread", "butter"],
     description: "Noodles in soup base for a complete meal."
@@ -2743,7 +2743,7 @@ export const products: Product[] = [
     reviewCount: 8500,
     reviews: 8500,
     deliveryMinutes: 10,
-    image: "/images/products/maggi-bhuna-masala.jpg",
+    image: "",
     tags: ["masala", "instant food"],
     aiSignals: ["onion", "tomato", "garlic"],
     description: "Ready-to-use bhuna masala for quick curries."
@@ -2764,7 +2764,7 @@ export const products: Product[] = [
     reviewCount: 11200,
     reviews: 11200,
     deliveryMinutes: 10,
-    image: "/images/products/maggi-bhuna-masala.jpg",
+    image: "",
     tags: ["masala", "spice", "instant food"],
     aiSignals: ["turmeric", "chilli", "coriander"],
     description: "Aromatic garam masala for Indian curries."
@@ -2785,7 +2785,7 @@ export const products: Product[] = [
     reviewCount: 9800,
     reviews: 9800,
     deliveryMinutes: 10,
-    image: "/images/products/maggi-bhuna-masala.jpg",
+    image: "",
     tags: ["masala", "chaat", "instant food"],
     aiSignals: ["chilli", "coriander", "lemon"],
     description: "Tangy chaat masala for snacks and chaat."
@@ -2806,7 +2806,7 @@ export const products: Product[] = [
     reviewCount: 7200,
     reviews: 7200,
     deliveryMinutes: 10,
-    image: "/images/products/maggi-bhuna-masala.jpg",
+    image: "",
     tags: ["ready to eat", "instant food"],
     aiSignals: ["rice", "dal", "roti"],
     description: "Ready-to-eat meals for quick lunch or dinner."
@@ -2827,7 +2827,7 @@ export const products: Product[] = [
     reviewCount: 6500,
     reviews: 6500,
     deliveryMinutes: 10,
-    image: "/images/products/mtr-breakfast-mix.jpg",
+    image: "",
     tags: ["breakfast", "instant food"],
     aiSignals: ["upma", "poha", "breakfast"],
     description: "Quick breakfast mix for busy mornings."
@@ -2848,7 +2848,7 @@ export const products: Product[] = [
     reviewCount: 5800,
     reviews: 5800,
     deliveryMinutes: 10,
-    image: "/images/products/maggi-bhuna-masala.jpg",
+    image: "",
     tags: ["upma", "breakfast", "instant food"],
     aiSignals: ["breakfast", "snacks", "chutney"],
     description: "Instant upma mix for quick breakfast."
@@ -2869,7 +2869,7 @@ export const products: Product[] = [
     reviewCount: 12500,
     reviews: 12500,
     deliveryMinutes: 10,
-    image: "/images/products/saffola-gold.jpg",
+    image: "",
     tags: ["oil", "cooking", "instant food"],
     aiSignals: ["mustard oil", "ghee", "cooking"],
     description: "Healthy cooking oil with blended vegetables."
@@ -2890,7 +2890,7 @@ export const products: Product[] = [
     reviewCount: 11200,
     reviews: 11200,
     deliveryMinutes: 10,
-    image: "/images/products/fortune-oil.jpg",
+    image: "",
     tags: ["oil", "cooking", "instant food"],
     aiSignals: ["mustard oil", "ghee", "cooking"],
     description: "Pure sunflower oil for healthy cooking."
@@ -2912,7 +2912,7 @@ export const products: Product[] = [
     reviewCount: 19500,
     reviews: 19500,
     deliveryMinutes: 10,
-    image: "/images/products/tata-salt.jpg",
+    image: "",
     tags: ["salt", "staple"],
     aiSignals: ["atta", "rice", "dal", "oil"],
     description: "Everyday iodised salt for Indian cooking."
@@ -2933,7 +2933,7 @@ export const products: Product[] = [
     reviewCount: 18900,
     reviews: 18900,
     deliveryMinutes: 10,
-    image: "/images/products/aashirvaad-atta.jpg",
+    image: "",
     tags: ["atta", "flour", "staple"],
     aiSignals: ["rice", "dal", "oil"],
     description: "Premium whole wheat flour for chapatis."
@@ -2954,7 +2954,7 @@ export const products: Product[] = [
     reviewCount: 15600,
     reviews: 15600,
     deliveryMinutes: 10,
-    image: "/images/products/fortune-rice.jpg",
+    image: "",
     tags: ["rice", "basmati", "staple"],
     aiSignals: ["dal", "atta", "oil"],
     description: "Premium basmati rice for biryanis and pulao."
@@ -2975,7 +2975,7 @@ export const products: Product[] = [
     reviewCount: 18900,
     reviews: 18900,
     deliveryMinutes: 10,
-    image: "/images/products/tata-tea.jpg",
+    image: "",
     tags: ["tea", "staple"],
     aiSignals: ["coffee", "milk", "sugar"],
     description: "Premium tea leaves for the perfect cup of chai."
@@ -2996,7 +2996,7 @@ export const products: Product[] = [
     reviewCount: 14200,
     reviews: 14200,
     deliveryMinutes: 10,
-    image: "/images/products/sugar.jpg",
+    image: "",
     tags: ["sugar", "staple"],
     aiSignals: ["tea", "coffee", "sweets"],
     description: "Pure sugar for everyday cooking and beverages."
@@ -3017,7 +3017,7 @@ export const products: Product[] = [
     reviewCount: 9800,
     reviews: 9800,
     deliveryMinutes: 10,
-    image: "/images/products/jaggery.jpg",
+    image: "",
     tags: ["jaggery", "staple"],
     aiSignals: ["tea", "sweets", "cooking"],
     description: "Natural jaggery for healthy cooking."
@@ -3038,7 +3038,7 @@ export const products: Product[] = [
     reviewCount: 12500,
     reviews: 12500,
     deliveryMinutes: 10,
-    image: "/images/products/toor-dal.jpg",
+    image: "",
     tags: ["dal", "staple"],
     aiSignals: ["rice", "atta", "oil"],
     description: "Premium toor dal for everyday cooking."
@@ -3059,7 +3059,7 @@ export const products: Product[] = [
     reviewCount: 11200,
     reviews: 11200,
     deliveryMinutes: 10,
-    image: "/images/products/moong-dal.jpg",
+    image: "",
     tags: ["dal", "staple"],
     aiSignals: ["rice", "atta", "oil"],
     description: "Premium moong dal for healthy cooking."
@@ -3080,7 +3080,7 @@ export const products: Product[] = [
     reviewCount: 10500,
     reviews: 10500,
     deliveryMinutes: 10,
-    image: "/images/products/chana-dal.jpg",
+    image: "",
     tags: ["dal", "staple"],
     aiSignals: ["rice", "atta", "oil"],
     description: "Premium chana dal for everyday cooking."
@@ -3101,7 +3101,7 @@ export const products: Product[] = [
     reviewCount: 9800,
     reviews: 9800,
     deliveryMinutes: 10,
-    image: "/images/products/masoor-dal.jpg",
+    image: "",
     tags: ["dal", "staple"],
     aiSignals: ["rice", "atta", "oil"],
     description: "Premium masoor dal for everyday cooking."
@@ -3122,7 +3122,7 @@ export const products: Product[] = [
     reviewCount: 8500,
     reviews: 8500,
     deliveryMinutes: 10,
-    image: "/images/products/aashirvaad-atta.jpg",
+    image: "",
     tags: ["chana", "staple"],
     aiSignals: ["rice", "atta", "oil"],
     description: "Premium kabuli chana for curries and salads."
@@ -3143,7 +3143,7 @@ export const products: Product[] = [
     reviewCount: 9200,
     reviews: 9200,
     deliveryMinutes: 10,
-    image: "/images/products/aashirvaad-atta.jpg",
+    image: "",
     tags: ["rajma", "staple"],
     aiSignals: ["rice", "atta", "onion"],
     description: "Premium rajma for curries and rice dishes."
@@ -3164,7 +3164,7 @@ export const products: Product[] = [
     reviewCount: 8800,
     reviews: 8800,
     deliveryMinutes: 10,
-    image: "/images/products/aashirvaad-atta.jpg",
+    image: "",
     tags: ["chana", "staple"],
     aiSignals: ["rice", "atta", "oil"],
     description: "Premium chana for everyday cooking."
@@ -3185,7 +3185,7 @@ export const products: Product[] = [
     reviewCount: 7500,
     reviews: 7500,
     deliveryMinutes: 10,
-    image: "/images/products/aashirvaad-atta.jpg",
+    image: "",
     tags: ["dal", "staple"],
     aiSignals: ["rice", "atta", "oil"],
     description: "Premium urad dal for dals and dosas."
@@ -3206,7 +3206,7 @@ export const products: Product[] = [
     reviewCount: 10200,
     reviews: 10200,
     deliveryMinutes: 10,
-    image: "/images/products/aashirvaad-atta.jpg",
+    image: "",
     tags: ["poha", "staple"],
     aiSignals: ["rice", "onion", "mustard seeds"],
     description: "Flattened rice for poha and snacks."
@@ -3227,7 +3227,7 @@ export const products: Product[] = [
     reviewCount: 8900,
     reviews: 8900,
     deliveryMinutes: 10,
-    image: "/images/products/aashirvaad-atta.jpg",
+    image: "",
     tags: ["rava", "staple"],
     aiSignals: ["rice", "dal", "oil"],
     description: "Semolina for upma, halwa, and sweets."
@@ -3248,7 +3248,7 @@ export const products: Product[] = [
     reviewCount: 8500,
     reviews: 8500,
     deliveryMinutes: 10,
-    image: "/images/products/aashirvaad-atta.jpg",
+    image: "",
     tags: ["maida", "flour", "staple"],
     aiSignals: ["atta", "rice", "dal"],
     description: "Refined flour for cakes, pastries, and breads."
@@ -3269,7 +3269,7 @@ export const products: Product[] = [
     reviewCount: 9200,
     reviews: 9200,
     deliveryMinutes: 10,
-    image: "/images/products/aashirvaad-atta.jpg",
+    image: "",
     tags: ["besan", "flour", "staple"],
     aiSignals: ["rice", "atta", "oil"],
     description: "Gram flour for pakoras and sweets."

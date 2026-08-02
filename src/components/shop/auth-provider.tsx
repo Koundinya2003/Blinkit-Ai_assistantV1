@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext } from "react";
-import { useAuth } from "@/lib/firebase-auth";
+import { useAuth } from "@/lib/firebase/auth";
 
 const AuthContext = createContext<ReturnType<typeof useAuth> | null>(null);
 

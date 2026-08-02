@@ -18,7 +18,8 @@ import {
 import { useCartStore } from "@/store/cart-store";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { getProductById, indianCities } from "@/lib/catalog";
+import { getProductById } from "@/lib/data-service";
+import { indianCities } from "@/lib/catalog";
 
 export function Header({ query, onQueryChange }: { query?: string; onQueryChange?: (value: string) => void }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

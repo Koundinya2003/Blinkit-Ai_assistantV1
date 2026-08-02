@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getReviewsByProductIdSorted } from "@/lib/firebase-reviews";
+import { getReviewsByProductIdSorted } from "@/lib/firebase/reviews";
 
 type SortOption = "latest" | "rating" | "helpful";
 

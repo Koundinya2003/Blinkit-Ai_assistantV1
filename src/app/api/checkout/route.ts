@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { getDb } from "@/lib/firebase";
-import { buildOrderItemsFromCart, calculateOrderPricing } from "@/lib/firebase-orders";
+import { buildOrderItemsFromCart, calculateOrderPricing } from "@/lib/firebase/orders";
 
 const checkoutSchema = z.object({
   userId: z.string().min(1),

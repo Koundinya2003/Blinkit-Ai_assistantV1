@@ -10,9 +10,9 @@ export type Category =
   | "Instant Food"
   | "Staples";
 
-export type OrderStatus = "placed" | "packed" | "out_for_delivery" | "delivered";
+export type OrderStatus = "placed" | "packed" | "out_for_delivery" | "delivered" | "confirmed" | "cancelled";
 
-export type PaymentMethod = "cash" | "card" | "upi" | "wallet";
+export type PaymentMethod = "cod" | "upi" | "card" | "wallet";
 
 export type AuthProvider = "google" | "email" | "anonymous";
 

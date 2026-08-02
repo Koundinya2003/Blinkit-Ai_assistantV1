@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, ShoppingBag, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { getProductById } from "@/lib/catalog";
+import { getProductById } from "@/lib/data-service";
 import { getCartTotals } from "@/lib/pricing";
 import { formatCurrency } from "@/lib/utils";
 import { useCartStore } from "@/store/cart-store";

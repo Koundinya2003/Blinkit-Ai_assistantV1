@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { aiAssistant } from "@/lib/ai-assistant";
+import { aiAssistant } from "@/lib/ai/assistant";
 
 const assistantRequestSchema = z.object({
   query: z.string().min(1).max(500),

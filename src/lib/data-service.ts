@@ -1,5 +1,5 @@
-import { getProducts } from "@/lib/firebase-products";
-import { getCategories } from "@/lib/firebase-categories";
+import { getProducts } from "@/lib/firebase/products";
+import { getCategories } from "@/lib/firebase/categories";
 import { checkFirestoreHealth, isFirestoreHealthy } from "@/lib/firebase";
 import { products as localProducts, categories as localCategories } from "@/lib/catalog";
 import type { Product, CategoryDoc } from "@/lib/types";
@@ -172,6 +172,26 @@ export async function searchProductsWithFallback(searchQuery: string): Promise<P
       p.subcategory.toLowerCase().includes(term) ||
       p.tags.some((t) => t.toLowerCase().includes(term))
   );
+}
+
+// ---------------------------------------------------------------------------
+// Synchronous cache lookups
+//
+// These read from the cached Firestore data (populated by getProductsWithFallback)
+// so every part of the app — cart, pricing, orders, AI recommendations — uses
+// the exact same product model and the same image field. If the cache has not
+// been populated yet, they fall back to the local catalog as a last resort.
+// ---------------------------------------------------------------------------
+export function getProductById(productId: string): Product | null {
+  if (productByIdCache) {
+    const cached = productByIdCache.get(productId);
+    if (cached) return cached;
+  }
+  return localProducts.find((p) => p.id === productId) || null;
+}
+
+export function getAllProducts(): Product[] {
+  return productsCache || localProducts;
 }
 
 export function clearCache(): void {
