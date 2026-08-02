@@ -5,11 +5,9 @@
  * 1. Reads every product from the local catalog
  * 2. Builds an intelligent search query for each product
  * 3. Searches the Pexels API for the best matching image
- * 4. Downloads the selected image
- * 5. Uploads it to Firebase Storage with a structured path
- * 6. Updates Firestore with the Firebase Storage download URL
- * 7. Handles failures gracefully and respects API rate limits
- * 8. Generates IMAGE_IMPORT_REPORT.md
+ * 4. Saves the original Pexels URL directly to Firestore
+ * 5. Handles failures gracefully and respects API rate limits
+ * 6. Generates IMAGE_IMPORT_REPORT.md
  *
  * Usage:
  *   Add PEXELS_API_KEY=your_key to .env or .env.local
@@ -18,7 +16,6 @@
 
 import { initializeApp, applicationDefault, cert } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
-import { getStorage, getDownloadURL } from "firebase-admin/storage";
 import { config } from "dotenv";
 import * as fs from "fs";
 import * as path from "path";
@@ -32,24 +29,8 @@ config({ path: ".env" });
 // ---------------------------------------------------------------------------
 const PEXELS_API_KEY = process.env.PEXELS_API_KEY;
 const PROJECT_ID = process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID;
-const STORAGE_BUCKET = process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET;
 const REQUEST_DELAY_MS = 1000; // Delay between Pexels API requests
 const MAX_RESULTS_PER_SEARCH = 30; // Pexels per_page
-const DOWNLOAD_TIMEOUT_MS = 30000; // Image download timeout
-
-// Category to folder mapping for Firebase Storage
-const CATEGORY_FOLDER_MAP: Record<string, string> = {
-  "Fruits & Vegetables": "fruits-vegetables",
-  "Dairy & Breakfast": "dairy-breakfast",
-  "Snacks": "snacks",
-  "Beverages": "beverages",
-  "Bakery": "bakery",
-  "Household": "household",
-  "Personal Care": "personal-care",
-  "Baby Care": "baby-care",
-  "Instant Food": "instant-food",
-  "Staples": "staples",
-};
 
 // ---------------------------------------------------------------------------
 // Types
@@ -100,8 +81,7 @@ interface ImportResult {
   category: string;
   searchQuery: string;
   status: "success" | "skipped" | "no_image" | "error";
-  storagePath?: string;
-  downloadUrl?: string;
+  pexelsUrl?: string;
   pexelsPhotoId?: number;
   error?: string;
 }
@@ -321,53 +301,6 @@ function selectBestImage(photos: PexelsPhoto[], product: Product): PexelsPhoto |
 }
 
 // ---------------------------------------------------------------------------
-// Download Image
-// ---------------------------------------------------------------------------
-async function downloadImage(url: string): Promise<Buffer> {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), DOWNLOAD_TIMEOUT_MS);
-
-  try {
-    const response = await fetch(url, {
-      signal: controller.signal,
-    });
-
-    if (!response.ok) {
-      throw new Error(`Failed to download image: ${response.status} ${response.statusText}`);
-    }
-
-    const arrayBuffer = await response.arrayBuffer();
-    return Buffer.from(arrayBuffer);
-  } finally {
-    clearTimeout(timeout);
-  }
-}
-
-// ---------------------------------------------------------------------------
-// Upload to Firebase Storage
-// ---------------------------------------------------------------------------
-async function uploadToStorage(
-  storage: ReturnType<typeof getStorage>,
-  buffer: Buffer,
-  storagePath: string,
-  contentType: string = "image/jpeg"
-): Promise<string> {
-  const bucket = storage.bucket();
-  const file = bucket.file(storagePath);
-
-  await file.save(buffer, {
-    metadata: {
-      contentType,
-      cacheControl: "public, max-age=31536000, immutable",
-    },
-  });
-
-  // Get the download URL
-  const downloadUrl = await getDownloadURL(file);
-  return downloadUrl;
-}
-
-// ---------------------------------------------------------------------------
 // Update Firestore
 // ---------------------------------------------------------------------------
 async function updateFirestore(
@@ -377,15 +310,6 @@ async function updateFirestore(
 ): Promise<void> {
   const ref = db.collection("products").doc(productId);
   await ref.update({ image: imageUrl });
-}
-
-// ---------------------------------------------------------------------------
-// Generate Storage Path
-// ---------------------------------------------------------------------------
-function generateStoragePath(product: Product, photo: PexelsPhoto): string {
-  const folder = CATEGORY_FOLDER_MAP[product.category] || "other";
-  const filename = `${product.slug}.jpg`;
-  return `products/${folder}/${filename}`;
 }
 
 // ---------------------------------------------------------------------------
@@ -416,36 +340,17 @@ async function main() {
     process.exit(1);
   }
 
-  if (!STORAGE_BUCKET) {
-    console.error("ERROR: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET is not set.");
-    process.exit(1);
-  }
-
   // Initialize Firebase Admin
   const { credential, method } = loadCredential();
   console.log(`Using credentials: ${method}`);
-  console.log(`Project: ${PROJECT_ID}`);
-  console.log(`Storage Bucket: ${STORAGE_BUCKET}\n`);
+  console.log(`Project: ${PROJECT_ID}\n`);
 
   initializeApp({
     credential,
     projectId: PROJECT_ID,
-    storageBucket: STORAGE_BUCKET,
   });
 
   const db = getFirestore();
-  const storage = getStorage();
-
-  // Test Storage connectivity
-  console.log("Testing Firebase Storage connectivity...");
-  try {
-    const bucket = storage.bucket();
-    const [exists] = await bucket.exists();
-    console.log(`Storage bucket accessible: ${exists}\n`);
-  } catch (err) {
-    console.error("Failed to access Firebase Storage:", err);
-    process.exit(1);
-  }
 
   // Import products from catalog
   console.log("Loading products from catalog...");
@@ -459,7 +364,6 @@ async function main() {
   let noImageCount = 0;
   let errorCount = 0;
   const apiErrors: string[] = [];
-  const storagePaths: string[] = [];
   const firestoreUpdates: string[] = [];
   const noImageProducts: string[] = [];
 
@@ -470,7 +374,7 @@ async function main() {
 
     // Skip if product already has a non-empty image
     if (product.image && product.image.trim() !== "") {
-      console.log(`${progress} SKIP: ${product.name} (already has image)`);
+      console.log(`${progress} SKIP: ${product.name} (already has image: ${product.image.substring(0, 50)}...)`);
       results.push({
         productId: product.id,
         productName: product.name,
@@ -524,23 +428,12 @@ async function main() {
 
       console.log(`         Selected: Pexels photo #${bestPhoto.id} (${bestPhoto.width}x${bestPhoto.height})`);
 
-      // Download image (use large2x for high quality)
-      const imageUrl = bestPhoto.src.large2x || bestPhoto.src.large;
-      console.log(`         Downloading from: ${imageUrl.substring(0, 80)}...`);
+      // Use the original Pexels URL (large2x for high quality)
+      const pexelsUrl = bestPhoto.src.large2x || bestPhoto.src.large;
+      console.log(`         Pexels URL: ${pexelsUrl.substring(0, 80)}...`);
 
-      const imageBuffer = await downloadImage(imageUrl);
-      console.log(`         Downloaded: ${(imageBuffer.length / 1024).toFixed(1)} KB`);
-
-      // Generate storage path
-      const storagePath = generateStoragePath(product, bestPhoto);
-      console.log(`         Uploading to: ${storagePath}`);
-
-      // Upload to Firebase Storage
-      const downloadUrl = await uploadToStorage(storage, imageBuffer, storagePath);
-      console.log(`         Uploaded: ${downloadUrl.substring(0, 80)}...`);
-
-      // Update Firestore
-      await updateFirestore(db, product.id, downloadUrl);
+      // Update Firestore with the Pexels URL directly
+      await updateFirestore(db, product.id, pexelsUrl);
       console.log(`         Firestore updated: products/${product.id}`);
 
       results.push({
@@ -549,12 +442,10 @@ async function main() {
         category: product.category,
         searchQuery,
         status: "success",
-        storagePath,
-        downloadUrl,
+        pexelsUrl,
         pexelsPhotoId: bestPhoto.id,
       });
 
-      storagePaths.push(storagePath);
       firestoreUpdates.push(`products/${product.id}`);
       successCount++;
 
@@ -592,7 +483,6 @@ async function main() {
     noImage: noImageCount,
     errors: errorCount,
     apiErrors,
-    storagePaths,
     firestoreUpdates,
     noImageProducts,
   });
@@ -620,7 +510,6 @@ function generateReport(
     noImage: number;
     errors: number;
     apiErrors: string[];
-    storagePaths: string[];
     firestoreUpdates: string[];
     noImageProducts: string[];
   }
@@ -639,19 +528,9 @@ function generateReport(
 
 ---
 
-## Firebase Storage Paths
-
-The following paths were used to store images in Firebase Storage:
-
-\`\`\`
-${stats.storagePaths.length > 0 ? stats.storagePaths.map((p) => `gs://${STORAGE_BUCKET}/${p}`).join("\n") : "(none)"}
-\`\`\`
-
----
-
 ## Firestore Documents Updated
 
-The following Firestore documents were updated with Firebase Storage download URLs:
+The following Firestore documents were updated with Pexels image URLs:
 
 \`\`\`
 ${stats.firestoreUpdates.length > 0 ? stats.firestoreUpdates.join("\n") : "(none)"}
@@ -675,40 +554,35 @@ ${stats.apiErrors.length > 0 ? stats.apiErrors.map((err) => `- ${err}`).join("\n
 
 ## Detailed Results
 
-| # | Product | Category | Search Query | Status | Storage Path |
-|---|---------|----------|--------------|--------|--------------|
-${results.map((r, i) => `| ${i + 1} | ${r.productName} | ${r.category} | "${r.searchQuery}" | ${r.status} | ${r.storagePath || "—"} |`).join("\n")}
+| # | Product | Category | Search Query | Status | Pexels URL |
+|---|---------|----------|--------------|--------|------------|
+${results.map((r, i) => `| ${i + 1} | ${r.productName} | ${r.category} | "${r.searchQuery}" | ${r.status} | ${r.pexelsUrl ? r.pexelsUrl.substring(0, 50) + "..." : "—"} |`).join("\n")}
 
 ---
 
 ## Pipeline Configuration
 
 - **Image Source**: Pexels API (https://api.pexels.com/v1/search)
-- **Storage Destination**: Firebase Storage (\`${STORAGE_BUCKET}\`)
 - **Firestore Collection**: \`products\`
 - **Request Delay**: ${REQUEST_DELAY_MS}ms between API calls
 - **Max Results per Search**: ${MAX_RESULTS_PER_SEARCH}
-- **Download Timeout**: ${DOWNLOAD_TIMEOUT_MS}ms
 - **Image Quality**: \`large2x\` from Pexels (highest available)
-- **Storage Structure**: \`products/<category-folder>/<product-slug>.jpg\`
 
 ---
 
 ## Current Image Pipeline
 
 \`\`\`
-UI Components (<Image src={product.image} />)
+Pexels API
     ↓
-Data Service (data-service.ts)
+Best Image URL (original Pexels URL)
     ↓
-Firestore (products collection)
+Firestore (product.image field)
     ↓
-image field (Firebase Storage download URL)
-    ↓
-Firebase Storage (products/<category>/<slug>.jpg)
+Next.js UI (<Image src={product.image} />)
 \`\`\`
 
-The frontend never calls the Pexels API directly. All image URLs are stored in Firestore and served from Firebase Storage.
+Product images are stored directly as Pexels URLs in Firestore. No Firebase Storage involved.
 `;
 
   fs.writeFileSync("IMAGE_IMPORT_REPORT.md", report, "utf-8");
