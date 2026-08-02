@@ -10,6 +10,16 @@ tsconfig.tsbuildinfo
 # Firebase Admin service account credentials — NEVER commit these
 service-account.json
 firebase-adminsdk-*.json
+firebase-admin.json
+
+# Environment files
+.env
+.env.local
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
 
 # Product Asset Pipeline — generated artifacts (keep folders via .gitkeep)
 scripts/assets/downloads/*
