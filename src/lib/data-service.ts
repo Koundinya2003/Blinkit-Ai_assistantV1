@@ -2,6 +2,7 @@ import { getProducts } from "@/lib/firebase/products";
 import { getCategories } from "@/lib/firebase/categories";
 import { checkFirestoreHealth, isFirestoreHealthy } from "@/lib/firebase";
 import { products as localProducts, categories as localCategories } from "@/lib/catalog";
+import { products as seedDataProducts } from "@/lib/seed-data";
 import type { Product, CategoryDoc } from "@/lib/types";
 
 let productsCache: Product[] | null = null;
@@ -29,6 +30,19 @@ async function isFirestoreReachable(): Promise<boolean> {
   return checkFirestoreHealth();
 }
 
+function getFallbackProducts(): Product[] {
+  const merged = [...localProducts, ...seedDataProducts];
+  const uniqueBySlug = new Map<string, Product>();
+
+  for (const product of merged) {
+    if (!uniqueBySlug.has(product.slug)) {
+      uniqueBySlug.set(product.slug, product);
+    }
+  }
+
+  return Array.from(uniqueBySlug.values());
+}
+
 // Build lookup maps from the cached product array
 function buildLookupMaps(products: Product[]) {
   productByIdCache = new Map(products.map((p) => [p.id, p]));
@@ -40,7 +54,7 @@ export async function getProductsWithFallback(): Promise<Product[]> {
 
   // Fast-fail: skip Firestore if we already know it's unavailable
   if (firestoreAvailable === false) {
-    productsCache = localProducts;
+    productsCache = getFallbackProducts();
     buildLookupMaps(productsCache);
     return productsCache;
   }
@@ -50,7 +64,7 @@ export async function getProductsWithFallback(): Promise<Product[]> {
     const healthy = await isFirestoreReachable();
     if (!healthy) {
       firestoreAvailable = false;
-      productsCache = localProducts;
+      productsCache = getFallbackProducts();
       buildLookupMaps(productsCache);
       return productsCache;
     }
@@ -69,7 +83,7 @@ export async function getProductsWithFallback(): Promise<Product[]> {
     firestoreAvailable = false;
   }
 
-  productsCache = localProducts;
+  productsCache = getFallbackProducts();
   buildLookupMaps(productsCache);
   return productsCache;
 }
@@ -139,7 +153,7 @@ export async function getProductBySlugWithFallback(slug: string): Promise<Produc
   }
   // Ensure cache is populated
   await getProductsWithFallback();
-  return productBySlugCache?.get(slug) || localProducts.find((p) => p.slug === slug) || null;
+  return productBySlugCache?.get(slug) || getFallbackProducts().find((p) => p.slug === slug) || null;
 }
 
 // Use cache instead of re-fetching from Firestore
@@ -151,7 +165,7 @@ export async function getProductByIdWithFallback(id: string): Promise<Product | 
   }
   // Ensure cache is populated
   await getProductsWithFallback();
-  return productByIdCache?.get(id) || localProducts.find((p) => p.id === id) || null;
+  return productByIdCache?.get(id) || getFallbackProducts().find((p) => p.id === id) || null;
 }
 
 export async function getProductsByCategoryWithFallback(category: string): Promise<Product[]> {
