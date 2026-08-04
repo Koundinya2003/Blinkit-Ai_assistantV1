@@ -1,4 +1,4 @@
-# Blinkit AI
+# Blinkit AI (https://blinkit-ai-assistantv1.vercel.app/)
 
 Production-grade AI-assisted grocery shopping experience for India, built with Next.js 15, App Router, TypeScript, TailwindCSS, shadcn-style components, Framer Motion, TanStack Query, Zustand, React Hook Form, Zod, Firebase, and OpenRouter.
 
