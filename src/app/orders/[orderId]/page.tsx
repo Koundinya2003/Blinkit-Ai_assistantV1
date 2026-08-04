@@ -5,6 +5,7 @@ import { CheckCircle2, Clock, MapPin, Package, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getOrder } from "@/lib/firebase/orders";
 import { formatCurrency } from "@/lib/utils";
+import { getProductImage } from "@/lib/product-image";
 
 const statusConfig = {
   placed: { label: "Order placed", color: "text-blue-600", bg: "bg-blue-50" },
@@ -89,7 +90,7 @@ export default async function OrderConfirmationPage({
               <div key={item.productId} className="flex items-center gap-3">
                   <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg bg-muted">
                     <Image
-                      src={item.productImage}
+                      src={item.productImage || getProductImage(item.productId)}
                       alt={item.productName}
                       fill
                       sizes="64px"

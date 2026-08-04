@@ -15,6 +15,7 @@ import {
 import { getDb } from "./index";
 import type { Order, OrderItem, OrderPricing, UserAddress, PaymentMethod } from "../types";
 import { getProductById } from "../data-service";
+import { getProductImage } from "../product-image";
 
 const ORDERS_COLLECTION = "orders";
 
@@ -150,7 +151,7 @@ export function buildOrderItemsFromCart(
     return {
       productId: item.productId,
       productName: product.name,
-      productImage: product.image,
+      productImage: getProductImage(product.slug, product.image),
       quantity: item.quantity,
       unitPrice: product.price,
       totalPrice: product.price * item.quantity

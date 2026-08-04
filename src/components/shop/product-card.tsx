@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Heart, Clock, Star, ShoppingBag, Check } from "lucide-react";
 import type { Product } from "@/lib/types";
 import { formatCurrency } from "@/lib/utils";
+import { getProductImage } from "@/lib/product-image";
 import { QuantityStepper } from "@/components/shop/quantity-stepper";
 import { useCartStore } from "@/store/cart-store";
 import { useWishlist } from "@/hooks/use-wishlist";
@@ -53,7 +54,7 @@ export function ProductCard({ product }: { product: Product }) {
           )}
           
           <Image
-            src={product.image}
+            src={getProductImage(product.slug, product.image, product.name)}
             alt={`${product.brand} ${product.name} - ${product.unit}`}
             fill
             sizes="(max-width: 768px) 45vw, (max-width: 1024px) 30vw, 180px"

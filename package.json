@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "seed": "tsx scripts/seed-firestore.ts",
-    "generate-images": "tsx scripts/generate-pexels-images.ts"
+    "seed": "tsx scripts/seed-firestore.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",

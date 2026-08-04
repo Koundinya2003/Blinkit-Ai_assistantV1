@@ -19,6 +19,7 @@ import { ProductCard } from "@/components/shop/product-card";
 import { QuantityStepper } from "@/components/shop/quantity-stepper";
 import { getProductBySlugWithFallback, getProductsWithFallback } from "@/lib/data-service";
 import { formatCurrency } from "@/lib/utils";
+import { getProductImage } from "@/lib/product-image";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -40,7 +41,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: product.description,
       images: [
         {
-          url: product.image,
+          url: getProductImage(product.slug, product.image, product.name),
           width: 800,
           height: 800,
           alt: `${product.brand} ${product.name}`
@@ -52,7 +53,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       card: "summary_large_image",
       title: `${product.name} - ${product.brand}`,
       description: product.description,
-      images: [product.image]
+      images: [getProductImage(product.slug, product.image, product.name)]
     }
   };
 }
@@ -108,7 +109,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           {/* Image Gallery */}
           <div className="relative aspect-square overflow-hidden rounded-xl bg-gradient-to-br from-muted/30 to-muted/10">
             <Image 
-              src={product.image} 
+              src={getProductImage(product.slug, product.image, product.name)} 
               alt={product.name} 
               fill 
               sizes="(max-width: 768px) 100vw, 440px" 
@@ -318,7 +319,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                   >
                     <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-lg bg-muted">
                       <Image 
-                        src={item.image} 
+                        src={getProductImage(item.slug, item.image)} 
                         alt={item.name}
                         fill
                         sizes="64px"

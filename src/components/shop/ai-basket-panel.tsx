@@ -6,6 +6,7 @@ import { getBasketInsights, getBasketRecommendations } from "@/lib/ai";
 import { Button } from "@/components/ui/button";
 import { useCartStore } from "@/store/cart-store";
 import { formatCurrency } from "@/lib/utils";
+import { getProductImage } from "@/lib/product-image";
 import { ProductCard } from "@/components/shop/product-card";
 import { useState } from "react";
 import Image from "next/image";
@@ -108,7 +109,7 @@ export function AiBasketPanel() {
                 >
                   <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg bg-muted">
                     <Image 
-                      src={product.image} 
+                      src={getProductImage(product.slug, product.image)} 
                       alt={product.name}
                       fill
                       sizes="48px"

@@ -10,6 +10,7 @@ import { useAuth } from "@/lib/firebase/auth";
 import { getUserOrders } from "@/lib/firebase/orders";
 import { useCartStore } from "@/store/cart-store";
 import { formatCurrency } from "@/lib/utils";
+import { getProductImage } from "@/lib/product-image";
 import type { Order } from "@/lib/types";
 
 const statusConfig = {
@@ -168,7 +169,7 @@ function OrdersContent() {
                   <div key={item.productId} className="flex items-center gap-3">
                     <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-lg bg-muted">
                       <Image
-                        src={item.productImage}
+                        src={item.productImage || getProductImage(item.productId)}
                         alt={item.productName}
                         fill
                         sizes="48px"
