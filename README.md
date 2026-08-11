@@ -2,6 +2,10 @@
 
 Production-grade AI-assisted grocery shopping experience for India, built with Next.js 15, App Router, TypeScript, TailwindCSS, shadcn-style components, Framer Motion, TanStack Query, Zustand, React Hook Form, Zod, Firebase, and OpenRouter.
 
+## Product Context
+
+Built to explore what an AI-native grocery shopping experience could look like for Indian quick-commerce users. Blinkit's core flow (browse, cart, checkout) is fast, but product discovery is still largely keyword-search-driven. This prototype tests three product bets: AI-powered basket insights that nudge larger and smarter baskets, natural-language product search, and recipe-based cross-sell, aimed at lifting average order value and cutting search friction for time-pressed shoppers. It was built end-to-end (frontend, state management, AI integration, and a mock backend) to validate technical feasibility alongside the product idea.
+
 ## Features
 
 - **AI-Powered Shopping**: Intelligent basket insights, product recommendations, and search powered by OpenRouter
