@@ -1,37 +1,24 @@
-import { SearchX, PackageOpen, WifiOff } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import type { ReactNode } from "react";
 
-type EmptyStateProps = {
-  icon?: "search" | "products" | "offline";
+export function EmptyState({
+  emoji = "🔍",
+  title,
+  description,
+  action,
+}: {
+  emoji?: string;
   title: string;
   description?: string;
-  action?: {
-    label: string;
-    onClick: () => void;
-  };
-};
-
-const iconMap = {
-  search: SearchX,
-  products: PackageOpen,
-  offline: WifiOff
-};
-
-export function EmptyState({ icon = "products", title, description, action }: EmptyStateProps) {
-  const Icon = iconMap[icon];
-
+  action?: ReactNode;
+}) {
   return (
-    <div className="flex flex-col items-center justify-center py-16 text-center">
-      <div className="rounded-full bg-muted p-4">
-        <Icon className="h-8 w-8 text-muted-foreground" />
-      </div>
-      <h3 className="mt-4 text-lg font-black">{title}</h3>
-      {description && <p className="mt-2 max-w-sm text-sm text-muted-foreground">{description}</p>}
-      {action && (
-        <Button onClick={action.onClick} className="mt-6">
-          {action.label}
-        </Button>
-      )}
+    <div className="flex flex-col items-center justify-center rounded-lg border border-dashed border-border bg-background px-6 py-14 text-center">
+      <span className="text-4xl" aria-hidden>
+        {emoji}
+      </span>
+      <h3 className="mt-4 text-base font-bold">{title}</h3>
+      {description && <p className="mt-1 max-w-sm text-sm text-muted-foreground">{description}</p>}
+      {action && <div className="mt-5">{action}</div>}
     </div>
   );
 }

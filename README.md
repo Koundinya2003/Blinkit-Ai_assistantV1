@@ -1,216 +1,128 @@
-# Blinkit AI (https://blinkit-ai-assistantv1.vercel.app/)
+# Blinkit — Intent to Basket
 
-Production-grade AI-assisted grocery shopping experience for India, built with Next.js 15, App Router, TypeScript, TailwindCSS, shadcn-style components, Framer Motion, TanStack Query, Zustand, React Hook Form, Zod, Firebase, and OpenRouter.
+> Instead of searching for what you need, tell Blinkit what you want to achieve.
+> Blinkit works out what you need and builds the basket for you.
 
-## Product Context
+A quick-commerce shopping experience where the primary input is an outcome, not a
+keyword. Type *"I want to make biryani for 2"* or *"dinner for 4 under ₹600"* and
+the app plans the meal, scales the ingredients to the head count, maps every
+ingredient to a real product in the catalogue, works out how many packs to buy,
+fits the whole thing to the budget, and hands you a basket you can edit and check
+out.
 
-Built to explore what an AI-native grocery shopping experience could look like for Indian quick-commerce users. Blinkit's core flow (browse, cart, checkout) is fast, but product discovery is still largely keyword-search-driven. This prototype tests three product bets: AI-powered basket insights that nudge larger and smarter baskets, natural-language product search, and recipe-based cross-sell, aimed at lifting average order value and cutting search friction for time-pressed shoppers. It was built end-to-end (frontend, state management, AI integration, and a mock backend) to validate technical feasibility alongside the product idea.
+## The core flow
 
-## Features
-
-- **AI-Powered Shopping**: Intelligent basket insights, product recommendations, and search powered by OpenRouter
-- **Complete Shopping Flow**: Browse products, search, view details, manage cart, checkout, and order confirmation
-- **India-First Design**: Rupee pricing, Indian cities, phone validation, addresses, and grocery brands
-- **Real-time Cart Management**: Persistent cart with Zustand and Firebase sync
-- **Order Management**: Complete order lifecycle with Firestore backend
-- **Product Reviews**: Customer review system with ratings
-- **Wishlist**: Save favorite products for later
-- **Responsive UI**: Mobile-first design with smooth animations using Framer Motion
-
-## Tech Stack
-
-### Core
-- **Framework**: Next.js 15 with App Router
-- **Language**: TypeScript
-- **Styling**: TailwindCSS with shadcn-style components
-- **Animations**: Framer Motion
-
-### State & Data
-- **State Management**: Zustand
-- **Data Fetching**: TanStack Query (React Query)
-- **Forms**: React Hook Form with Zod validation
-- **Backend**: Firebase (Firestore, Auth)
-
-### AI & Intelligence
-- **AI Provider**: OpenRouter
-- **Features**: Smart search, recommendations, basket insights, recipe suggestions
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+ installed
-- npm or yarn package manager
-- Firebase project (optional, for full functionality)
-- OpenRouter API key (optional, for AI features)
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd Blinkit_ai_feature
+```
+natural language  →  intent  →  meal plan  →  scaled ingredients
+                                                     ↓
+   checkout  ←  cart  ←  editable basket  ←  real products + pack counts
 ```
 
-2. Install dependencies:
+Every step is a real artefact in the codebase, not a prompt-and-print:
+
+| Step | Where it lives | What it does |
+| --- | --- | --- |
+| Intent | `src/lib/ai/intent.ts` | Reads dish, occasion, head count, budget, diet and constraints out of the sentence |
+| Plan | `src/lib/ai/planner.ts` | Chooses the dishes, prices each candidate against the catalogue, and spends the budget on the best menu that fits |
+| Quantities | `src/lib/ai/recipes.ts`, `src/lib/catalog/units.ts` | Per-serving amounts scaled linearly, sub-linearly or fixed; unit conversion including per-piece weights ("2 onions" from a 1 kg pack) |
+| Products | `src/lib/ai/matcher.ts` | Ranks catalogue products for each ingredient by key match, pack fit, waste, rating and price |
+| Budget | `src/lib/ai/planner.ts` | Swaps to cheaper packs, then drops optional ingredients, then explains the shortfall honestly |
+| Basket | `src/lib/ai/basket.ts` | Orchestrates the above and applies the shopper's swaps and removals |
+
+### Why the model never names a product
+
+The LLM plans in **ingredient space** only — it returns canonical ingredient keys
+and quantities, never brands, products or prices. Deterministic code maps those
+keys onto the catalogue. That means the model cannot hallucinate a product that
+does not exist, cannot invent a price, and cannot recommend something out of
+stock. It also means the feature degrades cleanly: with no `OPENROUTER_API_KEY`
+the app falls back to a built-in recipe knowledge base and rule-based intent
+parsing, and every screen still works end to end.
+
+## What the shopper can do with a plan
+
+- Add any single ingredient, or the whole plan, to the cart
+- Change quantities with the standard stepper
+- Replace a product — each line lists other catalogue products that satisfy the
+  same ingredient, ranked
+- Remove ingredients they already have; the total updates and the plan rebuilds
+- See exactly why the plan looks the way it does: budget swaps, dropped
+  optionals, substitutions and unavailable items are all stated in plain language
+
+## The rest of the store
+
+The AI layer sits inside a working quick-commerce app rather than beside it:
+home with category rails, category and sub-category browsing with sorting,
+search, product detail pages, a cart drawer, checkout with address and payment,
+and an order confirmation that advances through its delivery timeline.
+
+## Product data
+
+`src/lib/catalog/` holds 329 products across 15 aisles, normalised into one
+shape with pack sizes parsed into base units (g / ml / piece). The interesting
+part is `keys` on each product — canonical ingredient keys such as `chicken`,
+`rice-basmati` or `garam-masala`. This is the only contract between the
+catalogue and the planner: nothing in the AI layer references a product id, so
+`CatalogSource` in `src/lib/catalog/index.ts` can be reimplemented against a live
+Blinkit feed without touching anything upstream.
+
+Prices, brands and pack sizes are modelled on real Indian quick-commerce SKUs.
+Delivery, stock and payment are simulated.
+
+## Running it
+
 ```bash
 npm install
-```
-
-3. Set up environment variables:
-```bash
-cp .env.example .env.local
-```
-
-4. Configure `.env.local` with your credentials:
-```env
-# Firebase Configuration
-NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
-NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
-
-# OpenRouter AI (Optional)
-OPENROUTER_API_KEY=your_openrouter_api_key
-
-# App Configuration
-NEXT_PUBLIC_APP_URL=http://localhost:3001
-```
-
-5. Run the development server:
-```bash
+cp .env.example .env.local   # optional — the app works without any keys
 npm run dev
 ```
 
-6. Open [http://localhost:3001](http://localhost:3001) in your browser.
+Open http://localhost:3000.
 
-## Available Scripts
+| Script | |
+| --- | --- |
+| `npm run dev` | Development server |
+| `npm run build` | Production build |
+| `npm run start` | Serve the production build |
+| `npm run lint` | ESLint |
+| `npm run typecheck` | TypeScript, no emit |
 
-- `npm run dev` - Start development server on http://localhost:3000
-- `npm run build` - Build the application for production
-- `npm run start` - Start the production server
-- `npm run lint` - Run ESLint to check code quality
-- `npm run typecheck` - Run TypeScript compiler to check types
+### Optional AI configuration
 
-## Project Structure
+```env
+OPENROUTER_API_KEY=sk-or-...
+OPENROUTER_MODEL=anthropic/claude-3.5-haiku
+```
+
+With a key, planning is done by the model and the plan header reads "AI plan".
+Without one it reads "Blinkit plan" and the deterministic planner runs. The app
+never claims to have used a model it did not.
+
+## Layout
 
 ```
 src/
-├── app/                    # Next.js App Router pages
-│   ├── api/               # API routes
-│   │   ├── ai/            # AI-powered endpoints
-│   │   ├── categories/    # Category management
-│   │   ├── checkout/      # Checkout processing
-│   │   ├── products/      # Product CRUD
-│   │   └── reviews/       # Review management
-│   ├── checkout/          # Checkout page
-│   ├── orders/            # Order history and details
-│   ├── product/           # Product detail pages
-│   ├── layout.tsx         # Root layout
-│   └── page.tsx           # Home page
-├── components/            # React components
-│   ├── shop/              # Shop-specific components
-│   │   ├── ai-basket-panel.tsx
-│   │   ├── cart-drawer.tsx
-│   │   ├── header.tsx
-│   │   ├── product-card.tsx
-│   │   └── ...
-│   └── ui/                # Reusable UI components
-├── hooks/                 # Custom React hooks
-│   ├── use-cart.ts
-│   ├── use-debounce.ts
-│   └── use-wishlist.ts
-├── lib/                   # Utility libraries and services
-│   ├── ai-*.ts           # AI integration modules
-│   ├── firebase-*.ts     # Firebase service modules
-│   ├── catalog.ts        # Product catalog
-│   ├── data-service.ts   # Data fetching service
-│   └── types.ts          # TypeScript type definitions
-└── store/                # Zustand state stores
-    └── cart-store.ts
+├── app/                      routes
+│   ├── page.tsx              home
+│   ├── plan/                 intent → basket
+│   ├── search/               search results
+│   ├── category/[slug]/      aisle browsing
+│   ├── product/[slug]/       product detail
+│   ├── checkout/             address + payment
+│   ├── order/[id]/           confirmation and delivery timeline
+│   └── api/plan|products|categories
+├── components/
+│   ├── plan/                 plan view, ingredient lines, product swapping
+│   ├── shop/                 header, cart drawer, product card, checkout
+│   └── ui/                   button, skeleton, empty state
+└── lib/
+    ├── ai/                   intent, recipes, occasions, planner, matcher, LLM
+    ├── catalog/              products, taxonomy, units, CatalogSource
+    ├── shop/                 pricing, orders
+    └── store/                cart (zustand, persisted)
 ```
 
-## Key Features Explained
+## Stack
 
-### AI Capabilities
-- **Smart Search**: AI-enhanced product search with natural language understanding
-- **Basket Insights**: Intelligent suggestions based on cart contents
-- **Recommendations**: Personalized product recommendations
-- **Recipe Suggestions**: AI-generated recipe ideas based on cart items
-
-### Firebase Integration
-- **Authentication**: User authentication and authorization
-- **Firestore**: Real-time database for products, orders, reviews, and user data
-- **Cart Persistence**: Cart data synced across sessions
-
-### State Management
-- **Zustand**: Lightweight state management for cart, wishlist, and UI state
-- **TanStack Query**: Server state management with caching and background updates
-
-## Environment Variables
-
-### Required for Full Functionality
-- `NEXT_PUBLIC_FIREBASE_*` - Firebase configuration for backend services
-- `OPENROUTER_API_KEY` - OpenRouter API key for AI features
-
-### Demo Mode
-The application runs in demo mode without credentials. In demo mode:
-- Products are loaded from local seed data
-- Cart operations work locally
-- AI features are disabled
-- Orders and reviews are not persisted
-
-## Deployment
-
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Import project in Vercel
-3. Add environment variables in Vercel project settings
-4. Deploy
-
-### Other Platforms
-
-The application can be deployed to any platform supporting Next.js:
-- Netlify
-- AWS Amplify
-- Google Cloud Run
-- Docker container
-
-## Development
-
-### Code Quality
-```bash
-# Run linting
-npm run lint
-
-# Check TypeScript types
-npm run typecheck
-```
-
-### Adding New Features
-1. Create API routes in `src/app/api/`
-2. Add components in `src/components/`
-3. Update state management in `src/store/`
-4. Add utility functions in `src/lib/`
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Run tests and linting
-5. Submit a pull request
-
-## License
-
-This project is private and proprietary.
-
-## Support
-
-For issues and questions, please contact the development team.
-
----
-
-Built with ❤️ for the Indian grocery shopping experience
+Next.js 15 (App Router), TypeScript, Tailwind, Zustand, React Hook Form + Zod,
+Framer Motion, OpenRouter (optional).

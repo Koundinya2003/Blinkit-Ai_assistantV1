@@ -1,26 +1,47 @@
-import * as React from "react";
+"use client";
+
+import { forwardRef } from "react";
 import { cn } from "@/lib/utils";
 
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  variant?: "primary" | "secondary" | "ghost" | "danger";
-  size?: "sm" | "md" | "icon";
+type Variant = "primary" | "secondary" | "ghost" | "outline" | "danger";
+type Size = "sm" | "md" | "lg" | "icon";
+
+const VARIANTS: Record<Variant, string> = {
+  primary: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm",
+  secondary: "bg-brand text-brand-ink hover:brightness-95 shadow-sm",
+  ghost: "text-foreground hover:bg-muted",
+  outline: "border border-border bg-background text-foreground hover:bg-muted",
+  danger: "text-danger hover:bg-danger/10",
 };
 
-export function Button({ className, variant = "primary", size = "md", ...props }: ButtonProps) {
+const SIZES: Record<Size, string> = {
+  sm: "h-8 px-3 text-xs",
+  md: "h-10 px-4 text-sm",
+  lg: "h-12 px-6 text-base",
+  icon: "h-10 w-10",
+};
+
+export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+  variant?: Variant;
+  size?: Size;
+};
+
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button(
+  { className, variant = "primary", size = "md", type = "button", ...props },
+  ref
+) {
   return (
     <button
+      ref={ref}
+      type={type}
       className={cn(
-        "inline-flex items-center justify-center gap-2 rounded-md font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50",
-        variant === "primary" && "bg-primary text-primary-foreground hover:bg-primary/90",
-        variant === "secondary" && "border border-border bg-white text-foreground hover:bg-muted",
-        variant === "ghost" && "text-foreground hover:bg-muted",
-        variant === "danger" && "bg-red-600 text-white hover:bg-red-700",
-        size === "sm" && "h-8 px-3 text-xs",
-        size === "md" && "h-11 px-4 text-sm",
-        size === "icon" && "h-9 w-9",
+        "inline-flex items-center justify-center gap-2 rounded-[10px] font-semibold transition-colors",
+        "disabled:pointer-events-none disabled:opacity-50",
+        VARIANTS[variant],
+        SIZES[size],
         className
       )}
       {...props}
     />
   );
-}
+});

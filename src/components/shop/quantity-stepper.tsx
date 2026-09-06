@@ -1,84 +1,79 @@
 "use client";
 
-import { Minus, Plus, Check } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { useCartStore } from "@/store/cart-store";
-import { useState } from "react";
+import { Minus, Plus } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { useCartStore, useCartQuantity } from "@/lib/store/cart-store";
 
-export function QuantityStepper({ productId }: { productId: string }) {
-  const [isAnimating, setIsAnimating] = useState(false);
-  const items = useCartStore((state) => state.items);
-  const addItem = useCartStore((state) => state.addItem);
-  const updateQuantity = useCartStore((state) => state.updateQuantity);
-  const quantity = items.find((item) => item.productId === productId)?.quantity ?? 0;
+export function QuantityStepper({
+  productId,
+  disabled,
+  size = "md",
+  className,
+}: {
+  productId: string;
+  disabled?: boolean;
+  size?: "sm" | "md";
+  className?: string;
+}) {
+  const quantity = useCartQuantity(productId);
+  const add = useCartStore((state) => state.add);
+  const setQuantity = useCartStore((state) => state.setQuantity);
 
-  const handleAdd = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    setIsAnimating(true);
-    addItem(productId);
-    setTimeout(() => setIsAnimating(false), 300);
-  };
+  const height = size === "sm" ? "h-8" : "h-9";
+  const text = size === "sm" ? "text-xs" : "text-sm";
 
-  const handleDecrease = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    setIsAnimating(true);
-    updateQuantity(productId, quantity - 1);
-    setTimeout(() => setIsAnimating(false), 300);
-  };
-
-  const handleIncrease = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    setIsAnimating(true);
-    addItem(productId);
-    setTimeout(() => setIsAnimating(false), 300);
-  };
-
-  if (!quantity) {
+  if (disabled) {
     return (
-      <Button
-        size="sm"
-        onClick={handleAdd}
-        className="add-to-cart-btn button-press"
-        aria-label="Add to cart"
+      <span className={cn("inline-flex items-center justify-center rounded-[10px] border border-border px-3 font-semibold text-muted-foreground", height, text, className)}>
+        Sold out
+      </span>
+    );
+  }
+
+  if (quantity === 0) {
+    return (
+      <button
         type="button"
+        onClick={() => add(productId)}
+        aria-label="Add to cart"
+        className={cn(
+          "inline-flex items-center justify-center rounded-[10px] border border-primary bg-primary/5 px-4 font-bold uppercase tracking-wide text-primary transition-colors hover:bg-primary hover:text-primary-foreground",
+          height,
+          text,
+          className
+        )}
       >
-        <span className="relative z-10 flex items-center gap-1.5">
-          {isAnimating ? (
-            <>
-              <Check className="h-4 w-4" />
-              Added
-            </>
-          ) : (
-            <>
-              <Plus className="h-4 w-4" />
-              Add
-            </>
-          )}
-        </span>
-      </Button>
+        Add
+      </button>
     );
   }
 
   return (
-    <div className="quantity-stepper animate-scale-in">
+    <div
+      className={cn(
+        "inline-grid grid-cols-3 items-center overflow-hidden rounded-[10px] bg-primary font-bold text-primary-foreground",
+        height,
+        text,
+        size === "sm" ? "w-[84px]" : "w-[96px]",
+        className
+      )}
+    >
       <button
-        onClick={handleDecrease}
-        aria-label={`Decrease quantity, currently ${quantity}`}
-        className="transition-smooth hover:bg-primary/90 active:scale-95 disabled:opacity-50"
-        disabled={isAnimating}
         type="button"
+        onClick={() => setQuantity(productId, quantity - 1)}
+        aria-label={quantity === 1 ? "Remove from cart" : "Decrease quantity"}
+        className="grid h-full place-items-center transition-colors hover:bg-black/10"
       >
         <Minus className="h-3.5 w-3.5" />
       </button>
-      <div className="grid place-items-center text-sm font-bold tabular-nums">
+      <span className="text-center tabular-nums" aria-live="polite">
         {quantity}
-      </div>
+      </span>
       <button
-        onClick={handleIncrease}
-        aria-label={`Increase quantity, currently ${quantity}`}
-        className="transition-smooth hover:bg-primary/90 active:scale-95 disabled:opacity-50"
-        disabled={isAnimating}
         type="button"
+        onClick={() => add(productId)}
+        aria-label="Increase quantity"
+        className="grid h-full place-items-center transition-colors hover:bg-black/10"
       >
         <Plus className="h-3.5 w-3.5" />
       </button>

@@ -1,69 +1,46 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { Suspense } from "react";
 import "./globals.css";
-import { AppProviders } from "@/components/shop/app-providers";
+import { Header } from "@/components/shop/header";
 import { CartDrawer } from "@/components/shop/cart-drawer";
+import { Footer } from "@/components/shop/footer";
 
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap"
-});
+const inter = Inter({ subsets: ["latin"], display: "swap", variable: "--font-sans" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"),
   title: {
-    default: "Blinkit AI - AI-Assisted Quick Commerce Grocery Shopping",
-    template: "%s | Blinkit AI"
+    default: "Blinkit — tell us what you want to accomplish",
+    template: "%s | Blinkit",
   },
-  description: "AI-assisted quick commerce grocery shopping for India. Get groceries delivered in 10-15 minutes with smart AI recommendations.",
-  keywords: ["grocery", "quick commerce", "AI shopping", "Blinkit", "India", "delivery", "online shopping"],
-  authors: [{ name: "Blinkit AI" }],
+  description:
+    "Describe a meal, a head count and a budget. Blinkit plans the dishes, works out the quantities and builds a shoppable basket of real products delivered in minutes.",
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "/",
-    siteName: "Blinkit AI",
-    title: "Blinkit AI - AI-Assisted Quick Commerce Grocery Shopping",
-    description: "AI-assisted quick commerce grocery shopping for India. Get groceries delivered in 10-15 minutes with smart AI recommendations.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Blinkit AI - Groceries in minutes, smarter after every add"
-      }
-    ]
+    siteName: "Blinkit",
+    title: "Blinkit — tell us what you want to accomplish",
+    description: "Natural language in, a full basket of real groceries out.",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Blinkit AI - AI-Assisted Quick Commerce Grocery Shopping",
-    description: "AI-assisted quick commerce grocery shopping for India. Get groceries delivered in 10-15 minutes.",
-    images: ["/og-image.png"]
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1
-    }
-  },
-  verification: {
-    google: "google-site-verification-code"
-  }
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export const viewport: Viewport = {
+  themeColor: "#f8cb46",
+  width: "device-width",
+  initialScale: 1,
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-IN">
-      <body className={inter.className}>
-        <AppProviders>
-          {children}
-          <CartDrawer />
-        </AppProviders>
+    <html lang="en-IN" className={inter.variable}>
+      <body className="font-sans">
+        <Suspense fallback={<div className="h-[68px] border-b border-border bg-background" />}>
+          <Header />
+        </Suspense>
+        <main className="mx-auto min-h-[70vh] max-w-7xl px-4 py-5">{children}</main>
+        <Footer />
+        <CartDrawer />
       </body>
     </html>
   );
