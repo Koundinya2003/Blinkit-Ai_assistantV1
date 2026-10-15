@@ -1,0 +1,492 @@
+<title>Intent to Basket</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Figtree:ital,wght@0,400;0,600;0,800;1,400&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Identity: a dark store shelf at rush hour. Sunny shelf yellow ground, receipt paper, leaf green for what the code decides, chili for the model, a rider route as the motif. */
+:root {
+  --ground: #ffe680;
+  --shelf: #f5cf3d;
+  --paper: #fffdf4;
+  --ink: #15241a;
+  --muted: #4f5a45;
+  --leaf: #12773a;
+  --chili: #d4421c;
+  --rule: #d7b52a;
+  --soft: #fff3b8;
+  --display: "Big Shoulders Display", "Arial Narrow", sans-serif;
+  --body: "Figtree", system-ui, sans-serif;
+  --mono: "DM Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #101a13; --shelf: #1c2a1f; --paper: #17221a; --ink: #f6ecc4; --muted: #b5b18f;
+    --leaf: #6fd38f; --chili: #ff8b5e; --rule: #34452f; --soft: #213024;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #101a13; --shelf: #1c2a1f; --paper: #17221a; --ink: #f6ecc4; --muted: #b5b18f;
+  --leaf: #6fd38f; --chili: #ff8b5e; --rule: #34452f; --soft: #213024;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 15px;
+  line-height: 1.45;
+}
+.sheet { width: 960px; margin: 0 auto; padding: 12px 0; display: grid; gap: 0; }
+.panel { position: relative; padding: 30px 40px 34px; }
+.tag {
+  display: inline-flex; align-items: center; gap: 10px;
+  font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink); background: var(--shelf); padding: 7px 12px 7px 10px;
+  border-left: 5px solid var(--leaf);
+}
+.tag b { color: var(--leaf); font-weight: 500; }
+h2 { font: 800 46px/0.95 var(--display); text-transform: uppercase; letter-spacing: .01em; margin: 14px 0 8px; }
+h2 em { font-style: normal; color: var(--leaf); }
+.lede { color: var(--muted); max-width: 640px; font-size: 16px; }
+.mono { font-family: var(--mono); }
+
+/* ---------- hero ---------- */
+.hero { display: grid; grid-template-columns: 1.12fr 1fr; gap: 34px; padding-top: 34px; }
+.kicker { font: 500 12px/1.3 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.hero h1 { font: 900 104px/0.86 var(--display); text-transform: uppercase; margin: 16px 0 18px; letter-spacing: -.005em; }
+.hero h1 span { display: block; }
+.hero h1 .g { color: var(--leaf); }
+.hero p { font-size: 16.5px; max-width: 470px; }
+.hero p strong { font-weight: 800; }
+.note { margin-top: 14px; font: 400 12px/1.4 var(--mono); color: var(--muted); }
+.stats { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(5, 1fr); border-top: 3px solid var(--ink); margin-top: 6px; }
+.stat { padding: 12px 14px 0 0; }
+.stat b { display: block; font: 900 50px/1 var(--display); }
+.stat span { font: 500 11.5px/1.3 var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.stat:nth-child(odd) b { color: var(--leaf); }
+
+.counter { background: var(--paper); border: 2px solid var(--ink); position: relative; align-self: start; }
+.intent { display: flex; align-items: center; gap: 10px; padding: 14px 16px; border-bottom: 2px dashed var(--rule); background: var(--soft); }
+.intent .q { font: 800 13px/1 var(--body); background: var(--ink); color: var(--paper); padding: 6px 8px; letter-spacing: .04em; }
+.typed { font: 500 15px/1 var(--mono); white-space: nowrap; overflow: hidden; width: 29ch; border-right: 2px solid var(--chili); animation: type 9s steps(28, end) infinite; }
+@keyframes type { 0% { width: 0; } 24%, 92% { width: 29ch; } 100% { width: 29ch; } }
+.receipt { padding: 14px 18px 12px; }
+.rhead { display: flex; justify-content: space-between; font: 800 13px/1 var(--body); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 8px; }
+.rhead span:last-child { color: var(--leaf); }
+.line { display: grid; grid-template-columns: 1fr auto; font: 400 13.5px/1.75 var(--mono); border-bottom: 1px dotted var(--rule); animation: drop 9s cubic-bezier(.2,.9,.3,1.2) infinite; animation-delay: calc(var(--i) * 0.13s); }
+.line i { font-style: normal; color: var(--muted); font-size: 11.5px; margin-left: 6px; }
+.line .amt { color: var(--leaf); font-weight: 500; }
+@keyframes drop {
+  0%, 26% { opacity: 0; transform: translateY(-14px); }
+  33%, 90% { opacity: 1; transform: none; }
+  97%, 100% { opacity: 0; transform: translateX(26px); }
+}
+.rfoot { display: flex; justify-content: space-between; padding-top: 10px; font: 500 12px/1.3 var(--mono); color: var(--muted); }
+.zig { height: 12px; background: linear-gradient(135deg, var(--paper) 50%, transparent 50%) 0 0 / 14px 12px, linear-gradient(225deg, var(--paper) 50%, transparent 50%) 0 0 / 14px 12px; position: absolute; left: 0; right: 0; bottom: -14px; }
+.rider { position: absolute; right: -2px; top: -16px; background: var(--chili); color: #fff; font: 800 12px/1 var(--body); padding: 6px 9px; letter-spacing: .05em; text-transform: uppercase; transform: rotate(3deg); }
+
+/* ---------- route ---------- */
+.route { background: var(--paper); border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); }
+.routemap { position: relative; margin-top: 18px; }
+.routemap svg { display: block; width: 880px; height: 70px; }
+.road { fill: none; stroke: var(--ink); stroke-width: 4; stroke-dasharray: 1000; animation: draw 2s ease-out both; }
+.road2 { fill: none; stroke: var(--shelf); stroke-width: 1.5; stroke-dasharray: 6 7; }
+@keyframes draw { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
+.pin { animation: pop .5s cubic-bezier(.3,1.6,.5,1) both; transform-box: fill-box; transform-origin: center; }
+@keyframes pop { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.stops { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
+.stop { animation: rise .6s ease-out both; }
+@keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.stop h3 { font: 800 25px/1 var(--display); text-transform: uppercase; }
+.stop code { display: inline-block; font: 500 11px/1.3 var(--mono); color: var(--leaf); margin: 4px 0 6px; }
+.stop p { font-size: 13px; line-height: 1.4; color: var(--muted); }
+.flowline { margin-top: 20px; font: 500 13px/1.5 var(--mono); padding: 10px 14px; background: var(--soft); border-left: 5px solid var(--chili); }
+.flowline b { color: var(--chili); font-weight: 500; }
+
+/* ---------- wall ---------- */
+.wall { display: grid; grid-template-columns: 1fr 84px 1fr; margin-top: 20px; align-items: stretch; }
+.side h3 { font: 800 28px/1 var(--display); text-transform: uppercase; }
+.side .who { font: 500 11.5px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; margin-bottom: 6px; }
+.side.model .who { color: var(--chili); }
+.side.code .who { color: var(--leaf); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.chip { font: 500 13px/1 var(--mono); padding: 8px 10px; border: 2px solid currentColor; animation: pop .45s cubic-bezier(.3,1.6,.5,1) both; }
+.model .chip { color: var(--chili); }
+.code .chip { color: var(--leaf); }
+.chip span { color: var(--ink); }
+.divider { position: relative; display: flex; justify-content: center; }
+.divider::before { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; border-left: 4px solid var(--ink); }
+.divider span { position: relative; align-self: center; background: var(--ink); color: var(--ground); font: 900 15px/1 var(--display); text-transform: uppercase; letter-spacing: .08em; padding: 10px 6px; writing-mode: vertical-rl; }
+.cant { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 24px; border: 2px solid var(--ink); }
+.cant div { padding: 14px 16px; font-size: 14px; animation: stamp .5s ease-out both; }
+.cant div + div { border-left: 2px solid var(--ink); }
+.cant b { display: block; font: 800 22px/1 var(--display); text-transform: uppercase; color: var(--chili); margin-bottom: 4px; }
+@keyframes stamp { from { opacity: 0; transform: scale(1.25) rotate(-3deg); } to { opacity: 1; transform: none; } }
+.switch { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px; }
+.mode { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; font-size: 14px; }
+.badge { font: 800 13px/1 var(--body); text-transform: uppercase; letter-spacing: .05em; padding: 7px 9px; white-space: nowrap; }
+.badge.ai { background: var(--chili); color: #fff; }
+.badge.rules { background: var(--leaf); color: var(--paper); }
+
+/* ---------- math ---------- */
+.math { background: var(--paper); border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); }
+.cols3 { display: grid; grid-template-columns: 1.15fr 1fr 0.95fr; gap: 30px; margin-top: 20px; }
+.col h3 { font: 800 24px/1 var(--display); text-transform: uppercase; margin-bottom: 4px; }
+.col .sub { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+.chart svg { width: 100%; height: auto; display: block; overflow: visible; }
+.axis { stroke: var(--ink); stroke-width: 1.5; }
+.grid line { stroke: var(--rule); stroke-width: 1; stroke-dasharray: 2 4; }
+.curve { fill: none; stroke-width: 3.5; stroke-linecap: round; stroke-dasharray: 400; animation: trace 1.8s ease-out both; }
+@keyframes trace { from { stroke-dashoffset: 400; } to { stroke-dashoffset: 0; } }
+.c-lin { stroke: var(--ink); }
+.c-sub { stroke: var(--leaf); animation-delay: .3s; }
+.c-fix { stroke: var(--chili); animation-delay: .6s; }
+.chart text { font: 500 11px var(--mono); fill: var(--muted); }
+.chart .lbl { font: 800 13px var(--body); }
+.legend { list-style: none; margin-top: 8px; font-size: 12.5px; }
+.legend li { display: grid; grid-template-columns: 22px 1fr; align-items: center; line-height: 1.6; }
+.legend i { width: 14px; height: 4px; display: block; }
+.sig { list-style: none; }
+.sig li { display: grid; grid-template-columns: 22px 1fr; gap: 8px; padding: 6px 0; border-bottom: 1px dotted var(--rule); font-size: 13.5px; animation: rise .5s ease-out both; }
+.sig .s { font: 400 13px/1.4 var(--body); text-align: center; }
+.sig .plus { color: var(--leaf); }
+.sig .minus { color: var(--chili); }
+.ladder { list-style: none; counter-reset: step; }
+.ladder li { position: relative; padding: 10px 12px 10px 48px; margin-bottom: 8px; background: var(--soft); font-size: 13.5px; animation: wipe .6s ease-out both; border-left: 4px solid var(--leaf); }
+.ladder li:nth-child(3) { border-left-color: var(--chili); }
+.ladder li::before { counter-increment: step; content: counter(step); position: absolute; left: 12px; top: 8px; font: 900 26px/1 var(--display); color: var(--leaf); }
+.ladder li:nth-child(3)::before { color: var(--chili); }
+.ladder b { display: block; font-weight: 800; }
+@keyframes wipe { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+.example { margin-top: 12px; font: 400 12.5px/1.5 var(--mono); color: var(--muted); }
+.example b { color: var(--ink); font-weight: 500; }
+
+/* ---------- shopper ---------- */
+.two { display: grid; grid-template-columns: 1.05fr 1fr; gap: 34px; margin-top: 20px; }
+.planline { background: var(--paper); border: 2px solid var(--ink); }
+.pl-head { display: flex; justify-content: space-between; align-items: baseline; padding: 12px 16px; border-bottom: 2px dashed var(--rule); }
+.pl-head b { font: 800 20px/1 var(--display); text-transform: uppercase; }
+.pl-head span { font: 500 12px/1 var(--mono); color: var(--muted); }
+.pl-row { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; padding: 12px 16px; }
+.pl-row .nm { font-weight: 800; }
+.pl-row .pk { font: 400 12px/1.4 var(--mono); color: var(--muted); }
+.stepper { display: inline-flex; align-items: center; border: 2px solid var(--leaf); font: 800 15px/1 var(--body); color: var(--leaf); }
+.stepper span { padding: 6px 10px; }
+.stepper .n { background: var(--leaf); color: var(--paper); }
+.alts { padding: 4px 16px 14px; }
+.alts .t { font: 500 11px/1 var(--mono); text-transform: uppercase; letter-spacing: .1em; color: var(--muted); margin: 6px 0 6px; }
+.alt { display: grid; grid-template-columns: 1fr auto auto; gap: 14px; font: 400 13px/2 var(--mono); border-top: 1px dotted var(--rule); animation: rise .5s ease-out both; }
+.alt .sw { color: var(--leaf); font-weight: 500; }
+.pl-actions { display: flex; gap: 8px; padding: 0 16px 16px; }
+.pl-actions span { font: 600 12.5px/1 var(--body); padding: 8px 10px; border: 2px solid var(--ink); }
+.pl-actions span.on { background: var(--ink); color: var(--paper); }
+.can { list-style: none; margin-top: 16px; }
+.can li { padding: 7px 0 7px 22px; position: relative; font-size: 14px; border-bottom: 1px dotted var(--rule); }
+.can li::before { content: ""; position: absolute; left: 0; top: 13px; width: 10px; height: 10px; background: var(--leaf); transform: rotate(45deg); }
+.track { margin-top: 4px; }
+.track h3, .store h3 { font: 800 24px/1 var(--display); text-transform: uppercase; margin-bottom: 10px; }
+.timeline { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); padding-top: 22px; }
+.timeline::before { content: ""; position: absolute; top: 29px; left: 8px; right: 8px; height: 4px; background: var(--rule); }
+.timeline .fill { position: absolute; top: 29px; left: 8px; right: 8px; height: 4px; background: var(--leaf); transform-origin: left; animation: grow 3s ease-in-out .4s both; }
+@keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.tstep { position: relative; padding: 24px 10px 0 0; font-size: 12px; line-height: 1.35; }
+.tstep::before { content: ""; position: absolute; top: 0; left: 0; width: 18px; height: 18px; border-radius: 50%; background: var(--paper); border: 4px solid var(--leaf); animation: pop .4s cubic-bezier(.3,1.6,.5,1) both; animation-delay: var(--d); }
+.tstep b { display: block; font-weight: 800; font-size: 13px; margin-bottom: 2px; }
+.tstep span { color: var(--muted); }
+.fees { display: flex; gap: 0; margin-top: 20px; border: 2px solid var(--ink); }
+.fees div { flex: 1; padding: 10px 12px; font-size: 12.5px; color: var(--muted); }
+.fees div + div { border-left: 2px solid var(--ink); }
+.fees b { display: block; font: 900 30px/1 var(--display); color: var(--ink); }
+.store { margin-top: 20px; }
+.screens { display: flex; flex-wrap: wrap; gap: 6px; }
+.screens span { font: 500 12.5px/1 var(--mono); padding: 7px 9px; background: var(--shelf); }
+
+/* ---------- stack ---------- */
+.stack { background: var(--ink); color: var(--ground); }
+.stack .tag { background: var(--ground); color: var(--ink); }
+.stack h2 em { color: var(--shelf); }
+.stack .lede { color: var(--ground); opacity: .8; }
+.stackgrid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; margin-top: 20px; }
+.stackgrid h3 { font: 800 22px/1 var(--display); text-transform: uppercase; margin-bottom: 10px; color: var(--shelf); }
+.tech { list-style: none; }
+.tech li { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid rgba(127,127,127,.35); font-size: 14px; animation: rise .5s ease-out both; }
+.tech li span { font: 400 12px/1.6 var(--mono); opacity: .7; }
+.term { font: 400 13px/1.8 var(--mono); background: var(--paper); color: var(--ink); padding: 12px 14px; border-left: 4px solid var(--shelf); }
+.term .c { opacity: .55; }
+.env { margin-top: 12px; font-size: 13px; line-height: 1.5; }
+.env code { font-family: var(--mono); color: var(--shelf); }
+.next p { font-size: 14px; margin-bottom: 10px; }
+.next code { font-family: var(--mono); color: var(--shelf); font-size: 12.5px; }
+:root[data-theme="dark"] .stack { }
+
+/* ---------- responsive ---------- */
+@media (max-width: 980px) { .sheet { width: 100%; } }
+</style>
+
+<main class="sheet">
+
+<!-- 01 hero -->
+<section class="panel hero" data-panel="01_hero" data-alt="Intent to Basket, a quick commerce shopping experiment. Headline: Say the meal. Get the basket. Instead of searching for what you need, tell the store what you want to achieve. Type I want to make biryani for 2 or dinner for 4 under 600 rupees, and the app plans the meal, scales the ingredients to the head count, maps every ingredient to a real catalogue product, works out how many packs to buy, fits the budget and hands you an editable basket. Example receipt, Chicken Biryani for 2: basmati rice 250 g, chicken 400 g, onion 2 pieces, curd 150 g, ginger garlic paste 31 g, biryani masala 1 pack, cooking oil 31 ml, mint 23 g, coriander 23 g, plus optional whole spices and saffron. 11 ingredients, 2 optional. Numbers: 329 products, 15 aisles, 41 dishes, 7 occasions, 0 API keys required. Delivery, stock and payment are simulated.">
+  <div>
+    <div class="kicker">intent to basket · a quick commerce experiment</div>
+    <h1><span>Say the meal.</span><span class="g">Get the</span><span class="g">basket.</span></h1>
+    <p>Instead of searching for what you need, <strong>tell the store what you want to achieve.</strong> Type “dinner for 4 under ₹600” and the app plans the meal, scales it to the head count, maps every ingredient to a real product, counts the packs, fits the budget and hands you a basket you can edit and check out.</p>
+    <div class="note">Concept build. Prices and packs are modelled on real Indian quick commerce SKUs; delivery, stock and payment are simulated.</div>
+  </div>
+  <div class="counter">
+    <div class="rider">intent in, basket out</div>
+    <div class="intent"><span class="q">ASK</span><span class="typed">I want to make biryani for 2</span></div>
+    <div class="receipt">
+      <div class="rhead"><span>Chicken Biryani</span><span>serves 2</span></div>
+      <div class="line" style="--i:0"><span>Basmati rice</span><span class="amt">250 g</span></div>
+      <div class="line" style="--i:1"><span>Chicken</span><span class="amt">400 g</span></div>
+      <div class="line" style="--i:2"><span>Onion</span><span class="amt">2 pc</span></div>
+      <div class="line" style="--i:3"><span>Curd</span><span class="amt">150 g</span></div>
+      <div class="line" style="--i:4"><span>Ginger garlic paste</span><span class="amt">31 g</span></div>
+      <div class="line" style="--i:5"><span>Biryani masala</span><span class="amt">1 pack</span></div>
+      <div class="line" style="--i:6"><span>Cooking oil</span><span class="amt">31 ml</span></div>
+      <div class="line" style="--i:7"><span>Mint, coriander</span><span class="amt">23 g each</span></div>
+      <div class="line" style="--i:8"><span>Whole spices, saffron<i>optional</i></span><span class="amt">1 each</span></div>
+      <div class="rfoot"><span>11 ingredients · 2 optional</span><span>scaled, then matched</span></div>
+    </div>
+    <div class="zig"></div>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>329</b><span>catalogue products</span></div>
+    <div class="stat"><b>15</b><span>aisles</span></div>
+    <div class="stat"><b>41</b><span>dishes it can plan</span></div>
+    <div class="stat"><b>7</b><span>occasions</span></div>
+    <div class="stat"><b>0</b><span>API keys required</span></div>
+  </div>
+</section>
+
+<!-- 02 route -->
+<section class="panel route" data-panel="02_route" data-alt="The core flow, drawn as a delivery route. A sentence becomes an intent, a meal plan, scaled ingredients, real products with pack counts, an editable basket, then cart and checkout. Every step is real code. Intent, in intent.ts: reads dish, occasion, head count, budget, diet and constraints out of the sentence. Plan, in planner.ts: chooses the dishes, prices each candidate against the catalogue and spends the budget on the best menu that fits. Quantities, in recipes.ts and units.ts: per serving amounts scaled linearly, sub linearly or fixed, with unit conversion including per piece weights. Products, in matcher.ts: ranks catalogue products for each ingredient by key match, pack fit, waste, rating and price. Budget, in planner.ts: swaps to cheaper packs, then drops optional ingredients, then explains the shortfall honestly. Basket, in basket.ts: orchestrates the above and applies the shopper's swaps and removals.">
+  <span class="tag"><b>Aisle 01</b> the core flow</span>
+  <h2>Six stops from a sentence <em>to a basket</em></h2>
+  <p class="lede">Every step is a real artefact in the codebase, not a prompt and print.</p>
+  <div class="routemap">
+    <svg viewBox="0 0 880 70" aria-hidden="true">
+      <path class="road2" d="M10 40 C 80 10, 120 64, 160 40 S 240 14, 312 40 S 400 66, 460 40 S 560 12, 612 40 S 700 66, 760 40 S 840 22, 870 34"/>
+      <path class="road" d="M10 40 C 80 10, 120 64, 160 40 S 240 14, 312 40 S 400 66, 460 40 S 560 12, 612 40 S 700 66, 760 40 S 840 22, 870 34"/>
+      <g id="pins"></g>
+    </svg>
+  </div>
+  <div class="stops">
+    <div class="stop" style="animation-delay:.3s"><h3>Intent</h3><code>intent.ts</code><p>Reads dish, occasion, head count, budget, diet and constraints from the sentence.</p></div>
+    <div class="stop" style="animation-delay:.6s"><h3>Plan</h3><code>planner.ts</code><p>Chooses the dishes, prices each candidate against the catalogue, spends the budget on the best menu that fits.</p></div>
+    <div class="stop" style="animation-delay:.9s"><h3>Quantities</h3><code>recipes.ts · units.ts</code><p>Per serving amounts scaled linear, sub linear or fixed. Converts units, including per piece weights.</p></div>
+    <div class="stop" style="animation-delay:1.2s"><h3>Products</h3><code>matcher.ts</code><p>Ranks real products for each ingredient by key match, pack fit, waste, rating and price.</p></div>
+    <div class="stop" style="animation-delay:1.5s"><h3>Budget</h3><code>planner.ts</code><p>Cheaper packs first, then drops optional ingredients, then explains any shortfall honestly.</p></div>
+    <div class="stop" style="animation-delay:1.8s"><h3>Basket</h3><code>basket.ts</code><p>Orchestrates it all and applies the shopper's swaps and removals.</p></div>
+  </div>
+  <div class="flowline">natural language → intent → meal plan → scaled ingredients → real products + pack counts → editable basket → <b>cart → checkout</b></div>
+</section>
+
+<!-- 03 wall -->
+<section class="panel" data-panel="03_guardrail" data-alt="Why the model never names a product. The language model plans in ingredient space only: it returns canonical ingredient keys and quantities, such as chicken 400 g, onion 2 pieces, curd 150 g, saffron 1. Deterministic code maps those keys onto the catalogue and decides the product, brand, pack size, pack count, price and stock. So the model cannot hallucinate a product that does not exist, cannot invent a price, and cannot recommend something out of stock. The feature degrades cleanly: with OPENROUTER_API_KEY set, planning is done by the model and the plan header reads AI plan. Without a key it reads Blinkit plan, a built in recipe knowledge base and rule based intent parsing take over, and every screen still works end to end. The app never claims to have used a model it did not.">
+  <span class="tag"><b>Aisle 02</b> the guardrail</span>
+  <h2>The model never <em>names a product</em></h2>
+  <p class="lede">The LLM plans in ingredient space. Deterministic code owns the shelf. The only contract between them is a list of canonical ingredient keys on every product.</p>
+  <div class="wall">
+    <div class="side model">
+      <div class="who">The model returns</div>
+      <h3>Ingredient keys + quantities</h3>
+      <div class="chips">
+        <span class="chip" style="animation-delay:.2s">chicken <span>400 g</span></span>
+        <span class="chip" style="animation-delay:.35s">onion <span>2 pc</span></span>
+        <span class="chip" style="animation-delay:.5s">curd <span>150 g</span></span>
+        <span class="chip" style="animation-delay:.65s">mint <span>23 g</span></span>
+        <span class="chip" style="animation-delay:.8s">saffron <span>1</span></span>
+      </div>
+    </div>
+    <div class="divider"><span>keys only</span></div>
+    <div class="side code">
+      <div class="who">The code decides</div>
+      <h3>Product, pack, price, stock</h3>
+      <div class="chips">
+        <span class="chip" style="animation-delay:1s">product</span>
+        <span class="chip" style="animation-delay:1.15s">brand</span>
+        <span class="chip" style="animation-delay:1.3s">pack size</span>
+        <span class="chip" style="animation-delay:1.45s">pack count</span>
+        <span class="chip" style="animation-delay:1.6s">price</span>
+        <span class="chip" style="animation-delay:1.75s">in stock</span>
+      </div>
+    </div>
+  </div>
+  <div class="cant">
+    <div style="animation-delay:2s"><b>No phantom products</b>It cannot hallucinate an item that does not exist.</div>
+    <div style="animation-delay:2.25s"><b>No made up prices</b>Every rupee comes from the catalogue.</div>
+    <div style="animation-delay:2.5s"><b>No dead links</b>It cannot recommend something out of stock.</div>
+  </div>
+  <div class="switch">
+    <div class="mode"><span class="badge ai">AI plan</span><span>With <span class="mono">OPENROUTER_API_KEY</span> set, the model plans the meal and the header says so.</span></div>
+    <div class="mode"><span class="badge rules">Blinkit plan</span><span>No key: a built in recipe knowledge base and rule based intent parsing run, and every screen still works. It never claims a model it did not use.</span></div>
+  </div>
+</section>
+
+<!-- 04 math -->
+<section class="panel math" data-panel="04_math" data-alt="The kitchen maths. Scaling: per serving amounts scale three ways. Linear for staples like rice and chicken. Sub linear, servings to the power 0.65, for oil, pastes and herbs, so 10 servings need about 4.5 times one serving, not 10 times. Fixed for spices: you buy one pack of garam masala whether you cook for two or ten. Unit conversion includes per piece weights, so 2 onions can come from a 1 kg pack. Product ranking in matcher.ts adds points for ingredient key match, how much of the ingredient label the product name says back, rating and popularity, and subtracts for pack waste, extra packs and cost. The budget ladder: first swap to cheaper packs, then drop optional ingredients, then explain the shortfall in plain language.">
+  <span class="tag"><b>Aisle 03</b> the kitchen maths</span>
+  <h2>Cooking for ten is not <em>ten times the oil</em></h2>
+  <div class="cols3">
+    <div class="col chart">
+      <h3>Three ways to scale</h3>
+      <div class="sub">Multiple of one serving, by head count</div>
+      <svg id="scaling" viewBox="0 0 300 190" aria-hidden="true"></svg>
+      <ul class="legend">
+        <li><i style="background:var(--ink)"></i>Linear: rice, chicken, curd</li>
+        <li><i style="background:var(--leaf)"></i>Sub linear (servings to the 0.65): oil, pastes, herbs</li>
+        <li><i style="background:var(--chili)"></i>Fixed: one pack of masala for 2 or 10</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>How a product wins</h3>
+      <div class="sub">Each candidate is scored per ingredient in <span class="mono">matcher.ts</span></div>
+      <ul class="sig">
+        <li style="animation-delay:.3s"><span class="s plus">▲</span>Carries the ingredient key (closest key ranks highest)</li>
+        <li style="animation-delay:.45s"><span class="s plus">▲</span>Its name says the ingredient label back</li>
+        <li style="animation-delay:.6s"><span class="s plus">▲</span>Rating and number of ratings</li>
+        <li style="animation-delay:.75s"><span class="s minus">▼</span>Pack waste (a 5 kg sack for 400 g)</li>
+        <li style="animation-delay:.9s"><span class="s minus">▼</span>Each extra pack needed</li>
+        <li style="animation-delay:1.05s"><span class="s minus">▼</span>Cost, weighted harder in cheapest mode</li>
+      </ul>
+      <div class="example">Per piece weights: <b>“2 onions”</b> can be bought from a <b>1 kg pack</b>.</div>
+    </div>
+    <div class="col">
+      <h3>When the budget bites</h3>
+      <div class="sub">The planner tries, in order</div>
+      <ol class="ladder">
+        <li style="animation-delay:1.2s"><b>Swap to cheaper packs</b>Same ingredient, lower cost.</li>
+        <li style="animation-delay:1.5s"><b>Drop optional ingredients</b>Saffron goes before the rice does.</li>
+        <li style="animation-delay:1.8s"><b>Explain the shortfall</b>Honestly, in plain language.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 05 shopper -->
+<section class="panel" data-panel="05_shopper" data-alt="What the shopper can do with a plan: add any single ingredient or the whole plan to the cart, change quantities with the standard stepper, replace a product from a ranked list of other catalogue products that satisfy the same ingredient, remove ingredients they already have so the total updates and the plan rebuilds, and see exactly why the plan looks the way it does, with budget swaps, dropped optionals, substitutions and unavailable items stated in plain language. Example plan line: Onion, need 2 pieces, Onions 1 kg pack at 35 rupees, with alternatives Onions small pack 500 g at 22 rupees and Organic Onions 1 kg at 68 rupees. The rest of the store is a working quick commerce app: home with category rails, category and sub category browsing with sorting, search, product pages, a cart drawer, checkout with address and payment, and an order confirmation that advances through order placed, packed, on the way and delivered. Cart rules: free delivery above 499 rupees, otherwise a 25 rupee delivery fee, plus a 6 rupee handling fee.">
+  <span class="tag"><b>Aisle 04</b> the basket is yours</span>
+  <h2>A plan you can <em>argue with</em></h2>
+  <div class="two">
+    <div>
+      <div class="planline">
+        <div class="pl-head"><b>Onion</b><span>need 2 pc · Chicken Biryani</span></div>
+        <div class="pl-row">
+          <div><div class="nm">Onions</div><div class="pk">1 kg pack · ₹35 · covers 2 pc</div></div>
+          <div class="stepper"><span><svg width="10" height="10" viewBox="0 0 10 10"><rect x="0" y="4" width="10" height="2.4" fill="currentColor"/></svg></span><span class="n">1</span><span>+</span></div>
+        </div>
+        <div class="alts">
+          <div class="t">Replace with, same ingredient</div>
+          <div class="alt" style="animation-delay:.4s"><span>Onions (Small Pack)</span><span>500 g</span><span class="sw">₹22</span></div>
+          <div class="alt" style="animation-delay:.6s"><span>Organic Onions</span><span>1 kg</span><span class="sw">₹68</span></div>
+        </div>
+        <div class="pl-actions"><span class="on">Add whole plan</span><span>Add this line</span><span>I have this</span></div>
+      </div>
+      <ul class="can">
+        <li>Add one ingredient, or the whole plan, to the cart</li>
+        <li>Change quantities with the standard stepper</li>
+        <li>Remove what you already have: the total updates, the plan rebuilds</li>
+        <li>See why: budget swaps, dropped optionals, substitutions and unavailable items, in plain language</li>
+      </ul>
+    </div>
+    <div>
+      <div class="track">
+        <h3>Then it delivers (in simulation)</h3>
+        <div class="timeline">
+          <div class="fill"></div>
+          <div class="tstep" style="--d:.4s"><b>Order placed</b><span>We have your order</span></div>
+          <div class="tstep" style="--d:1.2s"><b>Packed</b><span>From the dark store</span></div>
+          <div class="tstep" style="--d:2.2s"><b>On the way</b><span>Rider riding out</span></div>
+          <div class="tstep" style="--d:3.3s"><b>Delivered</b><span>Enjoy your order</span></div>
+        </div>
+      </div>
+      <div class="fees">
+        <div><b>₹499</b>free delivery above</div>
+        <div><b>₹25</b>delivery fee below it</div>
+        <div><b>₹6</b>handling fee</div>
+      </div>
+      <div class="store">
+        <h3>The rest of the store works too</h3>
+        <div class="screens">
+          <span>home + category rails</span><span>aisles + sub aisles</span><span>sorting</span><span>search</span><span>product pages</span><span>cart drawer</span><span>checkout: address, payment</span><span>order tracking</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 stack -->
+<section class="panel stack" data-panel="06_stack" data-alt="Stack and running it. Next.js 15 with the App Router, TypeScript, Tailwind, Zustand for a persisted cart, React Hook Form with Zod, Framer Motion, and OpenRouter as an optional model provider, deployed with a Vercel config in the bom1 region. Run it with npm install, copy .env.example to .env.local (optional, the app works without any keys), then npm run dev and open localhost port 3000. Environment variables: NEXT_PUBLIC_APP_URL, OPENROUTER_API_KEY, OPENROUTER_MODEL. Built to swap in a live feed: nothing in the AI layer references a product id, so CatalogSource in src/lib/catalog/index.ts can be reimplemented against a live catalogue without touching anything upstream.">
+  <span class="tag"><b>Aisle 05</b> checkout</span>
+  <h2>Stack, setup and <em>what plugs in next</em></h2>
+  <div class="stackgrid">
+    <div>
+      <h3>Built with</h3>
+      <ul class="tech">
+        <li style="animation-delay:.1s">Next.js 15 <span>App Router</span></li>
+        <li style="animation-delay:.2s">TypeScript <span>strict types</span></li>
+        <li style="animation-delay:.3s">Tailwind <span>styling</span></li>
+        <li style="animation-delay:.4s">Zustand <span>persisted cart</span></li>
+        <li style="animation-delay:.5s">React Hook Form + Zod <span>checkout</span></li>
+        <li style="animation-delay:.6s">Framer Motion <span>motion</span></li>
+        <li style="animation-delay:.7s">OpenRouter <span>optional LLM</span></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Run it</h3>
+      <div class="term">npm install<br>cp .env.example .env.local <span class="c"># optional</span><br>npm run dev<br><span class="c"># open localhost:3000</span></div>
+      <div class="env">Variables: <code>NEXT_PUBLIC_APP_URL</code>, <code>OPENROUTER_API_KEY</code>, <code>OPENROUTER_MODEL</code>. No keys needed to run.</div>
+    </div>
+    <div class="next">
+      <h3>Ready for a live feed</h3>
+      <p>Nothing in the AI layer references a product id. Products carry canonical ingredient keys, and that is the whole contract.</p>
+      <p>So <code>CatalogSource</code> in <code>src/lib/catalog/index.ts</code> can be reimplemented against a live catalogue without touching anything upstream.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script>
+// Pins on the route (frozen at build time)
+(function () {
+  const svgNS = "http://www.w3.org/2000/svg";
+  const road = document.querySelector(".road");
+  const g = document.getElementById("pins");
+  const len = road.getTotalLength();
+  const xs = [80, 230, 380, 530, 680, 830];
+  xs.forEach((x, k) => {
+    // find point on path near x
+    let best = 0, bd = 1e9;
+    for (let t = 0; t <= len; t += 2) { const p = road.getPointAtLength(t); const d = Math.abs(p.x - x); if (d < bd) { bd = d; best = t; } }
+    const p = road.getPointAtLength(best);
+    const c = document.createElementNS(svgNS, "g");
+    c.setAttribute("class", "pin");
+    c.setAttribute("style", "animation-delay:" + (0.3 + k * 0.3).toFixed(1) + "s");
+    c.innerHTML = '<circle cx="' + p.x.toFixed(1) + '" cy="' + p.y.toFixed(1) + '" r="14" fill="var(--leaf)" stroke="var(--paper)" stroke-width="3"/><text x="' + p.x.toFixed(1) + '" y="' + (p.y + 5).toFixed(1) + '" text-anchor="middle" font-family="Big Shoulders Display" font-weight="900" font-size="16" fill="var(--paper)">' + (k + 1) + '</text>';
+    g.appendChild(c);
+  });
+})();
+// Scaling chart
+(function () {
+  const s = document.getElementById("scaling");
+  const W = 300, H = 190, L = 30, B = 165, T = 10, R = 290;
+  const x = (n) => L + (n - 1) / 9 * (R - L);
+  const y = (v) => B - v / 10 * (B - T);
+  let h = '<g class="grid">';
+  [2.5, 5, 7.5, 10].forEach((v) => { h += '<line x1="' + L + '" x2="' + R + '" y1="' + y(v) + '" y2="' + y(v) + '"/>'; });
+  h += '</g><line class="axis" x1="' + L + '" y1="' + B + '" x2="' + R + '" y2="' + B + '"/><line class="axis" x1="' + L + '" y1="' + T + '" x2="' + L + '" y2="' + B + '"/>';
+  [1, 4, 7, 10].forEach((n) => { h += '<text x="' + x(n) + '" y="' + (B + 16) + '" text-anchor="middle">' + n + '</text>'; });
+  [5, 10].forEach((v) => { h += '<text x="' + (L - 6) + '" y="' + (y(v) + 4) + '" text-anchor="end">' + v + '×</text>'; });
+  const path = (f) => { let d = ""; for (let n = 1; n <= 10.001; n += 0.25) d += (d ? " L" : "M") + x(n).toFixed(1) + " " + y(f(n)).toFixed(1); return d; };
+  h += '<path class="curve c-lin" d="' + path((n) => n) + '"/>';
+  h += '<path class="curve c-sub" d="' + path((n) => Math.pow(n, 0.65)) + '"/>';
+  h += '<path class="curve c-fix" d="' + path(() => 1) + '"/>';
+  h += '<text class="lbl" x="' + (R - 4) + '" y="' + (y(10) + 16) + '" text-anchor="end" fill="var(--ink)">10×</text>';
+  h += '<text class="lbl" x="' + (R - 4) + '" y="' + (y(Math.pow(10, 0.65)) - 8) + '" text-anchor="end" fill="var(--leaf)">4.5×</text>';
+  h += '<text class="lbl" x="' + (R - 4) + '" y="' + (y(1) - 8) + '" text-anchor="end" fill="var(--chili)">1×</text>';
+  h += '<text x="' + ((L + R) / 2) + '" y="' + (B + 30) + '" text-anchor="middle">servings</text>';
+  s.innerHTML = h;
+})();
+</script>
